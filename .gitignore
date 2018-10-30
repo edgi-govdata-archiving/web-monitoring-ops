@@ -1,0 +1,7 @@
+templates/secrets.yaml
+templates/secrets.*.yaml
+templates/ui-secrets.yaml
+templates/ui-secrets.*.yaml
+*secrets*
+services.yaml
+!examples/services.yaml

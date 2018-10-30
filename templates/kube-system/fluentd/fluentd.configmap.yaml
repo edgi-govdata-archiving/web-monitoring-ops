@@ -1,0 +1,24 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluentd-config
+  namespace: kube-system
+data:
+  fluent.conf: |
+    @include /fluentd/etc/kubernetes.conf
+    # Amend tags before the cloudwatch_logs plugin picks them up. Modifies
+    # the name of the destination AWS cloudwatch log stream..
+    <match kubernetes.var.log.containers.*.log>
+      @type record_reformer
+      renew_record false
+      enable_ruby true
+      tag ${record['kubernetes']['namespace_name']}.${record['kubernetes']['labels']['app']||record['kubernetes']['labels']['k8s-app']}.${record['kubernetes']['container_name']}.log
+    </match>
+    <match **>
+      @type cloudwatch_logs
+      @id out_cloudwatch_logs
+      log_group_name "#{ENV['LOG_GROUP_NAME']}"
+      auto_create_stream true
+      use_tag_as_stream true
+    </match>

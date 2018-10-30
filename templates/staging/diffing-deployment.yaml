@@ -1,0 +1,40 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: diffing
+  namespace: staging
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: diffing-server
+    spec:
+      containers:
+      - name: processing
+        image: envirodgi/processing:ce708709d66daa02a6c2811ee5b4d38f9543536a
+        imagePullPolicy: Always
+        ports: 
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "100m"
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"
+        readinessProbe:
+          tcpSocket:
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          tcpSocket:
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        env:
+        - name: DIFFER_COLOR_INSERTION
+          value: "#a1d76a"
+        - name: DIFFER_COLOR_DELETION
+          value: "#e8a4c8"
