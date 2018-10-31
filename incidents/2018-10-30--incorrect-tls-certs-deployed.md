@@ -56,16 +56,21 @@ Incident resolved.
 
 ### What Went Well
 
-...
+All infrastructure operated as documented.
 
 ### What Went Wrong
 
-...
+@jsnshrmn did not use a reasonable operational procedure during the initial deployment of the production namespace, nor did he adequately test the success of changes to the service configuration templates. Additionally, there were no automated post-deployment tests nor endpoint monitoring to alert anyone of the issue until the versionista-scraper ran and failed later that evening. If any of these factors were not in play, this error would have:
+
+- never happened, or
+- been identified immediately after the staging deployment, or
+- been identified immediately after the production deployment, instead of many hours later
 
 
 ## Action Items
 
-...
+- @jsnshrmn will identify and implement a basic service deployment test procedure
+- @jsnshrmn will identify and implement a basic service monitoring and alerting process for our staging and production endpoints
 
 
 ## Responders
