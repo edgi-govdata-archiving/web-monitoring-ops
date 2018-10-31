@@ -4,8 +4,7 @@
 
 During the initial deployment of the production namespace to the Kubernetes cluster, @jsnshrmn made configuration changes to the load balancers outside of kubectl, and did not update the certificates specified in the Kubernetes service templates afterwards.
 
-After reorganizing the services templates weeks later, @jsnshrmn redeployed all services, to verify that no substantive changes were made. @jsnshrmn had added a security exception in his browser (accidentally making it permanent) for the incorrect certs on deployment day so that he could check the content being returned on that day. Because of this, he did not notice the incorrect certificates during his spot checks of staging and then production end points.
-
+After reorganizing the services templates weeks later, @jsnshrmn redeployed all services, and by doing that applied the incorrect certificates to staging and production end points.
 
 
 ## Timeline
