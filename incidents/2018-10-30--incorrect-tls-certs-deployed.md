@@ -25,7 +25,7 @@ Weeks later, @jsnshrmn deploys reorganized service configuration to staging (and
 
 ### 2018-10-30 12:15
 
-@jsnshrmn deploys reorganized service configuration to production (and the incorrect certs along with it), and performs a sanity check by visiting the staging ui and api endpoints in his browser. This looks fine on the surface, because his browser had a *permanent* exception to allow the invalid certificate and isn't looking very closely at the security status for the endpoints.
+@jsnshrmn deploys reorganized service configuration to production (and the incorrect certs along with it), and performs a sanity check by visiting the production ui and api endpoints in his browser. This looks fine on the surface, because his browser had a *permanent* exception to allow the invalid certificate and isn't looking very closely at the security status for the endpoints.
 
 
 ### 2018-10-30 19:00
