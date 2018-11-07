@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: processing
-        image: envirodgi/processing:69d34dc6a2b4c0e743769ec8ec994e79161af205
+        image: envirodgi/processing:6928782d2bf2f4a5b30dbb427e6f3e738481b885
         imagePullPolicy: Always
         ports: 
         - containerPort: 80
@@ -38,3 +38,8 @@ spec:
           value: "#a1d76a"
         - name: DIFFER_COLOR_DELETION
           value: "#e8a4c8"
+        - name: SENTRY_DSN
+          valueFrom:
+            secretKeyRef:
+              name: diffing-secrets
+              key: sentry_dsn
