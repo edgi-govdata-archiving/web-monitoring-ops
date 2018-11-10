@@ -76,6 +76,8 @@ spec:
             secretKeyRef:
               name: app-secrets
               key: postmark_api_token
+        - name: QUEUES
+          value: "mailers,import,analysis"
         - name: RACK_ENV
           value: production
         - name: RAILS_ENV
