@@ -1,6 +1,6 @@
 # Manually Managed Services
 
-While most of our infrastructure is managed with Kubernetes, several stateful services and other components are managed separately. At current, these are managed manually, but we are considering the best tools for this, e.g. Ansible. (If you have expertise or time to contribute here, let us know in the issues or on Slack!)
+While most of our infrastructure is managed with Kubernetes, several stateful services and other components are managed separately. At current, these are managed manually, but we are considering the best tools for this, e.g. Ansible. (If you have expertise or time to contribute here, let us know in the issues or on [Slack](https://archivers-slack.herokuapp.com/)!)
 
 
 ## Redis Cache
