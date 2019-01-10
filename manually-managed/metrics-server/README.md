@@ -106,17 +106,19 @@
    nginx -s reload
    ```
 
+14. Enable backups for the EBS volume storing the elasticache indexes as described in the [Schedule Automated Amazon EBS Snapshots Tutorial](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/TakeScheduledSnapshot.html)
+
 ## ELBs
 
-14. Create an external-facing ELB pointed at this VM with a  listener ("target
+15. Create an external-facing ELB pointed at this VM with a  listener ("target
    group") named ``elasticsearch`` and add the VM as a target.
 
-15. Create an internal ELB with a listener ("target group") named
+16. Create an internal ELB with a listener ("target group") named
    ``elasticsearch-internal`` and add the VM as a target.
 
 ## DNS
 
-16. Add a A ALIAS record for ``kibana.kube.monitoring.envirodatagov.org`` aimed
+17. Add a A ALIAS record for ``kibana.kube.monitoring.envirodatagov.org`` aimed
    at the external-facing ELB.
 
 ## Verify
