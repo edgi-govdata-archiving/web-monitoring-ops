@@ -133,5 +133,4 @@ curl -u username:password -X "POST" http://<PRIVATE_DNS>/test/_doc/1 -d '{"hello
 
 ## TO DO
 
-* Separate storage volume for elastic indexes, with backups
 * Put all services onto one VPC so they can send metrics to elasticserach
