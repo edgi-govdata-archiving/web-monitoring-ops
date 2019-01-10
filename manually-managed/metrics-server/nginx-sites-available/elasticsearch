@@ -8,6 +8,8 @@ server {
         server_name internal-elasticsearch.*;
 
         location / {
+                auth_basic "Authentication Required";
+                auth_basic_user_file /etc/nginx/.htpasswd;
                 proxy_set_header Host $host;
                 proxy_set_header X-Forwarded-Proto $scheme;
                 proxy_set_header X-Forwarded-Port $server_port;
