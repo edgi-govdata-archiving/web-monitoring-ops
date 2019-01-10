@@ -40,7 +40,7 @@
    apt-get install apt-transport-https
    wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
    echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
-   apt-get install elasticsearch kibana nginx
+   apt-get install apache2-utils elasticsearch kibana nginx
    ```
 
 6. Create elasticsearch data directory and set permissions.
@@ -90,7 +90,13 @@
 11. Upload ``kibana`` and ``elasticsearch`` nginx config, stored under ``nginx/``
    beside this ``README`` file into ``/etc/nginx/sites-available``.
 
-12. Create soft-links from ``sites-enabled`` to ``sites-available``. Reload nginx
+12. Create a basic auth user for elasticsearch authentication
+
+   ```
+   htpasswd -c /etc/nginx/.htpasswd <someusername>
+   ```
+
+13. Create soft-links from ``sites-enabled`` to ``sites-available``. Reload nginx
    configuration.
 
 
@@ -102,15 +108,15 @@
 
 ## ELBs
 
-13. Create an external-facing ELB pointed at this VM with a  listener ("target
+14. Create an external-facing ELB pointed at this VM with a  listener ("target
    group") named ``elasticsearch`` and add the VM as a target.
 
-14. Create an internal ELB with a listener ("target group") named
+15. Create an internal ELB with a listener ("target group") named
    ``elasticsearch-internal`` and add the VM as a target.
 
 ## DNS
 
-15. Add a A ALIAS record for ``kibana.kube.monitoring.envirodatagov.org`` aimed
+16. Add a A ALIAS record for ``kibana.kube.monitoring.envirodatagov.org`` aimed
    at the external-facing ELB.
 
 ## Verify
@@ -122,7 +128,7 @@ The URL of the internal VM should be accessible from inside the kube VPC, and it
 should accept a request such as
 
 ```
-curl -X "POST" http://<PRIVATE_DNS>/test/_doc/1 -d '{"hello": "world"}' -H "Content-Type: application/json" 
+curl -u username:password -X "POST" http://<PRIVATE_DNS>/test/_doc/1 -d '{"hello": "world"}' -H "Content-Type: application/json" 
 ```
 
 ## TO DO
