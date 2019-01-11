@@ -2,10 +2,15 @@
 
 ## Overview
 
-* One VM running elasticsearch, kibana, and nginx --- all installed via Debian
+* One VM runs elasticsearch, kibana, and nginx --- all installed via Debian
   packages and managed with systemd.
-* One externally-facing ELB serving Kibana.
-* One interal ELB ingesting data into elasticserach. 
+* One externally-facing ELB serves kibana and elasticsearch
+* Kibana is fully public. No sensitive data will be stored there.
+* Elasticsearch requires authentication, so only authorized services can submit
+  data. (Kibana can access elasticsearch locally without authentication because
+  they run on the same host.) required to submit data.
+* The indexes from elasticsearch are stored on an EBS volume with regular
+  backups.
 
 ## VM
 
@@ -113,26 +118,24 @@
 15. Create an external-facing ELB pointed at this VM with a  listener ("target
    group") named ``elasticsearch`` and add the VM as a target.
 
-16. Create an internal ELB with a listener ("target group") named
-   ``elasticsearch-internal`` and add the VM as a target.
-
 ## DNS
 
-17. Add a A ALIAS record for ``kibana.kube.monitoring.envirodatagov.org`` aimed
-   at the external-facing ELB.
+17. Create two A ALIAS records, for ``kibana.kube.monitoring.envirodatagov.org``
+    and ``elasticsearch.kube.monitoring.envirodatagov.org`` respectively, both
+    aimed at the ELB.
 
 ## Verify
 
 Once DNS propagates, http://kibana.kube.monitoring.envirodatagov.org should load
-a public Kibana dashboard.
-
-The URL of the internal VM should be accessible from inside the kube VPC, and it
-should accept a request such as
+a public Kibana dashboard, and
 
 ```
-curl -u username:password -X "POST" http://<PRIVATE_DNS>/test/_doc/1 -d '{"hello": "world"}' -H "Content-Type: application/json" 
+curl -u <USER>:<PASSWORD> elasticsearch.kube.monitoring.envirodatagov.org
 ```
 
-## TO DO
+should return JSON from elasticserach. And it should be possible to submit data
+like so:
 
-* Put all services onto one VPC so they can send metrics to elasticserach
+```
+curl -u <USER>:<PASSWORD> -X "POST" http://elasticsearch.kube.monitoring.envirodatagov.org/test/_doc/1 -d '{"hello": "world"}' -H "Content-Type: application/json"
+```
