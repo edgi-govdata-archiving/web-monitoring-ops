@@ -1,4 +1,4 @@
-# 2019-01-18: Versionista Scaper Failure.
+# 2019-01-18: Versionista Scraper Failure.
 
 ## Summary
 
