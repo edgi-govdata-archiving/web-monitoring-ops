@@ -1,3 +1,5 @@
+[![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat)](https://github.com/edgi-govdata-archiving/overview/blob/master/CONDUCT.md)
+
 # Deploying Web Monitoring on a Kubernetes Cluster running on AWS
 
 You need:
