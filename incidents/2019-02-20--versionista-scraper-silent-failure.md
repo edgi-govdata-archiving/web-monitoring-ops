@@ -75,7 +75,7 @@ Backfilling process for `versionista2` finishes.
 
 ## Action Items
 
-- Review and merge PR for the fix.
+- Review and merge PR for the fix. ([scraper#196](https://github.com/edgi-govdata-archiving/web-monitoring-versionista-scraper/pull/196))
 - There was an old discussion about having a process that looks for new records from Versionista in our DB every so often as a general “is it working and not failing silently?” measure. We should discuss whether we should revive that.
 
 
