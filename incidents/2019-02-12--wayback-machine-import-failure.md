@@ -47,7 +47,7 @@ Manual backfilling finishes. @Mr0grog drops all auto-analysis jobs (since we spa
 
 ### What Went Wrong
 
-- There were alerts for this issue and it lingered for a *loooooong* time.
+- There were no alerts for this issue and it lingered for a *loooooong* time.
 - @Mr0grog is only writing this incident report 13 days later. That's much too long.
 
 
