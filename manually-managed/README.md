@@ -33,4 +33,10 @@ We currently run scheduled scripts for extracting data from external services (V
 TBD
 
 
+## IA Archiver
+
+We have an EC2 VM named `ia-archiver` that pushes lists of URLs to the Internet Archive’s “Save Page Now” feature on a regular basis. More information about this is in [`ia-archiver`](./ia-archiver). It’s mainly just an implementation of [wayback-spn-client].
+
+
 [-db]: https://github.com/edgi-govdata-archiving/web-monitoring-db
+[wayback-spn-client]: https://github.com/Mr0grog/wayback-spn-client
