@@ -97,3 +97,4 @@ Export an env var to make sure `wayback-spn-client` uses this install of Chrome 
 - Switch to using SPN v2 (in beta). @Mr0grog has some half-finished scripts for this.
 - Build a more comprehensive list of things in `missing-from-ia.txt` rather than updating it piecemeal based on daily healthcheck results.
 - Give Wayback team an updated list of all our URLs and use this less heavily? (On the other hand, maintaining the list here has taught @Mr0grog a lot about the issues with and genesis of the current list of URLs we track, and there’s a lot that can/should be cleaned out/updated. It’d lovely to do that before updating the Wayback team.)
+- Log management—at a minimum, we should really have some kind of log rotation set up. Alternatively/in addition, ship them to a service.
