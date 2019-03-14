@@ -905,6 +905,10 @@ https://www.epa.gov/waterdata/summaries-water-pollution-reporting-categories
 https://earthdata.nasa.gov/about/gcmd/global-change-master-directory-gcmd-keywords
 https://www.epa.gov/benmap/how-benmap-ce-estimates-health-and-economic-effects-air-pollution
 https://www.fema.gov/national-flood-insurance-program/information-insurance-professionals
+https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/idaho
+https://www.epa.gov/statelocalenergy/avert-tutorial-getting-started-open-workbook-and-enable-macros
+http://epa.gov/greeningepa/large-lakes-research-station
+https://echo.epa.gov/tools/web-services/enforcement-cases
 
 # MAYBE A TEMPORARY BLIP?
 # http://www.globalchange.gov/browse/multimedia/us-seasonal-temperatures
@@ -941,6 +945,9 @@ https://www.justice.gov/enrd/5755.htm
 # ------
 # Now at: https://www.epa.gov/gmi
 https://www.epa.gov/globalmethane
+# ------
+# Now at: https://www.nrel.gov/grid/microgrids.html
+http://www.nrel.gov/esi/microgrids.html
 
 
 # No longer exists; has not existed for a long time
@@ -948,6 +955,7 @@ https://www.epa.gov/globalmethane
 # https://www.epa.gov/climate-and-energy-resources-state-local-and-tribal-governments/printable-checklist-obtain-resourc-0
 # https://science.nasa.gov/earth-science/programs/flight
 # https://www.blm.gov/wy/st/en/programs/energy/Coal_Resources/coalfaqs/transfer_or_sale.print.html
+# https://www.whitehouse.gov/administration/eop/ceq/Press_Releases/March_4_2010
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
