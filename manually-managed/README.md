@@ -40,3 +40,9 @@ We have an EC2 VM named `ia-archiver` that pushes lists of URLs to the Internet 
 
 [-db]: https://github.com/edgi-govdata-archiving/web-monitoring-db
 [wayback-spn-client]: https://github.com/Mr0grog/wayback-spn-client
+
+## Metrics Server
+
+We use Elasticserach and its Kibana front-end for metrics collection and
+visualization. See the metrics-server directory in this repository for
+provisioning and configuration details.
