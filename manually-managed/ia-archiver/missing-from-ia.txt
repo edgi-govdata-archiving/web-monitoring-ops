@@ -909,6 +909,17 @@ https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-effor
 https://www.epa.gov/statelocalenergy/avert-tutorial-getting-started-open-workbook-and-enable-macros
 http://epa.gov/greeningepa/large-lakes-research-station
 https://echo.epa.gov/tools/web-services/enforcement-cases
+http://arpa-e.energy.gov/?q=site-page/compliance/nepa-compliance-documents&field_program_tid=All&field_project_state_value=All&field_project_status_value=All&field_tech_cat_1_tid=All&page=8
+https://www.epa.gov/statelocalenergy/local-energy-efficiency-benefits-and-opportunities
+https://www.epa.gov/aboutepa/regional-science-and-technology-rst-organizations
+http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A96&f[1]=field_media_topics%3A100
+https://catalog.data.gov/dataset?_organization_limit=0&groups=climate5434&organization=dhs-gov
+https://echo.epa.gov/tools/web-services/air-pollutant-report
+http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A95&f[1]=field_media_region%3A141
+https://www.epa.gov/waterdata/knowing-our-waters-tribal-reporting-under-305b
+https://www.blm.gov/programs/lands-and-realty/regional-information/alaska/RDI
+https://www.fs.fed.us/science-technology/energy-forest-products
+https://www.epa.gov/heat-islands/understanding-your-citys-heat-islands-overview-and-key-considerations
 
 # MAYBE A TEMPORARY BLIP?
 # http://www.globalchange.gov/browse/multimedia/us-seasonal-temperatures
@@ -948,6 +959,23 @@ https://www.epa.gov/globalmethane
 # ------
 # Now at: https://www.nrel.gov/grid/microgrids.html
 http://www.nrel.gov/esi/microgrids.html
+# ------
+# Now at: https://www.epa.gov/climateleadership/center-corporate-climate-leadership-direct-fugitive-emissions-refrigeration-air
+https://www.epa.gov/climateleadership/direct-fugitive-emissions-refrigeration-air-conditioning-fire-suppression-and
+# ------
+# Now at: https://www.fs.fed.us/managing-land/private-land/forest-legacy
+https://www.fs.fed.us/spf/coop/programs/loa/flp.shtml
+
+# MOVED AND BROKEN PAGES
+# Similar to the above list, but the old URLs are 404s now.
+# ------
+# Now at: https://www.nrel.gov/research/michael-himmel.html
+# http://www.nrel.gov/about/himmel.html
+# ------
+# NOTE: this just went https and added `.html` to the end. We should check most
+# of our 404s at NREL for a similar pattern.
+# Now at: https://www.nrel.gov/news/press/2015/18515.html
+# http://www.nrel.gov/news/press/2015/18515
 
 
 # No longer exists; has not existed for a long time
@@ -956,6 +984,11 @@ http://www.nrel.gov/esi/microgrids.html
 # https://science.nasa.gov/earth-science/programs/flight
 # https://www.blm.gov/wy/st/en/programs/energy/Coal_Resources/coalfaqs/transfer_or_sale.print.html
 # https://www.whitehouse.gov/administration/eop/ceq/Press_Releases/March_4_2010
+# https://www.epa.gov/pesticides/epa-and-pmra-release-new-harmonized-product-chemistry-templates
+# https://www.blm.gov/ak/st/en/prog/energy/egy_phospahtes.html
+# https://www.blm.gov/nm/st/en/prog/energy.html
+# http://www.nrel.gov/about/robin-newmark.html
+# https://www.data.gov/dataset?_organization_limit=0&groups=climate5434&vocab_category_all=Energy+Infrastructure&organization=dhs-gov
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
@@ -1015,6 +1048,8 @@ https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefi
 # https://www.epa.gov/region02/waste/dupont_pompton/pdf/sample_collection_procedures_sow.pdf
 # https://www.justice.gov/enrd/ENRD_Assets/ENRD_Accomplishments_Report_2013_2.pdf
 # http://sncaadvisorycommittee.noaa.gov/Portals/0/Meeting-Documents/May-2017/SNCA_AdvisoryCommittee_Mtg_May2017_finaldoc_DOI.pdf
+# http://www.nrel.gov/docs/fy13osti/58018.pdf
+# https://www.epa.gov/sites/production/files/2013-09/documents/boilerghgsettlement.pdf
 
 
 # Skip FTP for now
