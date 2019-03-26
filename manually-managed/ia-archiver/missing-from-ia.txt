@@ -920,6 +920,7 @@ https://www.epa.gov/waterdata/knowing-our-waters-tribal-reporting-under-305b
 https://www.blm.gov/programs/lands-and-realty/regional-information/alaska/RDI
 https://www.fs.fed.us/science-technology/energy-forest-products
 https://www.epa.gov/heat-islands/understanding-your-citys-heat-islands-overview-and-key-considerations
+http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A96&f[1]=field_media_topics%3A93
 
 # MAYBE A TEMPORARY BLIP?
 # http://www.globalchange.gov/browse/multimedia/us-seasonal-temperatures
@@ -945,6 +946,10 @@ http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCod
 # "old" URL we have is just Versionista doing some ineffective crawling for us.
 http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode=617&navTab=nav_about_us
 # ------
+# Now at: https://science.gsfc.nasa.gov/solarsystem/p3g/
+# Same setup as above.
+http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&&navOrgCode=698&navTab=nav_about_us
+# ------
 # Now at: https
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # ------
@@ -965,6 +970,10 @@ https://www.epa.gov/climateleadership/direct-fugitive-emissions-refrigeration-ai
 # ------
 # Now at: https://www.fs.fed.us/managing-land/private-land/forest-legacy
 https://www.fs.fed.us/spf/coop/programs/loa/flp.shtml
+# ------
+# Now at: https://www.justice.gov/enrd/administrative-technical-and-paralegal-employment
+https://www.justice.gov/enrd/ENRD_Admin_Tech_and_Paralegal_Employment.html
+
 
 # MOVED AND BROKEN PAGES
 # Similar to the above list, but the old URLs are 404s now.
@@ -1050,6 +1059,7 @@ https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefi
 # http://sncaadvisorycommittee.noaa.gov/Portals/0/Meeting-Documents/May-2017/SNCA_AdvisoryCommittee_Mtg_May2017_finaldoc_DOI.pdf
 # http://www.nrel.gov/docs/fy13osti/58018.pdf
 # https://www.epa.gov/sites/production/files/2013-09/documents/boilerghgsettlement.pdf
+# http://www.nrel.gov/docs/fy12osti/55264.pdf
 
 
 # Skip FTP for now
