@@ -921,6 +921,7 @@ https://www.blm.gov/programs/lands-and-realty/regional-information/alaska/RDI
 https://www.fs.fed.us/science-technology/energy-forest-products
 https://www.epa.gov/heat-islands/understanding-your-citys-heat-islands-overview-and-key-considerations
 http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A96&f[1]=field_media_topics%3A93
+https://www.epa.gov/national-aquatic-resource-surveys/indicators-used-national-aquatic-resource-surveys
 
 # MAYBE A TEMPORARY BLIP?
 # http://www.globalchange.gov/browse/multimedia/us-seasonal-temperatures
@@ -973,6 +974,9 @@ https://www.fs.fed.us/spf/coop/programs/loa/flp.shtml
 # ------
 # Now at: https://www.justice.gov/enrd/administrative-technical-and-paralegal-employment
 https://www.justice.gov/enrd/ENRD_Admin_Tech_and_Paralegal_Employment.html
+# ------
+# Now at: https://www.epa.gov/wotus-rule/rulemaking-process
+http://epa.gov/wotus-rule/rulemaking-process
 
 
 # MOVED AND BROKEN PAGES
@@ -1060,6 +1064,7 @@ https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefi
 # http://www.nrel.gov/docs/fy13osti/58018.pdf
 # https://www.epa.gov/sites/production/files/2013-09/documents/boilerghgsettlement.pdf
 # http://www.nrel.gov/docs/fy12osti/55264.pdf
+# http://www.nrel.gov/docs/fy12osti/55961.pdf
 
 
 # Skip FTP for now
