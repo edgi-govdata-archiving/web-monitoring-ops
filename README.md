@@ -101,6 +101,18 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
+## VPC
+
+Create a new VPC using the `awscli` command: 
+
+```
+aws ec2 create-vpc --cidr-block 10.0.0.0/8
+```
+
+Make note of the `VpcId` and export it as an environmental variable. 
+
+	export VPC_ID=vpc-0bd9d80dac6b5c0d4
+
 ## Create S3 Bucket to store cluster state
 
 Create a bucket an S3 bucket to store cluster state. We include a random string
@@ -120,8 +132,7 @@ $ aws s3api put-bucket-versioning \
   --versioning-configuration \
   Status=Enabled
 ```
-
-## Create an AWS Route53 "hosted zone" to manage the cluster's DNS.
+# #Create an AWS Route53 "hosted zone" to manage the cluster's DNS.
 
 Obtain NS records from AWS Route 53.
 
@@ -129,7 +140,7 @@ Obtain NS records from AWS Route 53.
 export HOSTED_ZONE=...
 ```
 
-For example, EDGI's deployment uses ``HOSTED_ZONE=kube.monitoring.envirodatagov.org``.
+For example, EDGI's deployment uses ``HOSTED_ZONE=cluster.private.envirodatagov.local``.
 
 ```
 $ ID=$(uuidgen) && aws route53 create-hosted-zone --name $HOSTED_ZONE --caller-reference $ID | jq .DelegationSet.NameServers
@@ -141,8 +152,11 @@ $ ID=$(uuidgen) && aws route53 create-hosted-zone --name $HOSTED_ZONE --caller-r
 ]
 ```
 
-Enter these as NS Records for `kube.monitoring` with the Domain Registrar.
-Then, verify that the NS records have propagated.
+Make note of the `Id` of the newly created zone and export it as an environmental variable. 
+
+	export DNS_ZONE_PRIVATE_ID=...
+
+If you are using Route53 for DNS, no other DNS configuration is needed. Otherwise, enter these as NS Records for `kube.monitoring` with the Domain Registrar. Then, verify that the NS records have propagated.
 
 ```
 dig ns $HOSTED_ZONE
@@ -156,9 +170,20 @@ This provisions EC2 instances (one master and two workers, by default) and other
 cluster resources. Be patient: the command can take awhile to indicate that it is
 working.
 
-```
-kops create cluster --name $HOSTED_ZONE --zones $AWS_AVAILABILITY_ZONES --yes --ssh-public-key=~/.ssh/web-monitoring-kube.pub --state=$KOPS_STATE_STORE
-```
+
+	kops create cluster  \
+	--node-count 3  \
+	--zones us-west-2a,us-west-2b,us-west-2c  \
+	--master-zones us-west-2a  \
+	--dns-zone=${DNS_ZONE_PRIVATE_ID}  \
+	--dns private  \
+	--node-size t2.medium  \
+	--master-size t2.small  \
+	--topology private  \
+	--networking weave  \
+	--vpc=${VPC_ID}  \
+	--bastion  ${HOSTED_ZONE}
+
 
 See additional options in kops for controlling the specific zones of the nodes.
 ``kops update`` can be used to change these options later.
@@ -184,6 +209,20 @@ ip-172-XX-XX-XX.ec2.internal  node  True
 
 Your cluster <HOSTED_ZONE> is ready
 ```
+From this single command a large number of AWS resources are provisioned. The command creates six subnets in the VPC. Three public, three private, and four route tables to go along with them. One public route table with three subnet associations, and one route table for each of the private subnets.
+
+Each private subnet also has it's own associated NAT Gateway. That seems excessive, but I imagine there's a reason for it. Each NAT Gateway is associated with a public Elastic IP Address. The command creates several security groups to permit communication between the instances.
+
+Also, kops creates five instances. One "master", three "nodes", and a bastion host. The bastion host has a public IP address, but the master and nodes in the Kubernetes cluster do not. The bastion host allows only SSH access (port 22) from the security group "sg-0b1b434d07c25e1c2", which is associated with a classic ELB. The ELB listens on port 22 and is open to the world.
+
+The bastion host and the master are associated with an auto scaling group with a desired number of instances of one. If either the bastion host or the master crash or are terminated, the auto scaling group will repair the system automatically.
+
+The nodes are also in an auto scaling group with a desired number of instances set to three. Interesting to note that this cannot be adjusted outside of Kubernetes, because the system needs to know where the nodes are, and how many of them there are.
+
+Finally, the system creates three other classic ELBs.
+* One listens on port 443, forwards to port 443 on the Kubernetes master.
+* One listens on port 443, forwards to port 32714 of the Kubernetes nodes.
+* One listens on port 443, forwards to port 30831 of the Kubernetes nodes.
 
 ## Enable core metrics.
 
@@ -265,8 +304,7 @@ Enter this URI into the ``database_rds`` field in ``templates/${NAMESPACE}/secre
 echo -n postgresql://master:$DB_PASSWORD@rds:5432/web_monitoring_db | base64
 ```
 
-Wait several minutes for the RDS instance to be ready. You may check on its
-status like so.
+Wait several minutes for the RDS instance to be ready. You may check on its status like so.
 
 ```
 aws rds describe-db-instances --db-instance-identifier $DB_INSTANCE_IDENTIFIER | jq -r .DBInstances[0].DBInstanceStatus
@@ -289,7 +327,7 @@ export UI_ARN=$(aws acm request-certificate --validation-method DNS --domain-nam
 
 ### Validate certificates.
 
-Each certifcate requested above provides a CNAME name and value that must be
+Each certificate requested above provides a CNAME name and value that must be
 created to show that we control the domain that we would like to certify.
 Obtain this name and value.
 
@@ -298,8 +336,7 @@ export API_RES_REC=$(aws acm describe-certificate --certificate-arn $UI_ARN | jq
 export UI_RES_REC=$(aws acm describe-certificate --certificate-arn $UI_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
 ```
 
-Obtain the hosted name ID of our cluster DNS. This is where we will create the
-CNAME record.
+Obtain the hosted name ID of our cluster DNS. This is where we will create the CNAME record.
 
 ```
 export KUBE_ZONE=$(aws route53 list-hosted-zones-by-name --dns-name "$HOSTED_ZONE." | jq -r '.HostedZones[0].Id')
@@ -328,9 +365,7 @@ The record should shortly appear here:
 aws route53 list-resource-record-sets --hosted-zone-id $KUBE_ZONE | grep $NAMESPACE
 ```
 
-Validation can take some time after the records have been created, but we may
-continue with the rest of the process without waiting for this. Check on the
-status like so:
+Validation can take some time after the records have been created, but we may continue with the rest of the process without waiting for this. Check on the status like so:
 
 ```
 aws acm describe-certificate --certificate-arn $API_ARN | jq .Certificate.Status
@@ -354,11 +389,9 @@ to ``api.<NAMESPACE>.<HOSTED_ZONE>``.
 
 Secrets are used to store sensitive configuration data such as API keys.
 Naturally, the repository does not include these secrets, but it includes
-example files with all the necessary keys. The values are to be filled in by
-you.
+example files with all the necessary keys. The values are to be filled in by you.
 
-Copy the files and fill values into the copies. (TODO: Provide more guidance
-here.)
+Copy the files and fill values into the copies. (TODO: Provide more guidance here.)
 
 ```
 cp examples/secrets.yaml templates/${NAMESPACE}/secrets.yaml
@@ -429,7 +462,7 @@ the database above, you can log in with ``seed-admin@example.com`` /
 
 ## Deploying configuration changes.
 
-If you update the secrets used in a deployment, but haven't changed the deployment itself, kubernetes will not apply the new secrets when you redeploy. Rather than delete and recreating the deployment, you can change the value of the ``INCREMENTAL_UPDATE`` within the affected deployement and then run ``kubectl replace -f templates/${NAMESPACE}/example-deployment.yaml``. Since the deployment is now different, kubernetes will perform the rolling update as desired, with your new secret values.
+If you update the secrets used in a deployment, but haven't changed the deployment itself, kubernetes will not apply the new secrets when you redeploy. Rather than delete and recreating the deployment, you can change the value of the ``INCREMENTAL_UPDATE`` within the affected deployment and then run ``kubectl replace -f templates/${NAMESPACE}/example-deployment.yaml``. Since the deployment is now different, kubernetes will perform the rolling update as desired, with your new secret values.
 
 ## Troubleshooting
 
