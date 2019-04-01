@@ -922,6 +922,32 @@ https://www.fs.fed.us/science-technology/energy-forest-products
 https://www.epa.gov/heat-islands/understanding-your-citys-heat-islands-overview-and-key-considerations
 http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A96&f[1]=field_media_topics%3A93
 https://www.epa.gov/national-aquatic-resource-surveys/indicators-used-national-aquatic-resource-surveys
+https://www.epa.gov/sciencematters/epa-science-matters-newsletter-how-deep-are-seagrasses
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/alaska
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/alaska?qt-view__social_services_lister__page=0
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/alaska?qt-view__social_services_lister__page=1
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/alaska?qt-view__social_services_lister__page=2
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/arizona
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/arizona?qt-view__social_services_lister__page=0
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/arizona?qt-view__social_services_lister__page=1
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/arizona?qt-view__social_services_lister__page=2
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/california
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/colorado
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/montana-dakotas
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/montana-dakotas?qt-view__social_services_lister__page=0
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/montana-dakotas?qt-view__social_services_lister__page=1
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/oregon-washington
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/oregon-washington?qt-view__social_services_lister__page=0
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/oregon-washington?qt-view__social_services_lister__page=1
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/oregon-washington?qt-view__social_services_lister__page=2
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/utah
+https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health/wyoming
+https://www.usgs.gov/science/science-explorer?offset=140&lq=human+impacts
+https://www.usgs.gov/science/science-explorer?offset=120&lq=climatology
+https://www.epa.gov/sciencematters/meet-epa-exposure-scientist-and-national-program-director-dr-tina-bahadori
+https://www.justice.gov/enrd/attorney-employment?position=1&tid%5B222%5D=222&practice_area=All&field_va_location_administrative_area=All&order=changed&sort=asc
+
 
 # MAYBE A TEMPORARY BLIP?
 # http://www.globalchange.gov/browse/multimedia/us-seasonal-temperatures
@@ -977,6 +1003,9 @@ https://www.justice.gov/enrd/ENRD_Admin_Tech_and_Paralegal_Employment.html
 # ------
 # Now at: https://www.epa.gov/wotus-rule/rulemaking-process
 http://epa.gov/wotus-rule/rulemaking-process
+# ------
+# Now at: https://www.eia.gov/todayinenergy/index.php?tg=%20heating%20oil
+http://www.eia.gov/todayinenergy/index.cfm?tg=%20heating%20oil
 
 
 # MOVED AND BROKEN PAGES
@@ -1065,10 +1094,15 @@ https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefi
 # https://www.epa.gov/sites/production/files/2013-09/documents/boilerghgsettlement.pdf
 # http://www.nrel.gov/docs/fy12osti/55264.pdf
 # http://www.nrel.gov/docs/fy12osti/55961.pdf
+# https://www.justice.gov/enrd/ENRD_Assets/ENRD_2008_Accomplishments_Report_Final_508.pdf
 
 
 # Skip FTP for now
 # ftp://ftp.aoml.noaa.gov/phod/pub/lumpkin/drifter_climatology/monthly
+
+
+# Feedback form (considering deactivating these)
+# https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/bes/highlights/2016/bes-2016-11-l/
 
 
 # Quickly adding missing DOI pages. These probably need an audit, though.
