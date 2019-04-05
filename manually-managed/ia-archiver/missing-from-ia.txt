@@ -948,6 +948,8 @@ https://www.usgs.gov/science/science-explorer?offset=120&lq=climatology
 https://www.epa.gov/sciencematters/meet-epa-exposure-scientist-and-national-program-director-dr-tina-bahadori
 https://www.justice.gov/enrd/attorney-employment?position=1&tid%5B222%5D=222&practice_area=All&field_va_location_administrative_area=All&order=changed&sort=asc
 https://www.epa.gov/aboutepa/about-region-3s-laboratory-and-field-services-epas-environmental-science-center
+https://19january2017snapshot.epa.gov/climate-impacts/climate-impacts-transportation
+https://www.epa.gov/sciencematters/meet-epa-scientist-joachim-pleil-phd
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -1007,6 +1009,18 @@ http://epa.gov/wotus-rule/rulemaking-process
 # ------
 # Now at: https://www.eia.gov/todayinenergy/index.php?tg=%20heating%20oil
 http://www.eia.gov/todayinenergy/index.cfm?tg=%20heating%20oil
+# ------
+# Now at: https://www.nrel.gov/research/highlights/
+http://www.nrel.gov/research/highlights.html
+# ------
+# Now at: https://climate.nasa.gov/resources/graphics_and_multimedia/?scope=featured&type=54
+http://climate.nasa.gov/resources/graphics_and_multimedia/?scope=featured&type=54
+# ------
+# Now at: https://www.globalchange.gov/browse/multimedia?f[0]=field_media_report%3A2471&f[1]=field_media_topics%3A108
+http://www.globalchange.gov/browse/multimedia?f[0]=field_media_report%3A2471&f[1]=field_media_topics%3A108
+# ------
+# Now at: https://www.eia.gov/tools/a-z/index.php?id=f
+http://www.eia.gov/tools/a-z/index.cfm?id=f
 
 
 # MOVED AND BROKEN PAGES
@@ -1019,6 +1033,9 @@ http://www.eia.gov/todayinenergy/index.cfm?tg=%20heating%20oil
 # of our 404s at NREL for a similar pattern.
 # Now at: https://www.nrel.gov/news/press/2015/18515.html
 # http://www.nrel.gov/news/press/2015/18515
+# ------
+# Now at: https://www.nrel.gov/about/sustainable-buildings.html
+# http://www.nrel.gov/sustainable_nrel/rsf.html
 
 
 # No longer exists; has not existed for a long time
