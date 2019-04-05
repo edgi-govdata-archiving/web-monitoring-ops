@@ -950,6 +950,33 @@ https://www.justice.gov/enrd/attorney-employment?position=1&tid%5B222%5D=222&pra
 https://www.epa.gov/aboutepa/about-region-3s-laboratory-and-field-services-epas-environmental-science-center
 https://19january2017snapshot.epa.gov/climate-impacts/climate-impacts-transportation
 https://www.epa.gov/sciencematters/meet-epa-scientist-joachim-pleil-phd
+https://www.epa.gov/sciencematters/meet-epa-biologist-laura-jackson-phd
+https://www.epa.gov/sciencematters/meet-epa-chemist-linda-sheldon-phd
+https://www.epa.gov/sciencematters/meet-epa-ecologist-steve-paulsen
+https://www.epa.gov/sciencematters/meet-epa-engineer-steve-clark
+https://www.epa.gov/sciencematters/meet-epa-it-specialist-linda-harwell
+https://www.epa.gov/sciencematters/meet-epa-research-biologist-joel-hoffman-phd
+https://www.epa.gov/sciencematters/meet-epa-research-physical-scientist-vasu-kilaru
+https://www.epa.gov/sciencematters/meet-epa-researcher-chris-impellitteri
+https://www.epa.gov/sciencematters/meet-epa-scientist-blake-schaeffer-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-cecilia-tan-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-cynthia-yund-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-dermont-bouchard-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-eric-s-hall
+https://www.epa.gov/sciencematters/meet-epa-scientist-havala-pye-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-jane-gallagher-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-jordan-west-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-marilyn-tenbrink
+https://www.epa.gov/sciencematters/meet-epa-scientist-mehdi-s-hazari-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-michael-nye-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-nicolle-tulve-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-robert-janke
+https://www.epa.gov/sciencematters/meet-epa-scientist-tim-shafer-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-william-bill-mundy-phd
+https://www.epa.gov/sciencematters/meet-epa-scientist-william-will-k-boyes-phd
+https://www.epa.gov/sciencematters/meet-epas-dan-nelson
+https://www.epa.gov/sciencematters/meet-orise-research-fellow-nisha-s-sipes-phd
+https://www.epa.gov/sciencematters/meet-toby-schonfeld-phd
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -1021,6 +1048,9 @@ http://www.globalchange.gov/browse/multimedia?f[0]=field_media_report%3A2471&f[1
 # ------
 # Now at: https://www.eia.gov/tools/a-z/index.php?id=f
 http://www.eia.gov/tools/a-z/index.cfm?id=f
+# ------
+# Now at: https://www.epa.gov/sciencematters/meet-epa-research-chemist-angela-batt-phd
+https://www.epa.gov/sciencematters/meet-epa-research-chemist-angela-batt
 
 
 # MOVED AND BROKEN PAGES
@@ -1052,6 +1082,7 @@ http://www.eia.gov/tools/a-z/index.cfm?id=f
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
+https://www.epa.gov/sciencematters/meet-epa-scientist-swinburne-aj-jason-augustine-phd
 
 
 
