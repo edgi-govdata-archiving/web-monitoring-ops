@@ -31,10 +31,8 @@ https://www.fhwa.dot.gov/environment/sustainability/resilience/pilots/2013-2015_
 https://www.bsee.gov/guidance-and-regulations/standards
 http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCode=610&navTab=nav_about_us
 http://climate.nasa.gov/earth-apps/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_report%3A2939&f[1]=field_media_region%3A124
 https://www.usgs.gov/science/science-explorer?lq=endangered+species&classification=Video
 https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/news/featured-articles/2007/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_region%3A124&f[1]=field_media_topics%3A100
 https://www.epa.gov/aboutepa/epa-region-3-mid-atlantic
 https://www.transportation.gov/print/123751?title=Surface%20Transportation%20Planning&url=https%3A//www.transportation.gov/sustainability/climate/surface-transportation-planning
 https://www.nrcs.usda.gov/wps/portal/nrcs/main/national/energy/renewable
@@ -44,10 +42,7 @@ https://www.epa.gov/re-powering/epanrel-fact-sheet-geothermal-technology
 https://www.usgs.gov/science/science-explorer?lq=Restoration+of+Protected+Areas&classification=Data
 http://www.nrel.gov/about/owen-barwell.html
 https://www.fs.fed.us/visit
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A97&f[1]=field_media_topics%3A103
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A104&f[1]=field_media_topics%3A96
 https://www.fema.gov/flood-map-definition
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A109&f[1]=field_media_region%3A139
 https://www.epa.gov/cleanpowerplan/fact-sheet-clean-power-plan-built-solid-legal-and-scientific-foundation
 http://www.globalchange.gov/explore/hawai%CA%BBi-pacific-islands
 https://www.blm.gov/programs/recreation/permits-and-passes/lotteries-and-permit-systems
@@ -55,9 +50,6 @@ http://climate.nasa.gov/news/957/tropical-ecosystems-boost-carbon-dioxide-as-tem
 https://www.fema.gov/national-flood-insurance-program/claims-adjuster-forms
 https://www.epa.gov/statelocalclimate/sustainable-energy-services-program
 https://www.ngdc.noaa.gov/eog/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A107&f[1]=field_media_topics%3A102
-http://www.globalchange.gov/browse/multimedia/start-adaptation-research-africa
-http://www.globalchange.gov/browse/multimedia/projected-summertime-precipitation-changes
 https://www.nrcs.usda.gov/wps/portal/nrcs/main/national/contact/chief/civil
 https://www.epa.gov/indoor-air-quality-iaq/energy-weatherization-and-indoor-air-quality
 https://www.epa.gov/tribal/solid-waste-program-budgeting-alaska-tribal-communities
@@ -68,7 +60,6 @@ https://www.epa.gov/environmentaljustice/environmental-justice-funding-communiti
 http://climate.nasa.gov/quizzes/home-planet-quiz
 http://climate.nasa.gov/internal_resources/755
 https://www.epa.gov/renewable-fuel-standard-program/renewable-fuel-pathway-screening-tool-download
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A103&f[1]=field_media_topics%3A92
 https://www.hhs.gov/ash/oah/facts-and-stats/national-and-state-data-sheets/united-states-adolescent-health-facts/florida/index.html
 https://www.epa.gov/oh/east-liverpool-ohio-and-glasgow-borough-pennsylvania-air-monitoring-data
 https://www.osha.gov/SLTC/emergencypreparedness/guides/chemical.html
@@ -97,9 +88,7 @@ https://www.fema.gov/significant-flood-events
 https://energy.gov/eere/buildings/buildings-funding-opportunities
 https://www.epa.gov/economic-and-cost-analysis-air-pollution-regulations/resources-understanding-and-preparing-economic
 https://www.fs.fed.us/managing-land/fire/fire-management-today/fire-management-today-volume-74-issue-03
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A105&f[1]=field_media_report%3A2926
 https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/universities/highlights/?page=15
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A95&f[1]=field_media_topics%3A97
 https://echo.epa.gov/resources/general-info/echo-faq/air-data-system
 https://www.fema.gov/hazard-mitigation-planning-resources
 https://science.energy.gov/ngee-safety
@@ -109,7 +98,6 @@ https://www.blm.gov/learn/blm-library
 https://science.energy.gov/sbir/highlights/2015/sbir-2015-11-b/?p=1
 http://science.gsfc.nasa.gov/earth/cryosphere/index.cfm?fuseAction=home.main&navOrgCode=665&navTab=nav_about_us
 http://climate.nasa.gov/news/2499/polar-bears-across-the-arctic-face-shorter-sea-ice-season
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_region%3A124&f[1]=field_media_topics%3A2
 https://www.epa.gov/statelocalenergy/role-communication-ensuring-sustained-behavior-change
 https://www.epa.gov/statelocalclimate/gathering-and-using-state-level-energy-data
 https://earthdata.nasa.gov/library?page=17&filter=
@@ -122,7 +110,6 @@ https://www.epa.gov/heat-islands/austin-heat-island-mitigation
 http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode=612&navTab=nav_about_us
 https://www.epa.gov/indoor-air-quality-iaq/energy-savings-plus-health-indoor-air-quality-guidelines-multifamily-building
 https://science.energy.gov/hep/highlights/2016/hep-2016-12-aa/?p=1
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A93&f[1]=field_media_report%3A2926
 http://climate.nasa.gov/quizzes/clouds-aerosols-quiz/
 https://science.energy.gov/np/highlights/2016/np-2016-07-b/
 https://www.epa.gov/aboutepa/about-national-center-environmental-research-ncer
@@ -136,7 +123,6 @@ https://science.energy.gov/bes/efrc/news-and-events/
 https://science.energy.gov/node/37
 http://energy.gov/science-innovation/electric-power/smart-grid
 http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navOrgCode=606.2&navTab=nav_about_us
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A95&f[1]=field_media_report%3A2372
 https://www.blm.gov/learn/youth-and-educators/junior-ranger-program
 https://energy.gov/eere/buildings/energy-star-test-procedures-and-verification
 http://epa.gov/greeningepa/region-9-office
@@ -162,16 +148,13 @@ https://www.fws.gov/ecological-services/energy-development/wind.html
 http://science.gsfc.nasa.gov/earth/gcdc/index.cfm?fuseAction=home.main&navOrgCode=617&navTab=nav_about_us
 http://science.gsfc.nasa.gov/earth/gcdc/index.cfm?fuseAction=home.main&&navOrgCode=671&navTab=nav_about_us
 https://www.usgs.gov/science/science-explorer?lq=climatology&classification=News
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A105&f[1]=field_media_topics%3A95
 https://science.energy.gov/news/highlights/?page=18
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A103&f[1]=field_media_topics%3A94
 https://www.blm.gov/ak/st/en/prog/lands_realty/17b_easements/mou_blm_nps_fws_121288.html
 https://science.energy.gov/bes/mse/highlights/?page=12
 https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy/regional-information/utah
 https://science.energy.gov/bes/highlights/2016/bes-2016-06-k/
 https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/bes/highlights/2016/bes-2016-07-l/
 https://www.epa.gov/climatechange/impacts/agriculture.html
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A103&f[1]=field_media_topics%3A181
 http://www.ncep.noaa.gov/news/ncwcp/s035_script.shtml
 http://arpa-e.energy.gov/?q=arpa-e-programs/open-2012&order=title&sort=asc
 https://www3.epa.gov/climatechange/kids/solutions/prepare/ecosystems.html
@@ -181,7 +164,6 @@ https://www.doi.gov/lwcf
 http://arpa-e.energy.gov/?q=arpa-e-programs/nodes&order=title&sort=asc
 https://www.blm.gov/programs/lands-and-realty/land-tenure
 https://www.epa.gov/sourcewaterprotection/drinking-water-mapping-application-protect-source-waters-supporting-documents
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A97&f[1]=field_media_report%3A2371
 https://science.energy.gov/hep/funding-opportunities/
 https://echo.epa.gov/help/reports/criminal-case-report-help
 https://www.epa.gov/statelocalenergy/energy-and-environment-guide-action-chapter-75-maximizing-grid-investments-achieve
@@ -203,8 +185,6 @@ https://www.blm.gov/programs/fish-and-wildlife/threatened-and-endangered/state-t
 https://www3.epa.gov/climatechange/kids/solutions/actions/index.html
 https://www.epa.gov/pesticides/epa-seeks-comment-proposal-register-insecticide-sulfoxaflor-reduced-use
 https://www.fema.gov/local-official-survey-findings-flood-risk
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A104&f[1]=field_media_topics%3A103
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A95&f[1]=field_media_topics%3A92
 http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&&navOrgCode=691.1&navTab=nav_about_us
 https://www.epa.gov/water-research/bioplume-iii
 http://www.eia.gov/energyexplained/index.cfm?page=gasoline_fluctuations
@@ -227,7 +207,6 @@ https://science.energy.gov/bes/highlights/2016/bes-2016-07-l/?p=1
 https://www.epa.gov/water-research/geostatistical-environmental-assessment-software-geoeas
 https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/EOIs/FY2015.print.html
 https://science.energy.gov/sbir/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A103&f[1]=field_media_topics%3A101
 https://science.energy.gov/news/highlights/?page=12
 https://www3.epa.gov/climatechange/ccs/
 https://www3.epa.gov/climatechange/kids/impacts/effects/water.html
@@ -241,7 +220,6 @@ http://www.ncep.noaa.gov/news/ncwcp/s040.shtml
 http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCode=691.1&navTab=nav_about_us
 http://climate.nasa.gov/climate_resources/113
 http://science.gsfc.nasa.gov/earth/gcdc/index.cfm?fuseAction=home.main&navOrgCode=610.2&navTab=nav_about_us
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A95&f[1]=field_media_report%3A2374
 https://science.energy.gov/bes/highlights/2016/bes-2016-08-e/?p=1
 https://www.fs.fed.us/about-agency/regulations-policies
 https://www.epa.gov/climateleadership/center-corporate-climate-leadership-building-internal-support-ghg-management
@@ -249,7 +227,6 @@ https://www.epa.gov/npdes/vessel-technical-studies
 https://science.energy.gov/sbir/about/
 http://epa.gov/greeningepa/scope-3-greenhouse-gas-emissions-results
 https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/bes/highlights/2016/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A103&f[1]=field_media_topics%3A108
 http://climate.nasa.gov/news/2392/nasa-takes-part-in-airborne-study-of-southern-ocean
 https://www.epa.gov/tribal/region-10-tribal-operations-committee-rtoc-members
 http://www.eia.gov/energyexplained/?page=hydropower_environment
@@ -320,15 +297,12 @@ http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navO
 https://www.blm.gov/programs/energy-and-minerals/renewable-energy/solar-energy/permitting-and-development/mitigation
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/exploration
 https://science.energy.gov/public-data-download
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A99&f[1]=field_media_report%3A2471
 https://www.justice.gov/enrd/3058.htm
 https://www.blm.gov/learn/youth-and-educators/teachers-on-public-lands
 https://www.blm.gov/az/st/en/prog/energy/wind.html
 http://www.eia.gov/electricity/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A97&f[1]=field_media_report%3A2939
 https://data.globalchange.gov/report/nca4/chapter/overview-executive-summary/figure/overview_sectoral-cost-savings-from-mitigation_v1
 https://www.epa.gov/npdes/previous-versions-epas-msgp-documents
-http://www.globalchange.gov/browse/multimedia?page=3&f[0]=field_media_topics%3A99
 http://www.nrel.gov/esi/events.html?mc_cid=960e40b215&mc_eid=%5BUNIQID%5D
 https://www.epa.gov/faca/national-advisory-council-environmental-policy-and-technology-2016-2018-membership
 https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy/regional-information/idaho
@@ -366,16 +340,13 @@ http://www.eia.gov/energy_in_brief/article/greenhouse_gas.cfm
 http://www.eia.gov/energyexplained/index.cfm?page=solar_thermal_collectors
 https://science.energy.gov/sbir/highlights/2014/sbir-2014-04-a/?p=1
 https://www.epa.gov/tribal/region-10-clean-water-act-section-106-tribal-program-funding
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A2&f[1]=field_media_report%3A2375
 https://www.blm.gov/ak/st/en/prog/energy/oil_gas/npra/legacywell.html
 https://www.epa.gov/climateleadership/epa-corporate-ghg-goal-evaluation-model
 https://science.energy.gov/grants/policy-and-guidance/
 https://www.epa.gov/climate-and-energy-resources-state-local-and-tribal-governments/local-climate-and-energy-program
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A105&f[1]=field_media_region%3A138
 https://www.epa.gov/sciencematters/epa-science-matters-newsletter-good-climate-and-your-health-published-april-2014
 https://www.epa.gov/arc-x/disclaimer-adaptation-strategies-climate-change-adaptation
 https://science.energy.gov/ber/highlights/2016/ber-2016-07-b/?p=1
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A97&f[1]=field_media_region%3A140
 https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1049239&ext=pdf
 https://science.energy.gov/bso/
 https://www.fs.fed.us/science-technology/climate-change/drought-forests-and-rangelands
@@ -403,7 +374,6 @@ https://science.energy.gov/news/highlights/?perf=JGI
 https://www.fema.gov/pre-disaster-mitigation-program-fy-2015-subapplication-status
 https://www.epa.gov/rmp/forms/vulnerable-zone-indicator-system
 https://www.lib.noaa.gov/collections/imgdocmaps/imgdocmaps-index.html
-http://www.globalchange.gov/browse/multimedia?page=2&f[0]=field_media_topics%3A2
 https://www.epa.gov/indoor-air-quality-iaq/moisture-control-guidance-building-design-construction-and-maintenance-0
 https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B762F413E-76B7-4E29-ACD1-E8D5161A3074%7D&xsl=metadata_to_html_full
 https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=STANDARDS&p_id=10840
@@ -429,7 +399,6 @@ http://epa.gov/greeningepa/green-power-purchases
 http://www.nssl.noaa.gov/privacy.php
 http://www.eia.gov/state/
 https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7BB09088C4-2376-4DF5-A88D-5DE00D3854B8%7D&xsl=metadata_to_html_full
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_report%3A2939&f[1]=field_media_region%3A144
 https://data.globalchange.gov/report/nca4/chapter/agriculture-and-rural-communities/figure/fig10-2
 https://www.blm.gov/wy/st/en/programs/energy/Coal_Resources/coalfaqs/qualifications.html
 https://www.epa.gov/nps/nonpoint-source-success-stories-west-virginia
@@ -439,14 +408,11 @@ https://www.blm.gov/programs/energy-and-minerals/renewable-energy/partnerships
 http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&&navOrgCode=698&navTab=nav_about_us
 http://www.eia.gov/tools/a-z/index.cfm?id=e
 https://www.data.gov/dataset?_organization_limit=0&res_format=Get+Flood+Maps+and+Data+from+FEMA&groups=climate5434&organization=dhs-gov
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A103&f[1]=field_media_topics%3A2
 https://www.fema.gov/us-army-corps-engineers-coastal-partner
 https://www.epa.gov/heat-islands/heat-island-compendium
 https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/about/jobs/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A105&f[1]=field_media_topics%3A2
 https://science.energy.gov/node/38
 https://www.doi.gov/buybackprogram
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A107&f[1]=field_media_topics%3A106
 https://www.usgs.gov/science/science-explorer?offset=100&lq=climatology
 https://science.energy.gov/
 https://science.energy.gov/news/highlights/?perf=BER%20User%20Facilities
@@ -458,7 +424,6 @@ https://data.globalchange.gov/report/nca4/chapter/human-health/figure/fig--14-x-
 https://www.fema.gov/rebuilding-after-coastal-storm
 http://climate.nasa.gov/news/2490/nasa-analysis-finds-august-2016-another-record-month
 https://science.energy.gov/news/highlights/?prog=SUF&p=1
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A96&f[1]=field_media_report%3A3674
 https://www.epa.gov/climateleadership/center-corporate-climate-leadership-simplified-ghg-emissions-calculator
 https://www.doi.gov/SiteMap/index.htm
 https://www.epa.gov/sciencematters/meet-epa-researcher-dawn-king
@@ -473,7 +438,6 @@ http://climate.nasa.gov/news/2457/nasa-maps-california-drought-effects-on-sierra
 http://climate.nasa.gov/news/899/dont-let-this-happen-to-your-planet
 https://www.epa.gov/aboutepa/contact-epas-region-6-south-central-office
 https://energy.gov/eere/buildings/wireless-metering-challenge
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A103&f[1]=field_media_report%3A2373
 http://www.ncep.noaa.gov/vsp/request_info.php?rec=vsp_cpc_contact2
 https://data.globalchange.gov/report/nca4/chapter/mitigation-avoiding-and-reducing-long-term-risks/figure/summary_graphics_ideas
 https://science.energy.gov/program/highlights.shtml
@@ -503,10 +467,8 @@ https://www.usgs.gov/science/science-explorer?lq=climatology&classification=Publ
 http://epa.gov/greeningepa/national-computer-center
 http://www.eia.gov/energyexplained/index.cfm?page=us_energy_home
 https://www3.epa.gov/climatechange/kids/solutions/actions/less-energy.html
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A99&f[1]=field_media_topics%3A102
 http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navOrgCode=618&navTab=nav_about_us
 https://www.justice.gov/enrd/consent-decree/file/992371/download
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A95&f[1]=field_media_topics%3A102
 https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7BE4A3745C-46E6-4FCA-9B58-FB961935004E%7D&xsl=metadata_to_html_full
 https://science.energy.gov/bes/highlights/2016/?page=4
 http://www.eia.gov/energyexplained/?page=nonrenewable_home
@@ -539,25 +501,20 @@ https://www.doi.gov/businesses/working-with-interior
 https://www.fema.gov/national-flood-insurance-program/national-flood-insurance-program-community-status-book
 https://www.epa.gov/mats/epa-websites-related-mats-rule
 https://www.epa.gov/trinationalanalysis/transfers-site-waste-management-2016-tri-national-analysis
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A96&f[1]=field_media_report%3A2412
 https://www.usgs.gov/science/science-explorer?offset=1940&lq=human+impacts
 https://science.energy.gov/news/highlights/?page=6&p=1
 https://www.epa.gov/waterdata/executive-summary-1992-national-water-quality-inventory-report-congress
 https://www.epa.gov/faca/list-federal-advisory-committees-epa
 https://www.phmsa.dot.gov/hazmat-program-management-data-and-statistics/risk-and-regulatory-analysis/digital-dashboard
 https://www.epa.gov/indoor-air-quality-iaq/federal-interagency-committee-indoor-air-quality
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A99&f[1]=field_media_report%3A2939
 http://www.eia.gov/tools/faqs/faq.cfm?id=268&t=6
 https://science.energy.gov/bes/highlights/2015/bes-2015-12-b/
 https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/cancer/index.cfm
 https://www.epa.gov/statelocalenergy/avert-user-manual%E2%80%9D
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A97&f[1]=field_media_region%3A139
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A96&f[1]=field_media_region%3A139
 https://www.epa.gov/aboutepa/office-wastewater-management-annual-reports
 https://www.epa.gov/ambler/borit-cag-meeting-february-1-2017
 https://science.energy.gov/bes/community-resources/reports/
 https://science.energy.gov/ssp/
-http://www.globalchange.gov/browse/multimedia?page=7&f[0]=field_media_report%3A2939
 https://science.energy.gov/about/organization
 https://www.epa.gov/npdes/municipal-sources-resources
 https://science.energy.gov/bes/highlights/2016/
@@ -668,7 +625,6 @@ https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=
 https://science.energy.gov/bes/highlights/2016/bes-2016-06-g/
 https://www.epa.gov/climateleadership/improving-environmental-sustainability-supply-chains-best-practices
 https://science.energy.gov/pso/about/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_report%3A2420&f[1]=field_media_topics%3A2
 http://www.globalchange.gov/browse/reports/snow-water-ice-and-permafrost-arctic-swipa-2017
 http://science.gsfc.nasa.gov/earth/gcdc/index.cfm?fuseAction=home.main&navOrgCode=605&navTab=nav_about_us
 https://echo.epa.gov/trends/comparative-maps-dashboards/state-hazardous-waste-dashboard
@@ -688,7 +644,6 @@ https://data.globalchange.gov/report/nca4/chapter/air-quality/figure/ozone
 https://www.epa.gov/careers/current-job-openings-epa
 https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/health/topics/agents/climate-change/index.cfm
 https://www.epa.gov/arc-x/climate-adaptation-and-erosion-sedimentation
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A107&f[1]=field_media_topics%3A100
 https://www.epa.gov/rmp/how-submit-risk-management-plan-rmp-epa
 http://www.eia.gov/petroleum/supply/monthly/
 https://www.blm.gov/programs/energy-and-minerals/renewable-energy/solar-energy/permitting-and-development/right-of-way
@@ -711,7 +666,6 @@ https://www.epa.gov/www.epa.gov/climate-research
 https://science.energy.gov/bes/highlights/2015/bes-2015-07-d/
 https://www.fema.gov/www.fema.gov/floodplain-management-definition
 http://climate.nasa.gov/quizzes/quiz-salinity/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A105&f[1]=field_media_region%3A145
 https://echo.epa.gov/tools/web-services/facility-search-hazardous-waste
 http://science.gsfc.nasa.gov/earth/gcdc/index.cfm?fuseAction=home.main&&navOrgCode=699&navTab=nav_about_us
 https://data.globalchange.gov/report/nca4/chapter/southeast/figure/case_study_dod_fire_addington_graphic2
@@ -721,7 +675,6 @@ http://climate.nasa.gov/climate_resources/143/
 http://www.eia.gov/about/new/
 https://science.energy.gov/news/highlights/?page=26
 https://www.epa.gov/heat-islands/extreme-heat-implementation-creating-ground-based-temperature-data-network
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A105&f[1]=field_media_topics%3A106
 https://www.epa.gov/aboutepa/chronology-epa-deputy-administrators
 https://www.epa.gov/climateleadership/climate-leadership-awards-and-conference
 https://www.epa.gov/heat-islands/effects-composition-and-exposure-solar-reflectance-portland-cement-concrete
@@ -731,7 +684,6 @@ https://www.fema.gov/policy-claim-statistics-flood-insurance/policy-claim-statis
 https://science.energy.gov/ber/highlights/2016/ber-2016-06-j/?p=1
 https://climate.dot.gov/state-local/index.html
 http://climate.nasa.gov/climate_resources/93
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_region%3A124&f[1]=field_media_topics%3A94
 https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy/data
 https://www.epa.gov/research/rapid-benefit-indicators-rbi-approach-process-assessing-social-benefits-ecological
 https://science.energy.gov/user-facilities/frequently-asked-questions/
@@ -750,7 +702,6 @@ https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas.html
 http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navOrgCode=619&navTab=nav_about_us
 https://www.lib.noaa.gov/services/ask.html
 http://www.ncep.noaa.gov/news/ncwcp/s025.shtml
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A105&f[1]=field_media_report%3A3674
 https://science.energy.gov/sites/ena
 http://climate.nasa.gov/news/1027/
 http://www.eia.gov/energyexplained/index.cfm?page=secondary_home
@@ -762,7 +713,6 @@ https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-le
 https://www.osha.gov/pls/oshaweb/owalink.query_links?src_doc_type=STANDARDS&src_unique_file=1926_1053&src_anchor_name=1926.1053(b)(3)
 https://www.epa.gov/statelocalenergy/state-climate-and-energy-webinars
 https://www.bia.gov/WhatWeDo/ServiceOverview/LandWater-Resources/index.htm
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A109&f[1]=field_media_topics%3A97
 https://www.epa.gov/planandbudget/fy2017
 https://www.epa.gov/arc-x/climate-adaptation-and-outdoor-air-quality
 https://www.epa.gov/statelocalenergy/forms/get-updates-co-benefits-risk-assessment-cobra-screening-model
@@ -774,10 +724,8 @@ https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=INTERPRETATIONS&p
 https://science.nasa.gov/earth-science/programs/research-analysis/year-in-review-2018/ice-losses-antarctica
 https://www.usgs.gov/science/science-explorer?offset=60&lq=climatology
 http://www.nesdis.noaa.gov/news-articles-archive?page=3&order=field_date&sort=asc
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A104&f[1]=field_media_region%3A140
 https://www.epa.gov/airmarkets/clean-air-markets-faqs
 http://climate.nasa.gov/news/2443/all-in-the-naames-of-ocean-ecosystems-and-climate/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A99&f[1]=field_media_topics%3A107
 http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&&navOrgCode=690.1&navTab=nav_about_us
 http://epa.gov/greeningepa/energy-and-emissions-epa
 https://www.fs.fed.us/visit/know-before-you-go/lightning
@@ -798,7 +746,6 @@ https://www.epa.gov/heat-islands/louisville-metro-government-office-sustainabili
 https://www.epa.gov/statelocalenergy/energy-and-environment-guide-action-chapter-71-electricity-resource-planning-and
 https://www.fema.gov/hazard-mitigation-planning-process
 https://www.epa.gov/water-research/biological-methods-and-manual-development
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A2&f[1]=field_media_region%3A138
 https://www.epa.gov/statelocalenergy/csc-tip-sheets-working-across-idealogical-differences
 https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1042428&ext=pdf
 http://www.nesdis.noaa.gov/news-articles-archive?page=2&order=title&sort=asc
@@ -807,7 +754,6 @@ https://ephtracking.cdc.gov/showClimateChangeTracking.action
 https://science.energy.gov/research/ngeearctic.shtml
 https://science.energy.gov/mission
 https://www.doi.gov/WhoWeAre/BIA/OTS/NaturalResources/Water/index.htm
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A96&f[1]=field_media_report%3A2926
 https://19january2017snapshot.epa.gov/newsroom
 http://epa.gov/greeningepa/chapel-hill-laboratory
 http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&&navOrgCode=699&navTab=nav_about_us
@@ -815,7 +761,6 @@ http://science.gsfc.nasa.gov/earth/cryosphere/index.cfm?fuseAction=home.main&nav
 https://www.fema.gov/pre-disaster-mitigation-program-fy-2016-subapplication-status
 https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/user-facilities/policies-and-processes/
 http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&&navOrgCode=693&navTab=nav_about_us
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A95&f[1]=field_media_report%3A2412
 https://science.energy.gov/ArmUserReg/
 https://www.epa.gov/statelocalenergy/transportation-control-measures
 https://climate.dot.gov/state-local/integration/index.html
@@ -867,15 +812,12 @@ https://www.doi.gov/WhatWeDo/ServiceOverview/LandWater-Resources/index.htm
 https://www.phmsa.dot.gov/phmsa-regulations
 https://www.blm.gov/programs/lands-and-realty/cadastral-survey
 https://www.epa.gov/npdes/industrial-stormwater-guidance
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A99&f[1]=field_media_region%3A141
 http://www.nesdis.noaa.gov/news-articles-archive?page=5&order=title&sort=asc
 https://www.nps.gov/npmap/
 https://echo.epa.gov/help/training
 https://www.epa.gov/statelocalenergy/beyond-light-touch-next-steps-improving-energy-efficiency-multi-family-affordable
 https://toolkit.climate.gov/tool/tribal-resilience-resource-guide
 https://toolkit.climate.gov/
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A97&f[1]=field_media_region%3A145
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A97&f[1]=field_media_topics%3A181
 https://toolkit.climate.gov/tools
 https://toolkit.climate.gov/help/partners
 https://toolkit.climate.gov/reports
@@ -885,7 +827,6 @@ https://www.blm.gov/programs/natural-resources/forests-and-woodlands/biomass-and
 https://www.whitehouse.gov/administration/eop/ostp/pressroom?tid_1[796]=796&tid_1[666]=666&tid_1[476]=476&tid_1[581]=581&page=2
 https://www.epa.gov/aboutepa/our-mission-and-what-we-do
 https://www.epa.gov/home/returning-epa-its-core-mission
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A2&f[1]=field_media_report%3A2420
 http://arpa-e.energy.gov/?q=arpa-e-programs/mosaic&order=title&sort=asc
 https://www.epa.gov/arc-x/climate-adaptation-and-public-health
 https://www.epa.gov/waterutilityresponse/states-and-waterwastewater-agency-response-networks-working-together
@@ -895,7 +836,6 @@ https://www.blm.gov/basic/programs-energy-and-minerals-oil-and-gas-operations-an
 https://www.osha.gov/pls/oshaweb/owalink.query_links?src_doc_type=STANDARDS&src_unique_file=1926_1053&src_anchor_name=1926.1053(a)(19)(iii)
 https://www.epa.gov/aboutepa/epa-idaho
 https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/about/oregon-washington
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A104&f[1]=field_media_topics%3A106
 https://www.epa.gov/laws-regulations/epa-deregulatory-actions
 https://echo.epa.gov/resources/echo-data/state-comments-frozen-data/2010
 https://www.blm.gov/programs/fish-and-wildlife/wildlife/about/alaska
@@ -912,15 +852,12 @@ https://echo.epa.gov/tools/web-services/enforcement-cases
 http://arpa-e.energy.gov/?q=site-page/compliance/nepa-compliance-documents&field_program_tid=All&field_project_state_value=All&field_project_status_value=All&field_tech_cat_1_tid=All&page=8
 https://www.epa.gov/statelocalenergy/local-energy-efficiency-benefits-and-opportunities
 https://www.epa.gov/aboutepa/regional-science-and-technology-rst-organizations
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A96&f[1]=field_media_topics%3A100
 https://catalog.data.gov/dataset?_organization_limit=0&groups=climate5434&organization=dhs-gov
 https://echo.epa.gov/tools/web-services/air-pollutant-report
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A95&f[1]=field_media_region%3A141
 https://www.epa.gov/waterdata/knowing-our-waters-tribal-reporting-under-305b
 https://www.blm.gov/programs/lands-and-realty/regional-information/alaska/RDI
 https://www.fs.fed.us/science-technology/energy-forest-products
 https://www.epa.gov/heat-islands/understanding-your-citys-heat-islands-overview-and-key-considerations
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_topics%3A96&f[1]=field_media_topics%3A93
 https://www.epa.gov/national-aquatic-resource-surveys/indicators-used-national-aquatic-resource-surveys
 https://www.epa.gov/sciencematters/epa-science-matters-newsletter-how-deep-are-seagrasses
 https://www.blm.gov/programs/natural-resources/wetlands-and-riparian/riparian-health
@@ -980,7 +917,6 @@ https://www.epa.gov/sciencematters/meet-toby-schonfeld-phd
 
 
 # MAYBE A TEMPORARY BLIP?
-# http://www.globalchange.gov/browse/multimedia/us-seasonal-temperatures
 # https://www.epa.gov/hfstudy/national-hydraulic-fracturing-study-evaluation-existing-production-well-file-contents-qapp-0
 
 
@@ -1042,9 +978,6 @@ http://www.nrel.gov/research/highlights.html
 # ------
 # Now at: https://climate.nasa.gov/resources/graphics_and_multimedia/?scope=featured&type=54
 http://climate.nasa.gov/resources/graphics_and_multimedia/?scope=featured&type=54
-# ------
-# Now at: https://www.globalchange.gov/browse/multimedia?f[0]=field_media_report%3A2471&f[1]=field_media_topics%3A108
-http://www.globalchange.gov/browse/multimedia?f[0]=field_media_report%3A2471&f[1]=field_media_topics%3A108
 # ------
 # Now at: https://www.eia.gov/tools/a-z/index.php?id=f
 http://www.eia.gov/tools/a-z/index.cfm?id=f
