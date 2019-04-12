@@ -929,6 +929,7 @@ https://www.doi.gov/recreation/online-recreation-resources
 https://www.blm.gov/programs/recreation
 https://www.fws.gov/refuges/visit/great-recreation.html
 https://www.usbr.gov/recreation/
+https://www.fhwa.dot.gov/environment/sustainability/resilience/pilots/2013-2015_pilots/index.cfm
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -999,6 +1000,16 @@ http://www.eia.gov/tools/a-z/index.cfm?id=f
 # ------
 # Now at: https://www.epa.gov/sciencematters/meet-epa-research-chemist-angela-batt-phd
 https://www.epa.gov/sciencematters/meet-epa-research-chemist-angela-batt
+# ------
+# Now at: https://www.eia.gov/about/contact/
+http://www.eia.gov/about/contact/
+# ------
+# NOTE: seems like most https://energy.gov/* pages have moved to `www.` subdomain
+# Now at: https://www.energy.gov/eere/bioenergy/biomass-feedstocks
+https://energy.gov/eere/bioenergy/biomass-feedstocks
+# ------
+# Now at: https://www.energy.gov/eere/success-stories/listings/hydrogen-and-fuel-cells-success-stories
+https://energy.gov/eere/success-stories/listings/hydrogen-and-fuel-cells-success-stories
 
 
 # MOVED AND BROKEN PAGES
