@@ -930,6 +930,7 @@ https://www.blm.gov/programs/recreation
 https://www.fws.gov/refuges/visit/great-recreation.html
 https://www.usbr.gov/recreation/
 https://www.fhwa.dot.gov/environment/sustainability/resilience/pilots/2013-2015_pilots/index.cfm
+https://ops13web.nws.noaa.gov/pls/emrsuser/emrs_main.home
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -948,6 +949,11 @@ http://sncaadvisorycommittee.noaa.gov/Home/Disclaimer.aspx
 # Now at: https://science.gsfc.nasa.gov/heliophysics/
 # (Actually, digging into this more, it may have always been there, and this
 # could have been Versionista doing some very ineffective crawling for us.)
+# Dug into this more: all links on this host point to:
+#   {current_url}/index.cfm?fuseAction=home.main&navOrgCode=xyz&navTab=abc
+# It turns out this is an artifact of Fusebox, a Coldfusion web framework:
+#   https://en.wikipedia.org/wiki/Fusebox_(programming)
+# We probably need to systematically analyze all the science.gsfc.nasa.gov URLs
 http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCode=670&navTab=nav_about_us
 # ------
 # Now at: https://science.gsfc.nasa.gov/earth/hydrology/
@@ -1010,6 +1016,13 @@ https://energy.gov/eere/bioenergy/biomass-feedstocks
 # ------
 # Now at: https://www.energy.gov/eere/success-stories/listings/hydrogen-and-fuel-cells-success-stories
 https://energy.gov/eere/success-stories/listings/hydrogen-and-fuel-cells-success-stories
+# ------
+# Now at: https://www.eia.gov/consumption/data.php
+http://www.eia.gov/consumption/data.php
+# -----
+# Now at: https://science.gsfc.nasa.gov/astrophysics/osc/
+# See earlier examples of https://science.gsfc.nasa.gov/ redirects
+http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navOrgCode=660.2&navTab=nav_about_us
 
 
 # MOVED AND BROKEN PAGES
