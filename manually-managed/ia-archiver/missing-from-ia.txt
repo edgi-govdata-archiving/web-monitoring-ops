@@ -940,6 +940,7 @@ https://www.fema.gov/flood-insurance-reform-reducing-risk-and-rates
 https://www.fema.gov/flood-insurance-reform-law
 https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=10605&p_table=STANDARDS
 https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=3359&p_table=OSHACT
+https://www.blm.gov/basic/about-us-how-we-manage-box
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -1158,6 +1159,12 @@ https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=STANDARDS&p_id=98
 # -----
 # Now at: https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.305
 https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=STANDARDS&p_id=9882
+# -----
+# Now at: https://www.energy.gov/eere/wind/downloads/wind-integration-transmission-and-resource-assessment-and-characterization
+https://energy.gov/eere/wind/downloads/wind-integration-transmission-and-resource-assessment-and-characterization
+# -----
+# Now at: https://www.energy.gov/energysaver/design/landscaping-energy-efficient-homes
+http://energy.gov/public-services/homes/landscaping
 
 
 # MOVED AND BROKEN PAGES
@@ -1190,6 +1197,7 @@ https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=STANDARDS&p_id=98
 # https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=DIRECTIVES&p_id=5055
 # https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=NEWS_RELEASES&p_id=33504
 # https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=NEWS_RELEASES&p_id=33528
+# https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/2016/02notice1.html
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
