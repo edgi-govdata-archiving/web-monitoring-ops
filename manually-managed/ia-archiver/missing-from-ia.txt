@@ -948,6 +948,7 @@ https://www.epa.gov/water-research/water-research-fact-sheets
 https://www.epa.gov/P3/p3-teams-year
 https://www.epa.gov/P3
 https://www.epa.gov/water-research/geoplatform-stormwater-bmp-performance-database-0
+https://www.epa.gov/homeland-security-waste/guidance-about-planning-natural-disaster-debris
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -1271,6 +1272,10 @@ https://www.epa.gov/sciencematters/meet-epa-scientist-swinburne-aj-jason-augusti
 # http://www.nrel.gov/docs/fy12osti/55264.pdf
 # http://www.nrel.gov/docs/fy12osti/55961.pdf
 # https://www.justice.gov/enrd/ENRD_Assets/ENRD_2008_Accomplishments_Report_Final_508.pdf
+
+# ...Except these PDFs
+https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
+https://www.epa.gov/sites/production/files/2019-04/documents/final_pndd_guidance_0.pdf
 
 
 # Skip FTP for now
