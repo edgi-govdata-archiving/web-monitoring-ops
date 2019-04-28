@@ -941,6 +941,13 @@ https://www.fema.gov/flood-insurance-reform-law
 https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=10605&p_table=STANDARDS
 https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=3359&p_table=OSHACT
 https://www.blm.gov/basic/about-us-how-we-manage-box
+https://www.epa.gov/water-research/system-urban-stormwater-treatment-and-analysis-integration-sustain
+https://www.epa.gov/water-research/two-dimensional-subsurface-flow-fate-and-transport-microbes-and-chemicals-2dfatmic
+https://www.epa.gov/water-research/three-dimensional-subsurface-flow-fate-and-transport-microbes-and-chemicals-3dfatmic
+https://www.epa.gov/water-research/water-research-fact-sheets
+https://www.epa.gov/P3/p3-teams-year
+https://www.epa.gov/P3
+https://www.epa.gov/water-research/geoplatform-stormwater-bmp-performance-database-0
 
 
 # MAYBE A TEMPORARY BLIP?
