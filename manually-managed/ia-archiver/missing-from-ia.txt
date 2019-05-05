@@ -283,6 +283,7 @@ https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.g
 https://www.fema.gov/flood-insurance-reform-rates-and-refunds
 http://www.eia.gov/energyexplained/index.cfm?page=oil_where
 https://www.usgs.gov/science/science-explorer?offset=80&lq=human+impacts
+https://www.fs.fed.us/blogs
 https://www.fs.fed.us/blogs/strengthening-community-resilience
 http://www.eia.gov/energy_in_brief/article/power_grid.cfm
 https://data.globalchange.gov/report/nca4/chapter/built-environment-urban-systems-and-cities/figure/cascading-consequences-of-heavy-rainfall-for-urban-systems
@@ -1100,6 +1101,8 @@ https://www.epa.gov/statelocalenergy/downloading-avert-files-use-smoke
 https://www.epa.gov/statelocalenergy/avert-tutorial-information-needed-analysis
 https://www.epa.gov/statelocalenergy/forms/state-and-local-energy-newsletter
 https://www.epa.gov/statelocalenergy/state-co2-emissions-fossil-fuel-combustion
+https://echo.epa.gov/help/facility-search/air-search-results-help
+https://www.epa.gov/water-research/optimal-well-locator-owl
 
 
 # MAYBE A TEMPORARY BLIP?
