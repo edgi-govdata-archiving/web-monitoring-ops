@@ -1117,6 +1117,8 @@ http://arpa-e.energy.gov/?q=site-page/compliance/nepa-compliance-documents&field
 http://arpa-e.energy.gov/?q=site-page/compliance/nepa-compliance-documents&field_program_tid=All&field_project_state_value=All&field_project_status_value=All&field_tech_cat_1_tid=All&page=9
 http://arpa-e.energy.gov/?q=site-page/compliance/nepa-compliance-documents&field_program_tid=All&field_project_state_value=All&field_project_status_value=All&field_tech_cat_1_tid=All&page=10
 http://arpa-e.energy.gov/?q=site-page/compliance/nepa-compliance-documents&field_program_tid=All&field_project_state_value=All&field_project_status_value=All&field_tech_cat_1_tid=All&page=11
+https://www.epa.gov/npdes/developing-ms4-resources
+https://www.blm.gov/programs/lands-and-realty/right-of-way/communication-sites
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -1344,6 +1346,12 @@ http://energy.gov/public-services/homes/landscaping
 # -----
 # Now at: https://www.epa.gov/ust/publications-about-2015-ust-regulation
 https://www.epa.gov/node/152001
+# -----
+# Now at: https://www.blm.gov/programs/lands-and-realty/rights-of-way
+https://www.blm.gov/programs/lands-and-realty/right-of-way
+# -----
+# Now at: https://www.blm.gov/programs/lands-and-realty/right-of-way/west-wide-energy-corridors
+https://www.blm.gov/programs/lands-and-realty/right-of-way/electric-transmission-facilities-and-energy-corridors
 
 
 # MOVED AND BROKEN PAGES
@@ -1380,6 +1388,7 @@ https://www.epa.gov/node/152001
 # https://www.epa.gov/node/164839/title-news/165171/588815?title_op=word&title=superfund%20brownfield%20cleanup%20waste%20landfill&field_secondary_headline_value=&field_keywords_tid=&news_release_date[offset]=&news_release_date[value]=&field_press_office_tid=&field_subjects_tid=&&&&&&&&&&&&&field_geographic_locations_tid_1=&sort_by=timestamp&sort_order=DESC
 # https://www.epa.gov/node/164839/title-news/165317/573269?title_op=word&title=health&field_secondary_headline_value=&field_keywords_tid=&news_release_date[offset]=&news_release_date[value]=&field_press_office_tid=&field_subjects_tid=&&&&&&&&&&&&&field_geographic_locations_tid_1=&sort_by=timestamp&sort_order=DESC
 # https://www.epa.gov/home/are-you-climate-ready
+# https://www.blm.gov/basic/programs-fish-and-wildlife-sagegrouse-home-state-link-block
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
