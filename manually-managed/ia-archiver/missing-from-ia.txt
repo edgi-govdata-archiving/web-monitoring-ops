@@ -1352,6 +1352,9 @@ https://www.blm.gov/programs/lands-and-realty/right-of-way
 # -----
 # Now at: https://www.blm.gov/programs/lands-and-realty/right-of-way/west-wide-energy-corridors
 https://www.blm.gov/programs/lands-and-realty/right-of-way/electric-transmission-facilities-and-energy-corridors
+# -----
+# Now at: https://science.gsfc.nasa.gov/earth/localnews
+http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=localnews.main&navOrgCode=610
 
 
 # MOVED AND BROKEN PAGES
