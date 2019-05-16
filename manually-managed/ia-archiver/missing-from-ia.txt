@@ -1119,6 +1119,7 @@ http://arpa-e.energy.gov/?q=site-page/compliance/nepa-compliance-documents&field
 http://arpa-e.energy.gov/?q=site-page/compliance/nepa-compliance-documents&field_program_tid=All&field_project_state_value=All&field_project_status_value=All&field_tech_cat_1_tid=All&page=11
 https://www.epa.gov/npdes/developing-ms4-resources
 https://www.blm.gov/programs/lands-and-realty/right-of-way/communication-sites
+http://www.ncep.noaa.gov/news/ncwcp/s005.shtml
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -1419,6 +1420,11 @@ https://www.epa.gov/statelocalenergy/energy-efficiency-water-and-wastewater-faci
 # https://www.epa.gov/node/72613
 # https://www.epa.gov/node/45231
 
+
+# Not sure if it makes sense to track these:
+#
+# Search result page for ECHO; loads results async, so doesn't really snapshot well.
+https://echo.epa.gov/facilities/facility-search/results?mediaSelected=water&state=ALL48&activeOp=Any&permitStatus=EFF%2CEXP%2CADC%2CPND%2CRET&permitType=NPD%2CNGP%2CGPC%2CUFT
 
 
 # Skip PDFs for now
