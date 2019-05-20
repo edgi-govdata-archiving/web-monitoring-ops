@@ -1120,6 +1120,10 @@ http://arpa-e.energy.gov/?q=site-page/compliance/nepa-compliance-documents&field
 https://www.epa.gov/npdes/developing-ms4-resources
 https://www.blm.gov/programs/lands-and-realty/right-of-way/communication-sites
 http://www.ncep.noaa.gov/news/ncwcp/s005.shtml
+https://www.epa.gov/watershedacademy/watershed-academy-webcast-ten-years-watershed-assessment-ceap-insights-and-lessons
+https://www.fema.gov/mitigation-egrants-system-subapplicant-users
+https://www.usgs.gov/science/science-explorer?lq=endangered+species&classification=News
+https://nomads.ncdc.noaa.gov/data/gens/
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -1363,6 +1367,15 @@ http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=localnews.main&navOrgCod
 # -----
 # Now at: https://arpa-e.energy.gov/?q=project-tech-areas/storage&page=3
 http://arpa-e.energy.gov/?q=project-tech-areas/storage&page=3
+# -----
+# Now at: https://www.justice.gov/enrd/enrd-directive-99-20-global-settlement-policy-april-1999
+https://www.justice.gov/enrd/3055.htm
+# -----
+# Now at: https://www.ncep.noaa.gov/newsletter/march2014/printable.shtml
+http://www.ncep.noaa.gov/newsletter/march2014/printable.shtml
+# -----
+# Now at: https://www1.eere.energy.gov/library/default.aspx?Page=9
+https://energy.gov/eere/wind/publications
 
 
 # MOVED AND BROKEN PAGES
