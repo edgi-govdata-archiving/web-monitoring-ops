@@ -67,10 +67,7 @@ spec:
           value: "2018-10-23T07:00:00Z"
         # TODO: consider making this not a secret
         - name: HOST_URL
-          valueFrom:
-            secretKeyRef:
-              name: app-secrets
-              key: host_url
+          value: "https://api.monitoring.envirodatagov.org/"
         - name: LANG
           value: en_US.UTF-8
         - name: MAIL_SENDER
