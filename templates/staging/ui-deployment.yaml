@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: ui 
-        image: envirodgi/ui:f9ffe2fdf0f6e857740f5cb8611ba64f2970d314
+        image: envirodgi/ui:78b14ce8fb50c9ba65987d1215c1910c486f1020
         imagePullPolicy: Always
         ports: 
         - containerPort: 3001
