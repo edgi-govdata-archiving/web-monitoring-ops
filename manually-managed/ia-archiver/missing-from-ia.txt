@@ -1124,6 +1124,26 @@ https://www.epa.gov/watershedacademy/watershed-academy-webcast-ten-years-watersh
 https://www.fema.gov/mitigation-egrants-system-subapplicant-users
 https://www.usgs.gov/science/science-explorer?lq=endangered+species&classification=News
 https://nomads.ncdc.noaa.gov/data/gens/
+https://www.epa.gov/arc-x/climate-adaptation-and-change-fish-species
+https://www.fs.fed.us/science-technology/science-stories
+https://www.fs.fed.us/science-technology/science-stories/feed
+https://www.fs.fed.us/science-technology/science-stories?page=1
+https://www.fs.fed.us/science-technology/science-stories?page=2
+https://www.fs.fed.us/science-technology/science-stories?page=3
+https://www.fs.fed.us/science-technology/science-stories?page=4
+https://www.epa.gov/climateleadership/climate-leadership-financial-sector
+https://www.epa.gov/climateleadership/climate-leadership-financial-sector-webinar
+https://science.nasa.gov/earth-science/applied-sciences/making-space-for-earth/too-warm-to-survive
+https://science.nasa.gov/earth-science/applied-sciences/making-space-for-earth/space-challenge-in-east-africa-inspires-students
+https://www.epa.gov/npdes/industrial-stormwater-fact-sheet-series
+https://www.fs.fed.us/science-technology/tools-products
+https://www.epa.gov/npdes/ne-fremont-street-green-street-project
+https://echo.epa.gov/help/pesticide-dashboard-help
+https://echo.epa.gov/help/loading-tool/hypoxia-task-force-search-help/about-the-nutrient-model
+https://echo.epa.gov/help/loading-tool/hypoxia-task-force-search-help/methodology
+https://echo.epa.gov/help/loading-tool/hypoxia-task-force-search-help/potw-typical-pollutant-concentration-rationale
+https://echo.epa.gov/help/loading-tool/hypoxia-task-force-search-help
+https://www.epa.gov/indoor-air-quality-iaq/best-practices-indoor-air-quality-when-remodeling-your-home
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -1391,6 +1411,9 @@ https://energy.gov/eere/wind/publications
 # ------
 # Now at: https://www.nrel.gov/about/sustainable-buildings.html
 # http://www.nrel.gov/sustainable_nrel/rsf.html
+# ------
+# Now at: https://library.noaa.gov/Collections/Rare-Books
+# https://www.lib.noaa.gov/collections/rare.html
 
 
 # No longer exists; has not existed for a long time
@@ -1425,6 +1448,61 @@ https://www.epa.gov/statelocalenergy/state-and-local-guide-us-epa-climate-and-en
 https://www.epa.gov/statelocalenergy/integrating-energy-efficiency-and-renewable-energy-measures-air-quality-planning
 https://www.epa.gov/statelocalenergy/appendix-b-tools-and-models-referenced-each-chapter
 https://www.epa.gov/statelocalenergy/energy-efficiency-water-and-wastewater-facilities-0
+# 
+# No longer exists via server completely gone
+# https://climate.dot.gov/
+# https://climate.dot.gov/about-the-center.html
+# https://climate.dot.gov/about-the-clearinghouse.html
+# https://climate.dot.gov/about/index.html
+# https://climate.dot.gov/about/overview/science.html
+# https://climate.dot.gov/about/resources.html
+# https://climate.dot.gov/about/transportations-role/overview.html
+# https://climate.dot.gov/accessibility.html
+# https://climate.dot.gov/calendar-of-events.html
+# https://climate.dot.gov/disclaimer.html
+# https://climate.dot.gov/documents/gulf_coast_study.pdf
+# https://climate.dot.gov/freedom-of-information.html
+# https://climate.dot.gov/ghg-inventories-forcasts/index.html
+# https://climate.dot.gov/ghg-inventories-forcasts/national/us-inventory-structure.html
+# https://climate.dot.gov/ghg-inventories-forcasts/state-regional.html
+# https://climate.dot.gov/ghg-inventories-forcasts/transdata.html
+# https://climate.dot.gov/ghg-reduction-strategies/fuels-technologies/alternative-fuels.html
+# https://climate.dot.gov/ghg-reduction-strategies/general-resources.html
+# https://climate.dot.gov/ghg-reduction-strategies/index.html
+# https://climate.dot.gov/ghg-reduction-strategies/other-modes/aviation.html
+# https://climate.dot.gov/ghg-reduction-strategies/surface-transportation-operations.html
+# https://climate.dot.gov/ghg-reduction-strategies/surface-transportation.html
+# https://climate.dot.gov/glossary.html
+# https://climate.dot.gov/impacts-adaptations/forcasts.html
+# https://climate.dot.gov/impacts-adaptations/workshop_20150225/workshop_20150225_agenda.html
+# https://climate.dot.gov/index.html
+# https://climate.dot.gov/methodologies/analysis-resources.html
+# https://climate.dot.gov/methodologies/index.html
+# https://climate.dot.gov/methodologies/models-tools.html
+# https://climate.dot.gov/policies-legislation-programs/dot-partnerships/federal-agencies.html
+# https://climate.dot.gov/policies-legislation-programs/dot-partnerships/international-activities.html
+# https://climate.dot.gov/policies-legislation-programs/dot-partnerships/state-local-private.html
+# https://climate.dot.gov/policies-legislation-programs/federal-org-directory.html
+# https://climate.dot.gov/policies-legislation-programs/index.html
+# https://climate.dot.gov/privacy-policy.html
+# https://climate.dot.gov/resources/books.html
+# https://climate.dot.gov/resources/conferences.html
+# https://climate.dot.gov/resources/general_resources.html
+# https://climate.dot.gov/resources/index.html
+# https://climate.dot.gov/resources/newsletters.html
+# https://climate.dot.gov/resources/presentations/cop15_livability/html/index.html
+# https://climate.dot.gov/resources/presentations/cop15_livability/html/sld002.html
+# https://climate.dot.gov/resources/presentations/cop15_livability/html/sld012.html
+# https://climate.dot.gov/resources/presentations/cop15_livability/html/tsld001.html
+# https://climate.dot.gov/resources/presentations/cop15_livability/pdf/entire.pdf
+# https://climate.dot.gov/resources/presentations/driving_down_emissions/html/index.html
+# https://climate.dot.gov/resources/presentations/html/webinar_2010_06_16
+# https://climate.dot.gov/resources/presentations/transportation_overview/html/index.html
+# https://climate.dot.gov/resources/resources.html
+# https://climate.dot.gov/rss/rss.html
+# https://climate.dot.gov/site-map.html
+# https://climate.dot.gov/state-local/local-action-plans.html
+# https://climate.dot.gov/topics.html
 
 
 # These were alwasy 404s, not sure why we have them listed in the first place
@@ -1498,6 +1576,7 @@ https://echo.epa.gov/facilities/facility-search/results?mediaSelected=water&stat
 # http://www.nrel.gov/docs/fy12osti/55264.pdf
 # http://www.nrel.gov/docs/fy12osti/55961.pdf
 # https://www.justice.gov/enrd/ENRD_Assets/ENRD_2008_Accomplishments_Report_Final_508.pdf
+# https://echo.epa.gov/system/files/State%20Storyboard%20Majors%202008%203.11.11.pdf
 
 # ...Except these PDFs
 https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
