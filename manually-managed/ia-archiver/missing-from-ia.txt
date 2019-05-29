@@ -1144,6 +1144,10 @@ https://echo.epa.gov/help/loading-tool/hypoxia-task-force-search-help/methodolog
 https://echo.epa.gov/help/loading-tool/hypoxia-task-force-search-help/potw-typical-pollutant-concentration-rationale
 https://echo.epa.gov/help/loading-tool/hypoxia-task-force-search-help
 https://www.epa.gov/indoor-air-quality-iaq/best-practices-indoor-air-quality-when-remodeling-your-home
+https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B7C061368-B78A-49F9-9E7F-9F9ED52A7483%7D&xsl=metadata_to_html_full
+https://www.epa.gov/eco-research/methods-models-tools-and-databases-ecosystems-research
+https://www.blm.gov/programs/natural-resources/forests-and-woodlands/biomass-and-bioenergy/montana
+https://www.blm.gov/programs/fish-and-wildlife/fisheries-and-aquatics/about-the-program/colorado
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -1438,6 +1442,8 @@ https://energy.gov/eere/wind/publications
 # https://www.blm.gov/basic/programs-fish-and-wildlife-sagegrouse-home-state-link-block
 # http://www.ncep.noaa.gov/newsletter/april2017/newsletter.xml
 # http://www.ncep.noaa.gov/newsletter/january2017/newsletter.xml
+# https://www.blm.gov/programs/national-conservation-lands/about/data-and-resources
+# https://www.blm.gov/wy/st/en/programs/energy.html
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
@@ -1448,6 +1454,9 @@ https://www.epa.gov/statelocalenergy/state-and-local-guide-us-epa-climate-and-en
 https://www.epa.gov/statelocalenergy/integrating-energy-efficiency-and-renewable-energy-measures-air-quality-planning
 https://www.epa.gov/statelocalenergy/appendix-b-tools-and-models-referenced-each-chapter
 https://www.epa.gov/statelocalenergy/energy-efficiency-water-and-wastewater-facilities-0
+https://www.epa.gov/tribal/region-4-tribal-fy18-notice-funds-availability
+https://www.epa.gov/tribal/region-4-tribal-fy19-notice-funds-availability
+https://www.epa.gov/heat-islands/houston-downtown-management-districts-vertical-garden-green-wall-grant-program
 # 
 # No longer exists via server completely gone
 # https://climate.dot.gov/
@@ -1577,6 +1586,7 @@ https://echo.epa.gov/facilities/facility-search/results?mediaSelected=water&stat
 # http://www.nrel.gov/docs/fy12osti/55961.pdf
 # https://www.justice.gov/enrd/ENRD_Assets/ENRD_2008_Accomplishments_Report_Final_508.pdf
 # https://echo.epa.gov/system/files/State%20Storyboard%20Majors%202008%203.11.11.pdf
+# https://www.epa.gov/region02/waste/dupont_pompton/pdf/lautenberg_PR_12-2-2010.pdf
 
 # ...Except these PDFs
 https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
