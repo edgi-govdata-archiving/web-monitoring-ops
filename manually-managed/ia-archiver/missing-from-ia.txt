@@ -1148,6 +1148,14 @@ https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B7C0613
 https://www.epa.gov/eco-research/methods-models-tools-and-databases-ecosystems-research
 https://www.blm.gov/programs/natural-resources/forests-and-woodlands/biomass-and-bioenergy/montana
 https://www.blm.gov/programs/fish-and-wildlife/fisheries-and-aquatics/about-the-program/colorado
+https://www.epa.gov/enforcement/landowner-liability-protections
+https://www.epa.gov/air-research/community-multi-scale-air-quality-model-fact-sheet
+https://www.epa.gov/npdes/npdes-resources
+
+
+# USGS Science Explorer has changed drastically and maybe collapsed all the old versions together:
+https://www.usgs.gov/science/science-explorer?offset=20&lq=endangered+species
+https://www.usgs.gov/science/science-explorer?lq=Plant+Communities&classification=Web+Page
 
 
 # MAYBE A TEMPORARY BLIP?
@@ -1400,6 +1408,45 @@ http://www.ncep.noaa.gov/newsletter/march2014/printable.shtml
 # -----
 # Now at: https://www1.eere.energy.gov/library/default.aspx?Page=9
 https://energy.gov/eere/wind/publications
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/sap-33-weather-and-climate-extremes-changing-climate
+http://www.globalchange.gov/browse/reports/sap-33-weather-and-climate-extremes-changing-climate
+# -----
+# Now at: https://www.globalchange.gov/browse/reports?f[0]=field_report_organization%3A182
+http://www.globalchange.gov/browse/reports?f[0]=field_report_organization%3A182
+# -----
+# Now at: https://science.gsfc.nasa.gov/cisto/istr/
+http://science.gsfc.nasa.gov/earth/cryosphere/index.cfm?fuseAction=home.main&navOrgCode=606.3&navTab=nav_about_us
+# -----
+# Now at: https://www.globalchange.gov/browse/reports?page=2
+http://www.globalchange.gov/browse/reports?page=2
+# -----
+# Now at: https://www.epa.gov/ground-level-ozone-pollution/streamlining-sip-process
+https://www.epa.gov/ozone-pollution/streamlining-sip-process
+# -----
+# Now at: https://www.epa.gov/greeningepa/region-8-office
+http://epa.gov/greeningepa/region-8-office
+# -----
+# Now at: https://www.census.gov/topics/business-economy/information.html
+https://www.census.gov/econ/index.html
+# -----
+# Now at: https://www.epa.gov/superfund/hrs-subsurface-intrusion-component
+https://www.epa.gov/superfund/hrs-subsurface-intrusion
+# -----
+# Now at: https://www.epa.gov/climateleadership/center-corporate-climate-leadership-ghg-emission-factors-hub
+https://www.epa.gov/climateleadership/ghg-emission-factors-hub
+
+
+# NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
+# https://nomads.ncdc.noaa.gov/
+# https://nomads.ncdc.noaa.gov/ncep/NCEP
+# https://nomads.ncdc.noaa.gov/EnsProb/
+# https://nomads.ncdc.noaa.gov/data/gens/
+# https://nomads.ncdc.noaa.gov/data/ndfd/
+# https://nomads.ncdc.noaa.gov/data/srrs/
+# https://nomads.ncdc.noaa.gov/thredds/catalog/gens3/catalog.html
+# https://nomads.ncdc.noaa.gov/data/gdas/
+# https://nomads.ncdc.noaa.gov/cgi-bin/ncdc-ui/define-collection.pl?model_sys=narr
 
 
 # MOVED AND BROKEN PAGES
@@ -1444,6 +1491,7 @@ https://energy.gov/eere/wind/publications
 # http://www.ncep.noaa.gov/newsletter/january2017/newsletter.xml
 # https://www.blm.gov/programs/national-conservation-lands/about/data-and-resources
 # https://www.blm.gov/wy/st/en/programs/energy.html
+# https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/about/
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
@@ -1457,6 +1505,7 @@ https://www.epa.gov/statelocalenergy/energy-efficiency-water-and-wastewater-faci
 https://www.epa.gov/tribal/region-4-tribal-fy18-notice-funds-availability
 https://www.epa.gov/tribal/region-4-tribal-fy19-notice-funds-availability
 https://www.epa.gov/heat-islands/houston-downtown-management-districts-vertical-garden-green-wall-grant-program
+https://www.epa.gov/research/ncse-conference-2017-integrating-environment-health
 # 
 # No longer exists via server completely gone
 # https://climate.dot.gov/
@@ -1587,6 +1636,7 @@ https://echo.epa.gov/facilities/facility-search/results?mediaSelected=water&stat
 # https://www.justice.gov/enrd/ENRD_Assets/ENRD_2008_Accomplishments_Report_Final_508.pdf
 # https://echo.epa.gov/system/files/State%20Storyboard%20Majors%202008%203.11.11.pdf
 # https://www.epa.gov/region02/waste/dupont_pompton/pdf/lautenberg_PR_12-2-2010.pdf
+# http://sncaadvisorycommittee.noaa.gov/Portals/0/Meeting-Documents/March-2017-Presentations/Covi_HamptonRoadsAdForum_2016SocialCoastAbstract.pdf
 
 # ...Except these PDFs
 https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
