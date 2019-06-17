@@ -1151,6 +1151,19 @@ https://www.blm.gov/programs/fish-and-wildlife/fisheries-and-aquatics/about-the-
 https://www.epa.gov/enforcement/landowner-liability-protections
 https://www.epa.gov/air-research/community-multi-scale-air-quality-model-fact-sheet
 https://www.epa.gov/npdes/npdes-resources
+https://www.epa.gov/goldkingmine/gold-king-mine-watershed-fact-sheet
+https://www.epa.gov/waterdata/table-available-cycles-rad
+https://www.epa.gov/healthresearch/health-research-fact-sheets
+https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7BB9CB1E5B-21D4-4DBD-A38F-22BF3C5A1BDF%7D&xsl=metadata_to_html_full
+https://www.epa.gov/renewable-fuel-standard-program/gevo-inc-approval
+https://www.epa.gov/npdes/final-2015-msgp-documents
+https://data.nodc.noaa.gov/jason2/
+https://www.epa.gov/asbestos/epas-notification-rules-and-regulations-regarding-demolition-asbestos-containing-structures
+
+
+# Potential duplicate page?
+# This is the same content as: https://www.epa.gov/climateleadership/f-ghg-emissions-reduction-efforts-2014-flat-panel-display-supplier-profiles
+https://www.epa.gov/climateleadership/f-ghg-emissions-reduction-efforts-2014-flat-panel-display-supplier-profiles-0
 
 
 # USGS Science Explorer has changed drastically and maybe collapsed all the old versions together:
@@ -1435,6 +1448,23 @@ https://www.epa.gov/superfund/hrs-subsurface-intrusion
 # -----
 # Now at: https://www.epa.gov/climateleadership/center-corporate-climate-leadership-ghg-emission-factors-hub
 https://www.epa.gov/climateleadership/ghg-emission-factors-hub
+# -----
+# Now at: https://science.gsfc.nasa.gov/earth/wallops/
+http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&navOrgCode=610.W&navTab=nav_about_us
+# -----
+# Now at: https://www.epa.gov/faca/national-and-governmental-advisory-committees-meetings
+https://www.epa.gov/faca/nac-meetings
+# -----
+# Now at: https://www.epa.gov/climateleadership/f-ghg-emissions-reduction-efforts-fy2014-flat-panel-display-supplier-profiles
+# Oddity, the old URL redirects to the 2012 results: https://www.epa.gov/climateleadership/f-ghg-emissions-reduction-efforts-fy2012-flat-panel-display-supplier-profiles
+https://www.epa.gov/climateleadership/f-ghg-emissions-reduction-efforts-2014-flat-panel-display-supplier-profiles
+# -----
+# Now at: https://www.energy.gov/
+# Also a duplicate of http://energy.gov/
+http://www.doe.gov/
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/ipcc-climate-change-2014-impacts-adaptation-and-vulnerability
+http://www.globalchange.gov/browse/reports/ipcc-climate-change-2014-impacts-adaptation-and-vulnerability
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1465,6 +1495,9 @@ https://www.epa.gov/climateleadership/ghg-emission-factors-hub
 # ------
 # Now at: https://library.noaa.gov/Collections/Rare-Books
 # https://www.lib.noaa.gov/collections/rare.html
+# ------
+# Now at: [404]: https://library.noaa.gov/services/technical.html
+# https://www.lib.noaa.gov/services/technical.html
 
 
 # No longer exists; has not existed for a long time
@@ -1492,6 +1525,10 @@ https://www.epa.gov/climateleadership/ghg-emission-factors-hub
 # https://www.blm.gov/programs/national-conservation-lands/about/data-and-resources
 # https://www.blm.gov/wy/st/en/programs/energy.html
 # https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/about/
+# https://www.whitehouse.gov/administration/eop/ceq/initiatives/clean-water
+# https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/2015/fy2016costrecovery.html
+# https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/2015/fy2016costrecovery.print.html
+# https://www.epa.gov/pesticides/draft-risk-assessments-five-pesticides-including-aldicarb-and-coumaphos-available-public
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
@@ -1506,6 +1543,9 @@ https://www.epa.gov/tribal/region-4-tribal-fy18-notice-funds-availability
 https://www.epa.gov/tribal/region-4-tribal-fy19-notice-funds-availability
 https://www.epa.gov/heat-islands/houston-downtown-management-districts-vertical-garden-green-wall-grant-program
 https://www.epa.gov/research/ncse-conference-2017-integrating-environment-health
+https://www.epa.gov/ust/underground-storage-tank-ust-delivery-prohibition
+https://www.epa.gov/international-cooperation/documents-related-us-trade-and-investment-policy-making-process
+https://www.epa.gov/trinationalanalysis/waste-management-federal-facilities-2016-tri-national-analysis
 # 
 # No longer exists via server completely gone
 # https://climate.dot.gov/
