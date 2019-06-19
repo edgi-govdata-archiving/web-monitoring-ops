@@ -1465,6 +1465,9 @@ http://www.doe.gov/
 # -----
 # Now at: https://www.globalchange.gov/browse/reports/ipcc-climate-change-2014-impacts-adaptation-and-vulnerability
 http://www.globalchange.gov/browse/reports/ipcc-climate-change-2014-impacts-adaptation-and-vulnerability
+# -----
+# Now at: https://www.epa.gov/aboutepa/organization-epas-region-2-office-new-york-city
+https://www.epa.gov/aboutepa/organization-chart-epas-region-2-office
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
