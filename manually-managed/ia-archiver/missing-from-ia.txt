@@ -1159,11 +1159,26 @@ https://www.epa.gov/renewable-fuel-standard-program/gevo-inc-approval
 https://www.epa.gov/npdes/final-2015-msgp-documents
 https://data.nodc.noaa.gov/jason2/
 https://www.epa.gov/asbestos/epas-notification-rules-and-regulations-regarding-demolition-asbestos-containing-structures
+https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-industry/2016-control-techniques-guidelines-oil-and
+https://www.epa.gov/research-grants/14th-annual-p3-awards-national-student-design-competition-sustainability-focusing
+https://www.epa.gov/indoor-air-quality-iaq/tribal-indoor-air-quality-programs-spotlight
+https://www.epa.gov/ftta/epa-patents-available-licensing-pollution-prevention
+https://www.epa.gov/arc-x/tools-water-related-climate-change-adaptation
+https://www.epa.gov/saferchoice/safer-choice-partner-and-stakeholder-summit-2015
 
 
 # Potential duplicate page?
 # This is the same content as: https://www.epa.gov/climateleadership/f-ghg-emissions-reduction-efforts-2014-flat-panel-display-supplier-profiles
 https://www.epa.gov/climateleadership/f-ghg-emissions-reduction-efforts-2014-flat-panel-display-supplier-profiles-0
+
+# Possibly all the same page:
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-2012_og_lease_sales=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-colorado_2017_oil_and_gas_lease_=0&qt-energy_colorado_2016_lease_sales=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-co_2013_lease_sales=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-energy_colorado_2016_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-energy_colorado_2016_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-energy_colorado_2016_lease_sales=3
 
 
 # USGS Science Explorer has changed drastically and maybe collapsed all the old versions together:
@@ -1468,6 +1483,19 @@ http://www.globalchange.gov/browse/reports/ipcc-climate-change-2014-impacts-adap
 # -----
 # Now at: https://www.epa.gov/aboutepa/organization-epas-region-2-office-new-york-city
 https://www.epa.gov/aboutepa/organization-chart-epas-region-2-office
+# -----
+# Now at: https://science.gsfc.nasa.gov/solarsystem/astrochemistry/
+http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCode=691&navTab=nav_about_us
+# -----
+# Now at: https://www.epa.gov/re-powering
+https://www.epa.gov/oswercpa
+# -----
+# Now at: https://www.ncep.noaa.gov/news/ncwcp/s016.shtml
+# Tag? "media-gallery"
+http://www.ncep.noaa.gov/news/ncwcp/s016.shtml
+# -----
+# Now at: https://www.epa.gov/greeningepa/region-3-office
+http://epa.gov/greeningepa/region-3-office
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1532,6 +1560,7 @@ https://www.epa.gov/aboutepa/organization-chart-epas-region-2-office
 # https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/2015/fy2016costrecovery.html
 # https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/2015/fy2016costrecovery.print.html
 # https://www.epa.gov/pesticides/draft-risk-assessments-five-pesticides-including-aldicarb-and-coumaphos-available-public
+# https://www.epa.gov/npdes/outreach_files/web-based_training/2014/WQBELs%20III/WQBELs%20Part%20III%20Determining%20the%20Need%20for%20Chemical-specific%20WQBELs%20-%20Presenter%20output/presentation.html
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
