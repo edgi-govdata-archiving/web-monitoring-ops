@@ -1,10 +1,10 @@
-# 2019-07-21: Differ Process Pool Broken
+# 2019-07-21: Differ Broken
 
 ## Summary
 
 One of the diffing service pods started failing and returning a variety of errors, causing downstream errors in the DB’s auto-analysis job. @Mr0grog was offline at a camp and was unable to address it for a full day.
 
-The problem appears to have been caused by a broken process pool.
+The problem appears to have been caused by a broken executor.
 
 
 ## Timeline
@@ -45,7 +45,6 @@ Rob restarts all the differ pods one by one using:
 After monitoring Sentry for half an hour, all errors seem to have stopped and the incident is resolved.
 
 Plan to look into the cause and possible code fixes in more detail tomorrow.
-
 
 
 ## Lessons
