@@ -1165,6 +1165,20 @@ https://www.epa.gov/indoor-air-quality-iaq/tribal-indoor-air-quality-programs-sp
 https://www.epa.gov/ftta/epa-patents-available-licensing-pollution-prevention
 https://www.epa.gov/arc-x/tools-water-related-climate-change-adaptation
 https://www.epa.gov/saferchoice/safer-choice-partner-and-stakeholder-summit-2015
+https://www.epa.gov/renewable-fuel-standard-program/renewable-identification-numbers-rins-under-renewable-fuel-standard
+https://www.epa.gov/hfstudy/summary-technical-workshop-case-studies-assess-potential-impacts-hydraulic-fracturing
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-co_2013_lease_sales=3&qt-energy_colorado_2016_lease_sales=1
+https://www.epa.gov/arc-x/climate-adaptation-and-water-quality
+https://www.epa.gov/hfstudy/retrospective-case-study-raton-basin-colorado
+https://www.epa.gov/csapr/cross-state-air-pollution-rule-csapr-allowance-allocations-and-templates
+https://www.epa.gov/water-pollution-control-section-106-grants/instructions-applying-fy-2015-section-106-monitoring
+https://www.epa.gov/aboutepa/about-chesapeake-bay-program-office
+https://www.epa.gov/greenpower/making-environmental-claims
+https://www.blm.gov/programs/energy-and-minerals/helium/helium-statistical-reports
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=1&qt-co_2013_lease_sales=2
+https://www.fhwa.dot.gov/environment/sustainability/resilience/pilots/2013-2015_pilots/campo/index.cfm
+https://www.epa.gov/water-research/nutrients-management-epa-research-journal-articles-and-reports
+https://www.epa.gov/homeland-security-research/sam
 
 
 # Potential duplicate page?
@@ -1496,6 +1510,54 @@ http://www.ncep.noaa.gov/news/ncwcp/s016.shtml
 # -----
 # Now at: https://www.epa.gov/greeningepa/region-3-office
 http://epa.gov/greeningepa/region-3-office
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/energy-literacy-essential-principles-and-fundamental-concepts-energy-education
+http://www.globalchange.gov/browse/reports/energy-literacy-essential-principles-and-fundamental-concepts-energy-education
+# -----
+# Now at: https://science.gsfc.nasa.gov/earth/gmao/
+http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCode=610.1&navTab=nav_about_us
+# -----
+# Now at: https://www.epa.gov/naaqs/ozone-o3-standards-risk-and-exposure-assessments-review-completed-2015
+https://www.epa.gov/naaqs/ozone-o3-standards-risk-and-exposure-assessments-current-review
+# -----
+# Now at: https://www.ncep.noaa.gov/news/ncwcp/s035.shtml
+http://www.ncep.noaa.gov/news/ncwcp/s035.shtml
+# -----
+# Now at: https://www.epa.gov/energy-independence
+https://www.epa.gov/cleanpowerplantoolbox/survey-existing-state-policies-and-programs-reduce-power-sector-co2-emissions
+# -----
+# Now at: https://www.ncep.noaa.gov/newsletter/december2013/printable.shtml
+http://www.ncep.noaa.gov/newsletter/december2013/printable.shtml
+# -----
+# Now at: https://www.epa.gov/energy-independence
+https://www.epa.gov/cleanpowerplantoolbox/clean-power-plan-implementation-update
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/state-climate-summaries
+http://www.globalchange.gov/browse/reports/state-climate-summaries
+# -----
+# Now at: https://www.epa.gov/aboutepa/organization-epas-region-9-office-san-francisco
+https://www.epa.gov/aboutepa/organization-chart-epas-region-9-office
+# -----
+# Now at: https://www.bia.gov/bia/ots/division-natural-resources/branch-water-resources
+https://www.bia.gov/WhoWeAre/BIA/OTS/NaturalResources/Water/index.htm
+# -----
+# Now at: https://www.blm.gov/programs/lands-and-realty/nevada/snplma
+https://www.blm.gov/basic/programs-lands-and-realty-regional-information-nevada-snplma-overview
+# -----
+# Now at: https://science.gsfc.nasa.gov/astrophysics/xray/
+http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode=662&navTab=nav_about_us
+# -----
+# Now at: https://www.epa.gov/aboutepa/population-surrounding-3771-rcra-corrective-action-sites
+https://www.epa.gov/aboutepa/population-surrounding-3720-rcra-corrective-action-sites
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/ipcc-climate-change-2014-impacts-adaptation-and-vulnerability-summaries-frequently
+http://www.globalchange.gov/browse/reports/ipcc-climate-change-2014-impacts-adaptation-and-vulnerability-summaries-frequently
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/nrc-informing-effective-response-climate-change-america%E2%80%99s-climate-choices-panel
+http://www.globalchange.gov/browse/reports/nrc-informing-effective-response-climate-change-america%E2%80%99s-climate-choices-panel
+# -----
+# Now at: https://www.globalchange.gov/browse/reports?f[0]=field_report_organization%3A177
+http://www.globalchange.gov/browse/reports?f[0]=field_report_organization%3A177
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1529,6 +1591,9 @@ http://epa.gov/greeningepa/region-3-office
 # ------
 # Now at: [404]: https://library.noaa.gov/services/technical.html
 # https://www.lib.noaa.gov/services/technical.html
+# ------
+# Now at: https://library.noaa.gov/About/Library-Network
+# https://www.lib.noaa.gov/about/lib_network.html
 
 
 # No longer exists; has not existed for a long time
@@ -1561,6 +1626,10 @@ http://epa.gov/greeningepa/region-3-office
 # https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/2015/fy2016costrecovery.print.html
 # https://www.epa.gov/pesticides/draft-risk-assessments-five-pesticides-including-aldicarb-and-coumaphos-available-public
 # https://www.epa.gov/npdes/outreach_files/web-based_training/2014/WQBELs%20III/WQBELs%20Part%20III%20Determining%20the%20Need%20for%20Chemical-specific%20WQBELs%20-%20Presenter%20output/presentation.html
+# https://www.epa.gov/caa-permitting/oregon-bioenergy-non-title-v-permit-and-technical-support-document
+# https://www.census.gov/econ/susb/index.html
+# https://www.epa.gov/renewable-fuel-standard-program/modifications-renewable-fuel-standard-program-additional-resources
+# https://www.epa.gov/pesticides/clarification-registration-instructions-may-5-2016-endangered-species-assessments-webinar
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
@@ -1709,6 +1778,8 @@ https://echo.epa.gov/facilities/facility-search/results?mediaSelected=water&stat
 # https://echo.epa.gov/system/files/State%20Storyboard%20Majors%202008%203.11.11.pdf
 # https://www.epa.gov/region02/waste/dupont_pompton/pdf/lautenberg_PR_12-2-2010.pdf
 # http://sncaadvisorycommittee.noaa.gov/Portals/0/Meeting-Documents/March-2017-Presentations/Covi_HamptonRoadsAdForum_2016SocialCoastAbstract.pdf
+# https://yosemite.epa.gov/sab/sabproduct.nsf/13B1FD83815FA11885257A410064E0DC/$File/EPA-CASAC-12-005-unsigned.pdf
+# https://yosemite.epa.gov/sab/sabproduct.nsf/541F467A563F8CC585257328004D363B/$File/RESEARCH+OF+HERL++++CASAC-89-021_89021_5-22-1995_235.pdf
 
 # ...Except these PDFs
 https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
