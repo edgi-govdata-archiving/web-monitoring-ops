@@ -1179,6 +1179,26 @@ https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-le
 https://www.fhwa.dot.gov/environment/sustainability/resilience/pilots/2013-2015_pilots/campo/index.cfm
 https://www.epa.gov/water-research/nutrients-management-epa-research-journal-articles-and-reports
 https://www.epa.gov/homeland-security-research/sam
+https://www.epa.gov/renewable-fuel-standard-program/farmers-energy-cardinal-llc-approval
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=0&qt-energy_colorado_2016_lease_sales=2
+https://www.epa.gov/hfstudy/national-hydraulic-fracturing-study-evaluation-existing-production-well-file-contents-qapp-0
+https://www.census.gov/econ/wholesale.html
+https://www.st.nmfs.noaa.gov/commercial-fisheries/
+https://www.epa.gov/npdes/peak-flows-sewage-treatment-plants
+https://www.st.nmfs.noaa.gov/economics/mpa/index
+https://www.epa.gov/re-powering/re-powering-fact-sheet-geothermal-technologies
+https://www.epa.gov/sustainable-water-infrastructure/energy-efficiency-water-utilities
+https://www.epa.gov/greenpower/green-power-community-tools-and-resources
+https://www.epa.gov/npdes/sanitary-sewer-overflows-ssos
+https://www.epa.gov/npdes/npdes-whole-effluent-toxicity-wet-training
+https://www.epa.gov/renewable-fuel-standard-program/renewable-fuels-volume-standards-timeline-announced-documents
+https://www.epa.gov/waterdata/waters-mapping-services
+https://www.epa.gov/aboutepa/about-office-research-and-development-ord
+https://www.epa.gov/tribal/region-10-tribal-environmental-gap-success-stories
+https://www.epa.gov/pesticide-contacts/contacts-office-pesticide-programs-information-technology-and-resources
+https://www.epa.gov/water-research/rapid-benefit-indicators-rbi-approach
+https://www.epa.gov/endangered-species/assessing-pesticides-under-endangered-species-act
+https://www.epa.gov/arc-x/smart-growth-along-riverfront-helps-manage-stormwater-iowa-city-iowa
 
 
 # Potential duplicate page?
@@ -1198,10 +1218,6 @@ https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-le
 # USGS Science Explorer has changed drastically and maybe collapsed all the old versions together:
 https://www.usgs.gov/science/science-explorer?offset=20&lq=endangered+species
 https://www.usgs.gov/science/science-explorer?lq=Plant+Communities&classification=Web+Page
-
-
-# MAYBE A TEMPORARY BLIP?
-# https://www.epa.gov/hfstudy/national-hydraulic-fracturing-study-evaluation-existing-production-well-file-contents-qapp-0
 
 
 # MOVED PAGES
@@ -1235,6 +1251,15 @@ http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&&navOrgCode=69
 # Now at: https://science.gsfc.nasa.gov/earth/pressreleases
 Same setup as above.
 http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=highlight_prweb.main&navOrgCode=610&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/astrophysics/instruments/
+http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&navOrgCode=660.3&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/astrophysics/xray/
+http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navOrgCode=662&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/earth/giss/
+http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode=611&navTab=nav_about_us
 # ------
 # Now at: https
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
@@ -1558,6 +1583,24 @@ http://www.globalchange.gov/browse/reports/nrc-informing-effective-response-clim
 # -----
 # Now at: https://www.globalchange.gov/browse/reports?f[0]=field_report_organization%3A177
 http://www.globalchange.gov/browse/reports?f[0]=field_report_organization%3A177
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/identification-arctic-marine-areas-heightened-ecological-and-cultural-significance
+http://www.globalchange.gov/browse/reports/identification-arctic-marine-areas-heightened-ecological-and-cultural-significance
+# -----
+# Now at: https://arpa-e.energy.gov/?q=project-tech-areas/electrical-efficiency&page=1
+http://arpa-e.energy.gov/?q=project-tech-areas/electrical-efficiency&page=1
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/ipcc-climate-change-2014-mitigation-climate-change-summary-policymakers-and-technical
+http://www.globalchange.gov/browse/reports/ipcc-climate-change-2014-mitigation-climate-change-summary-policymakers-and-technical
+# -----
+# Now at: https://earthdata.nasa.gov/esdis/eso/standards-and-references
+https://earthdata.nasa.gov/user-resources/standards-and-references
+# -----
+# Now at: https://www.eia.gov/tools/faqs/faq.php?id=527&t=4
+http://www.eia.gov/tools/faqs/faq.cfm?id=527&t=4
+# -----
+# Now at: https://www.epa.gov/greeningepa/andrew-w-breidenbach-environmental-research-center-awberc
+http://epa.gov/greeningepa/andrew-w-breidenbach-environmental-research-center-awberc
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1630,6 +1673,10 @@ http://www.globalchange.gov/browse/reports?f[0]=field_report_organization%3A177
 # https://www.census.gov/econ/susb/index.html
 # https://www.epa.gov/renewable-fuel-standard-program/modifications-renewable-fuel-standard-program-additional-resources
 # https://www.epa.gov/pesticides/clarification-registration-instructions-may-5-2016-endangered-species-assessments-webinar
+# https://www.data.gov/dataset?_organization_limit=0&groups=climate5434&tags=mississippi&organization=dhs-gov
+# https://www.epa.gov/renewable-fuel-standard-program/2013-renewable-fuel-standards-renewable-fuel-standard-program-rfs2-0
+# https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Monitoring%20and%20Reporting/Monitoring%20and%20Reporting%20Requirements%20in%20NPDES%20Permits%20-%20Presenter%20output/presentation.html
+# https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Onshore_Operations.print.html
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
@@ -1647,6 +1694,8 @@ https://www.epa.gov/research/ncse-conference-2017-integrating-environment-health
 https://www.epa.gov/ust/underground-storage-tank-ust-delivery-prohibition
 https://www.epa.gov/international-cooperation/documents-related-us-trade-and-investment-policy-making-process
 https://www.epa.gov/trinationalanalysis/waste-management-federal-facilities-2016-tri-national-analysis
+https://www.epa.gov/trinationalanalysis/chemicals-special-concern-2016-tri-national-analysis
+http://epa.gov/citizen-science/additional-resources-citizen-science-environmental-protection
 # 
 # No longer exists via server completely gone
 # https://climate.dot.gov/
@@ -1702,6 +1751,10 @@ https://www.epa.gov/trinationalanalysis/waste-management-federal-facilities-2016
 # https://climate.dot.gov/site-map.html
 # https://climate.dot.gov/state-local/local-action-plans.html
 # https://climate.dot.gov/topics.html
+#
+# No longer exists; redirects to non-equivalent page
+# https://www.epa.gov/statelocalclimate/state-energy-co2-emissions
+# https://www.epa.gov/statelocalclimate/state-public-utility-commission-overview-energy-and-environment-officials
 
 
 # These were alwasy 404s, not sure why we have them listed in the first place
@@ -1780,6 +1833,7 @@ https://echo.epa.gov/facilities/facility-search/results?mediaSelected=water&stat
 # http://sncaadvisorycommittee.noaa.gov/Portals/0/Meeting-Documents/March-2017-Presentations/Covi_HamptonRoadsAdForum_2016SocialCoastAbstract.pdf
 # https://yosemite.epa.gov/sab/sabproduct.nsf/13B1FD83815FA11885257A410064E0DC/$File/EPA-CASAC-12-005-unsigned.pdf
 # https://yosemite.epa.gov/sab/sabproduct.nsf/541F467A563F8CC585257328004D363B/$File/RESEARCH+OF+HERL++++CASAC-89-021_89021_5-22-1995_235.pdf
+# https://www.epa.gov/region02/waste/dupont_pompton/pdf/projectoperations_plan_revised_cmi_wp_appendix_f.pdf
 
 # ...Except these PDFs
 https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
