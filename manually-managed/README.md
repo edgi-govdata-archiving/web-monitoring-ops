@@ -21,9 +21,9 @@ TBD
 
 ## Postgres via RDS
 
-[Web-monitoring-db’s][-db] database is a PostgreSQL database managed via RDS.
+[Web-monitoring-db’s][-db] database is a PostgreSQL database managed via RDS. We have separate production and staging databases, and connect to them via a Kubernetes service.
 
-TBD
+For details, see [`rds/README.md`](./rds/README.md).
 
 
 ## ETL
