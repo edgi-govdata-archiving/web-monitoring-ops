@@ -27,6 +27,7 @@ We have two databases:
 
             ```
             { DBInstanceClassMemory * (2 / 5) * (1 / (8 * 1024)) }
+              ^ Available mem          ^ Ratio   ^ Convert to units of 8 KB
             ```
 
 2. `web-monitoring-db-staging-aws-west2a` is the staging database. It is configured as:
