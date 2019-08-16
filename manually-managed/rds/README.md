@@ -2,6 +2,8 @@
 
 The Postgres database that backs [web-monitoring-db][] is managed through Amazon RDS, and so is manually configured instead of through Kubernetes. To provide access to Kubernetes, we use an “external” service named `rds`. See [`/examples/services.yaml`][services-example] in this repo for an example.
 
+## Databases
+
 We have two databases:
 
 1. `web-monitoring-db-production-a` is the production database (the `-a` is because it is the successor to an older produciton database). It is configured as:
@@ -34,6 +36,22 @@ We have two databases:
     - VPC: **Default VPC**
     - Security Groups: **Default**
     - Parameters: **Default**
+
+
+## References
+
+These docs were helpful in getting our RDS instances set up well:
+
+- [Tuning Your PostgreSQL Server (Postgres Wiki)](https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server)
+- [Server Configuration Tuning in PostgreSQL (Packt Pub)](https://hub.packtpub.com/server-configuration-tuning-postgresql/)
+- [Tuning Postgres on MacOS](http://big-elephants.com/2012-12/tuning-postgres-on-macos/) (Useful for its clear descriptions, but don’t follow the advice directly, since it’s focused around a dev server with few connections and small-ish data, not a production one.)
+- [Configuring memory for Postgres](https://www.citusdata.com/blog/2018/06/12/configuring-work-mem-on-postgres/) offers really useful guidance on `work_mem`, which is apparently often misunderstood, and which can be thorny to optimize.
+- [Is Your Postgres Query Starved for Memory?](http://patshaughnessy.net/2016/1/22/is-your-postgres-query-starved-for-memory) Even more useful details on `work_mem`.
+- [Increasing work_mem and shared_buffers on Postgres 9.2 significantly slows down queries (StackExchange)](https://dba.stackexchange.com/questions/27893/increasing-work-mem-and-shared-buffers-on-postgres-9-2-significantly-slows-down)
+- [Performance Tuning Queries in PostgreSQL](https://www.geekytidbits.com/performance-tuning-postgres/)
+
+Using `pg_table_size`, `pg_relation_size`, `pg_total_relation_size`, `pg_indexes_size`, etc. was also extremely helpful in understanding the actual memory needs and tradeoffs involved in configuring memory settings and in determining instance size. [“How to Get Table, Database, Indexes, Tablespace, and Value Size in PostgreSQL”](http://www.postgresqltutorial.com/postgresql-database-indexes-table-size/) is a good reference for that.
+
 
 
 [web-monitoring-db]: https://github.com/edgi-govdata-archiving/web-monitoring-db
