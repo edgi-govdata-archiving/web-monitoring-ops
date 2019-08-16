@@ -13,7 +13,7 @@ We have two databases:
     - Storage: **20+ GB Standard SSD** with autoscaling
     - VPC: **Same VPC as Kubernetes**
     - Security Groups: **Kubernetes security group** + **custom Postgres security group** for external access.
-    - Custom parameter group based on the defaults. The JSON configuration for the parameter group is in [`web-monitoring-db-production-a-params.json`][web-monitoring-db-production-a-params], but with these modifications:
+    - Custom parameter group based on the defaults. The JSON configuration for the parameter group is in [`web-monitoring-db-production-a-params.json`][web-monitoring-db-production-a-params] [(see below)](#other-notes), but with these modifications:
         - `work_mem` 16 MB (much bigger than default, which is 1 MB, but not huge)
         - `shared_buffers` 2/5 of available memory
         - `effective_cache_size` 3/4 of available memory
@@ -52,6 +52,15 @@ These docs were helpful in getting our RDS instances set up well:
 - [Performance Tuning Queries in PostgreSQL](https://www.geekytidbits.com/performance-tuning-postgres/)
 
 Using `pg_table_size`, `pg_relation_size`, `pg_total_relation_size`, `pg_indexes_size`, etc. was also extremely helpful in understanding the actual memory needs and tradeoffs involved in configuring memory settings and in determining instance size. [“How to Get Table, Database, Indexes, Tablespace, and Value Size in PostgreSQL”](http://www.postgresqltutorial.com/postgresql-database-indexes-table-size/) is a good reference for that.
+
+
+## Other Notes
+
+The parameter groups file can be generated with the AWS CLI app:
+
+```sh
+aws rds describe-db-parameters --db-parameter-group-name web-monitoring-db-production-a-params > ./manually-managed/rds/web-monitoring-db-production-a-params.json
+```
 
 
 
