@@ -52,7 +52,7 @@ The parameter groups file can be generated with the AWS CLI app:
 aws rds describe-db-parameters --db-parameter-group-name web-monitoring-db-production-a-params > ./manually-managed/rds/web-monitoring-db-production-a-params.json
 ```
 
-**Parameter Expressions:** AWS allows you to use expressions and variables for some settings settings, but they are limited and can wind up looking kind of funny. For example, `shared buffers` is:
+**Parameter Expressions:** AWS allows you to use expressions and variables for some settings, but they are limited and can wind up looking kind of funny. For example, `shared buffers` is:
 
 ```
 {DBInstanceClassMemory*2/40960}
