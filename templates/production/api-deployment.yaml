@@ -115,4 +115,4 @@ spec:
               name: app-secrets
               key: token_private_key
         - name: INCREMENTAL_UPDATE
-          value: "3"
+          value: "5"

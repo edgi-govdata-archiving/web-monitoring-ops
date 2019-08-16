@@ -51,7 +51,7 @@ spec:
           value: edgi-wm-db-internal
         - name: CACHE_DATE_DIFFER
           value: "2018-10-23T07:00:00Z"
-        - name: DATABASE_RDS
+        - name: DATABASE_URL
           valueFrom:
             secretKeyRef:
               name: app-secrets
@@ -106,4 +106,4 @@ spec:
               name: app-secrets
               key: token_private_key
         - name: INCREMENTAL_UPDATE
-          value: "4"
+          value: "5"
