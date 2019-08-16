@@ -57,4 +57,4 @@ Using `pg_table_size`, `pg_relation_size`, `pg_total_relation_size`, `pg_indexes
 
 [web-monitoring-db]: https://github.com/edgi-govdata-archiving/web-monitoring-db
 [web-monitoring-db-production-a-params]: ./web-monitoring-db-production-a-params.json
-[services-example]: ../examples/services.yaml
+[services-example]: ../../examples/services.yaml
