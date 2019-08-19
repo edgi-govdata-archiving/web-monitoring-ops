@@ -1199,6 +1199,11 @@ https://www.epa.gov/pesticide-contacts/contacts-office-pesticide-programs-inform
 https://www.epa.gov/water-research/rapid-benefit-indicators-rbi-approach
 https://www.epa.gov/endangered-species/assessing-pesticides-under-endangered-species-act
 https://www.epa.gov/arc-x/smart-growth-along-riverfront-helps-manage-stormwater-iowa-city-iowa
+https://www.epa.gov/naaqs/lead-pb-air-quality-standards
+https://www.epa.gov/tribal/region-10-tribal-environmental-gap-funding
+https://www.usgs.gov/science/science-explorer?offset=20&lq=human+impacts
+https://www.epa.gov/greenpower/green-power-partnership-requirements
+https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B5AD08978-EAFB-4FBC-B6A4-3A604797FF0E%7D&xsl=metadata_to_html_full
 
 
 # Potential duplicate page?
@@ -1601,6 +1606,12 @@ http://www.eia.gov/tools/faqs/faq.cfm?id=527&t=4
 # -----
 # Now at: https://www.epa.gov/greeningepa/andrew-w-breidenbach-environmental-research-center-awberc
 http://epa.gov/greeningepa/andrew-w-breidenbach-environmental-research-center-awberc
+# -----
+# Now at: https://www.epa.gov/greeningepa/alternative-fuel-vehicle-reports-epa
+http://epa.gov/greeningepa/alternative-fuel-vehicle-reports
+# -----
+# Now at: https://www.globalchange.gov/sites/globalchange/files/Regional_NE_V4.pdf
+http://www.globalchange.gov/sites/globalchange/files/Regional_NE_V4.pdf
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1677,6 +1688,8 @@ http://epa.gov/greeningepa/andrew-w-breidenbach-environmental-research-center-aw
 # https://www.epa.gov/renewable-fuel-standard-program/2013-renewable-fuel-standards-renewable-fuel-standard-program-rfs2-0
 # https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Monitoring%20and%20Reporting/Monitoring%20and%20Reporting%20Requirements%20in%20NPDES%20Permits%20-%20Presenter%20output/presentation.html
 # https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Onshore_Operations.print.html
+# https://www.epa.gov/region02/waste/dupont_pompton/pdf/dupont_third_party_contractor_program.pdf
+# https://www.epa.gov/cleanpowerplantoolbox/emission-guidelines-state-plan-implementation
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
