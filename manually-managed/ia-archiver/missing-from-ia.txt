@@ -1204,6 +1204,11 @@ https://www.epa.gov/tribal/region-10-tribal-environmental-gap-funding
 https://www.usgs.gov/science/science-explorer?offset=20&lq=human+impacts
 https://www.epa.gov/greenpower/green-power-partnership-requirements
 https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B5AD08978-EAFB-4FBC-B6A4-3A604797FF0E%7D&xsl=metadata_to_html_full
+https://www.epa.gov/sites/production/files/2016-03/documents/transcript_estimating_the_health_impacts_of_climate_change_and_clean_energy_programs.pdf
+https://www.epa.gov/sciencematters/epa-science-matters-newsletter-partnerships-protect-chesapeake-bay-published-january
+https://www.epa.gov/research-grants/research-grants-events
+https://www.blm.gov/programs/lands-and-realty/regional-information/california
+https://www.epa.gov/renewable-fuel-standard-program/cellulosic-waiver-credits-under-renewable-fuel-standard-program
 
 
 # Potential duplicate page?
@@ -1218,6 +1223,7 @@ https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-le
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-energy_colorado_2016_lease_sales=0
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-energy_colorado_2016_lease_sales=2
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-energy_colorado_2016_lease_sales=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-2012_og_lease_sales=2&qt-co_2013_lease_sales=2
 
 
 # USGS Science Explorer has changed drastically and maybe collapsed all the old versions together:
@@ -1612,6 +1618,27 @@ http://epa.gov/greeningepa/alternative-fuel-vehicle-reports
 # -----
 # Now at: https://www.globalchange.gov/sites/globalchange/files/Regional_NE_V4.pdf
 http://www.globalchange.gov/sites/globalchange/files/Regional_NE_V4.pdf
+# -----
+# Now at: https://arpa-e.energy.gov/?q=arpa-e-programs/range&order=title&sort=asc
+http://arpa-e.energy.gov/?q=arpa-e-programs/range&order=title&sort=asc
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/our-changing-planet-us-global-change-research-program-fiscal-year-1995
+http://www.globalchange.gov/browse/reports/our-changing-planet-us-global-change-research-program-fiscal-year-1995
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/ipcc-special-report-renewable-energy-sources-and-climate-change-mitigation
+http://www.globalchange.gov/browse/reports/ipcc-special-report-renewable-energy-sources-and-climate-change-mitigation
+# -----
+# Now at: https://www.eia.gov/tools/faqs/faq.php?id=5&t=5
+http://www.eia.gov/tools/faqs/faq.cfm?id=5&t=5
+# -----
+# Now at: https://sncaadvisorycommittee.noaa.gov/Portals/0/Documents-Page/FRN_2016-20705.pdf
+http://sncaadvisorycommittee.noaa.gov/Portals/0/Documents-Page/FRN_2016-20705.pdf
+# -----
+# Now at: https://www.epa.gov/wotus-rule/rapanos-v-united-states-carabell-v-united-states
+http://epa.gov/wotus-rule/rapanos-v-united-states-carabell-v-united-states
+# -----
+# Now at: https://www.epa.gov/ceam/fgets
+https://www.epa.gov/exposure-assessment-models/fgets
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
