@@ -1210,6 +1210,18 @@ https://www.epa.gov/research-grants/research-grants-events
 https://www.blm.gov/programs/lands-and-realty/regional-information/california
 https://www.epa.gov/renewable-fuel-standard-program/cellulosic-waiver-credits-under-renewable-fuel-standard-program
 https://www.globalchange.gov/engage/process-products/NCA3/technical-inputs
+https://www.epa.gov/nps/handbook-developing-watershed-plans-restore-and-protect-our-waters
+https://earthdata.nasa.gov/library?page=3&filter=
+https://earthdata.nasa.gov/library?page=3&filter=&sortby=Size&order=asc
+https://www.epa.gov/hfstudy/case-studies-epas-hydraulic-fracturing-study
+https://www.blm.gov/programs/energy-and-minerals/coal/background
+https://www.epa.gov/chemical-research/toxicology-testing-21st-century-tox21
+https://www.epa.gov/enforcement/resource-conservation-and-recovery-act-rcra-civil-penalty-policy
+https://www.epa.gov/rmp/chemical-safety-alert-safer-technology-and-alternatives
+https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/oregon
+https://www.epa.gov/chemical-research
+https://www.epa.gov/eco-research/ecosystems-and-air-quality
+https://www.epa.gov/water-research/nutrient-management-case-studies
 
 
 # Potential duplicate page?
@@ -1225,6 +1237,62 @@ https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-le
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-energy_colorado_2016_lease_sales=2
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=1&qt-energy_colorado_2016_lease_sales=3
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-2012_og_lease_sales=2&qt-co_2013_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=1&qt-colorado_2017_oil_and_gas_lease_=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=1&qt-colorado_2017_oil_and_gas_lease_=1&qt-2012_og_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-co_2013_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-co_2013_lease_sales=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-co_2013_lease_sales=3&qt-2012_og_lease_sales=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-co_2013_lease_sales=3&qt-2012_og_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=2&qt-2012_og_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=2&qt-2012_og_lease_sales=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=2&qt-colorado_2017_oil_and_gas_lease_=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=2&qt-co_2013_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=2&qt-co_2013_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=0&qt-energy_colorado_2016_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=1&qt-co_2013_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-colorado_2014_oil_and_gas_lease_=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=0&qt-colorado_2017_oil_and_gas_lease_=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=0&qt-colorado_2017_oil_and_gas_lease_=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=0&qt-colorado_2017_oil_and_gas_lease_=2&qt-energy_colorado_2016_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=0&qt-colorado_2017_oil_and_gas_lease_=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=0&qt-energy_colorado_2016_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=0&qt-energy_colorado_2016_lease_sales=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=3&qt-colorado_2014_oil_and_gas_lease_=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=3&qt-colorado_2017_oil_and_gas_lease_=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-co_2013_lease_sales=3&qt-colorado_2017_oil_and_gas_lease_=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-energy_colorado_2016_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-energy_colorado_2016_lease_sales=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-energy_colorado_2016_lease_sales=3&qt-co_2013_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-2012_og_lease_sales=3&qt-energy_colorado_2016_lease_sales=3&qt-co_2013_lease_sales=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=3&qt-2012_og_lease_sales=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=3&qt-colorado_2017_oil_and_gas_lease_=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=3&qt-colorado_2017_oil_and_gas_lease_=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=3&qt-colorado_2017_oil_and_gas_lease_=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=3&qt-energy_colorado_2016_lease_sales=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-colorado_2014_oil_and_gas_lease_=3&qt-energy_colorado_2016_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-co_2013_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-co_2013_lease_sales=0&qt-2012_og_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-co_2013_lease_sales=3&qt-2012_og_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-co_2013_lease_sales=3&qt-2012_og_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-co_2013_lease_sales=3&qt-energy_colorado_2016_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-co_2013_lease_sales=3&qt-energy_colorado_2016_lease_sales=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-2012_og_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-2012_og_lease_sales=0&qt-colorado_2017_oil_and_gas_lease_=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-2012_og_lease_sales=0&qt-co_2013_lease_sales=3
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-2012_og_lease_sales=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-2012_og_lease_sales=2&qt-colorado_2017_oil_and_gas_lease_=2
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-2012_og_lease_sales=2&qt-co_2013_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-2012_og_lease_sales=2&qt-co_2013_lease_sales=1
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=1&qt-2012_og_lease_sales=0
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=1&qt-2012_og_lease_sales=3
 
 
 # USGS Science Explorer has changed drastically and maybe collapsed all the old versions together:
@@ -1272,6 +1340,9 @@ http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navO
 # ------
 # Now at: https://science.gsfc.nasa.gov/earth/giss/
 http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode=611&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/astrophysics/xray/
+http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCode=662&navTab=nav_about_us
 # ------
 # Now at: https
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
@@ -1640,6 +1711,15 @@ http://epa.gov/wotus-rule/rapanos-v-united-states-carabell-v-united-states
 # -----
 # Now at: https://www.epa.gov/ceam/fgets
 https://www.epa.gov/exposure-assessment-models/fgets
+# -----
+# Now at: https://www.bsee.gov/what-we-do/offshore-regulatory-programs/hetc
+https://www.bsee.gov/whatwedo/regulatory-safety-programs/etac
+# -----
+# Now at: https://www.eia.gov/tools/faqs/faq.php?id=69&t=2
+http://www.eia.gov/tools/faqs/faq.cfm?id=69&t=2
+# -----
+# Now at: https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download/?cid=stelprdb1043153
+https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1043153&ext=pdf
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1718,6 +1798,9 @@ https://www.epa.gov/exposure-assessment-models/fgets
 # https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Onshore_Operations.print.html
 # https://www.epa.gov/region02/waste/dupont_pompton/pdf/dupont_third_party_contractor_program.pdf
 # https://www.epa.gov/cleanpowerplantoolbox/emission-guidelines-state-plan-implementation
+# https://www.data.gov/dataset?_organization_limit=0&tags=colorado&groups=climate5434&organization=dhs-gov
+# https://earthdata.nasa.gov/files/2015_DDSRS_Atmosphere.pdf
+https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%20the%20CWA%20and%20NPDES%20Program/Overview%20of%20the%20CWA%20and%20the%20NPDES%20Program%20-%20Presenter%20output/presentation.html
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
@@ -1737,6 +1820,7 @@ https://www.epa.gov/international-cooperation/documents-related-us-trade-and-inv
 https://www.epa.gov/trinationalanalysis/waste-management-federal-facilities-2016-tri-national-analysis
 https://www.epa.gov/trinationalanalysis/chemicals-special-concern-2016-tri-national-analysis
 http://epa.gov/citizen-science/additional-resources-citizen-science-environmental-protection
+https://www.epa.gov/faca/good-neighbor-environmental-board-charter-june-20-2016
 # 
 # No longer exists via server completely gone
 # https://climate.dot.gov/
