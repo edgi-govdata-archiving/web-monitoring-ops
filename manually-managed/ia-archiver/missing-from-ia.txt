@@ -1222,6 +1222,9 @@ https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-effor
 https://www.epa.gov/chemical-research
 https://www.epa.gov/eco-research/ecosystems-and-air-quality
 https://www.epa.gov/water-research/nutrient-management-case-studies
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/bonding
+https://www.epa.gov/homeland-security-research/homeland-security-research-partners
+https://www.epa.gov/arc-x/forms/share-your-feedback-help-us-develop-site
 
 
 # Potential duplicate page?
@@ -1720,6 +1723,9 @@ http://www.eia.gov/tools/faqs/faq.cfm?id=69&t=2
 # -----
 # Now at: https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download/?cid=stelprdb1043153
 https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1043153&ext=pdf
+# -----
+# Now at: https://www.epa.gov/wotus-rule
+https://www.epa.gov/cleanwaterrule/definition-waters-united-states-under-clean-water-act
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1800,6 +1806,7 @@ https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1043153&ex
 # https://www.epa.gov/cleanpowerplantoolbox/emission-guidelines-state-plan-implementation
 # https://www.data.gov/dataset?_organization_limit=0&tags=colorado&groups=climate5434&organization=dhs-gov
 # https://earthdata.nasa.gov/files/2015_DDSRS_Atmosphere.pdf
+# https://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/questions_and_answers.html
 https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%20the%20CWA%20and%20NPDES%20Program/Overview%20of%20the%20CWA%20and%20the%20NPDES%20Program%20-%20Presenter%20output/presentation.html
 #
 # No longer exists via 403
@@ -1821,6 +1828,7 @@ https://www.epa.gov/trinationalanalysis/waste-management-federal-facilities-2016
 https://www.epa.gov/trinationalanalysis/chemicals-special-concern-2016-tri-national-analysis
 http://epa.gov/citizen-science/additional-resources-citizen-science-environmental-protection
 https://www.epa.gov/faca/good-neighbor-environmental-board-charter-june-20-2016
+https://www.epa.gov/heat-islands/urban-and-rural-temperature-trends-proximity-large-us-cities-1951-2000
 # 
 # No longer exists via server completely gone
 # https://climate.dot.gov/
@@ -1959,10 +1967,12 @@ https://echo.epa.gov/facilities/facility-search/results?mediaSelected=water&stat
 # https://yosemite.epa.gov/sab/sabproduct.nsf/13B1FD83815FA11885257A410064E0DC/$File/EPA-CASAC-12-005-unsigned.pdf
 # https://yosemite.epa.gov/sab/sabproduct.nsf/541F467A563F8CC585257328004D363B/$File/RESEARCH+OF+HERL++++CASAC-89-021_89021_5-22-1995_235.pdf
 # https://www.epa.gov/region02/waste/dupont_pompton/pdf/projectoperations_plan_revised_cmi_wp_appendix_f.pdf
+# https://earthdata.nasa.gov/files/NASA_SOP_2012_A_new_pole_hole.pdf
 
 # ...Except these PDFs
 https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
 https://www.epa.gov/sites/production/files/2019-04/documents/final_pndd_guidance_0.pdf
+https://www.epa.gov/sites/production/files/2015-08/documents/absolute-energy-rec-determination-5-22-13.pdf
 
 
 # Skip FTP for now
