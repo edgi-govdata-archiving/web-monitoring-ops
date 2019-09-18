@@ -234,7 +234,6 @@ https://science.energy.gov/news/highlights/?page=44
 https://www.data.gov/dataset?_organization_limit=0&organization=doe-gov&tags=united-states&groups=climate5434
 https://www.fs.fed.us/visit/know-before-you-go/crime-prevention
 https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B6C7CBE2A-6547-4211-A328-6759D11DC117%7D&xsl=metadata_to_html_full
-http://epa.gov/wotus-rule/appendix-d-legal-definition-traditional-navigable-waters
 https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.gov/ber/highlights/2016/ber-2016-06-c/
 https://www.data.gov/dataset?_organization_limit=0&vocab_category_all=Flood&groups=climate5434&organization=dhs-gov
 http://climate.nasa.gov/news/909/getting-past-im-smart-youre-stupid
@@ -1225,6 +1224,9 @@ https://www.epa.gov/water-research/nutrient-management-case-studies
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/bonding
 https://www.epa.gov/homeland-security-research/homeland-security-research-partners
 https://www.epa.gov/arc-x/forms/share-your-feedback-help-us-develop-site
+https://www.epa.gov/irmpoli8/interim-procedures-facilitate-maintenance-control-family
+https://www.usgs.gov/science/science-explorer?lq=climatology&classification=Video
+https://www.epa.gov/lead/renovation-repair-and-painting-program-training-providers
 
 
 # Potential duplicate page?
@@ -1726,6 +1728,9 @@ https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1043153&ex
 # -----
 # Now at: https://www.epa.gov/wotus-rule
 https://www.epa.gov/cleanwaterrule/definition-waters-united-states-under-clean-water-act
+# -----
+# Now at: https://www.epa.gov/wotus-rule/appendix-d-legal-definition-traditional-navigable-waters
+http://epa.gov/wotus-rule/appendix-d-legal-definition-traditional-navigable-waters
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1807,6 +1812,7 @@ https://www.epa.gov/cleanwaterrule/definition-waters-united-states-under-clean-w
 # https://www.data.gov/dataset?_organization_limit=0&tags=colorado&groups=climate5434&organization=dhs-gov
 # https://earthdata.nasa.gov/files/2015_DDSRS_Atmosphere.pdf
 # https://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/questions_and_answers.html
+# https://www.whitehouse.gov/administration/eop/ostp/pressroom?tid_1[796]=796&tid_1[666]=666&tid_1[476]=476&tid_1[581]=581&page=1
 https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%20the%20CWA%20and%20NPDES%20Program/Overview%20of%20the%20CWA%20and%20the%20NPDES%20Program%20-%20Presenter%20output/presentation.html
 #
 # No longer exists via 403
@@ -1968,6 +1974,7 @@ https://echo.epa.gov/facilities/facility-search/results?mediaSelected=water&stat
 # https://yosemite.epa.gov/sab/sabproduct.nsf/541F467A563F8CC585257328004D363B/$File/RESEARCH+OF+HERL++++CASAC-89-021_89021_5-22-1995_235.pdf
 # https://www.epa.gov/region02/waste/dupont_pompton/pdf/projectoperations_plan_revised_cmi_wp_appendix_f.pdf
 # https://earthdata.nasa.gov/files/NASA_SOP_2012_A_new_pole_hole.pdf
+# https://www.epa.gov/sites/production/files/2013-08/documents/asthma_trifold_korean.pdf
 
 # ...Except these PDFs
 https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
