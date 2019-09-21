@@ -1227,6 +1227,9 @@ https://www.epa.gov/arc-x/forms/share-your-feedback-help-us-develop-site
 https://www.epa.gov/irmpoli8/interim-procedures-facilitate-maintenance-control-family
 https://www.usgs.gov/science/science-explorer?lq=climatology&classification=Video
 https://www.epa.gov/lead/renovation-repair-and-painting-program-training-providers
+https://www.epa.gov/hfstudy/review-state-and-industry-spill-data-characterization-hydraulic-fracturing-related-spills-0
+https://www.epa.gov/superfund-redevelopment-initiative/superfund-redevelopment-videos
+https://www.epa.gov/pesticide-registration/sulfoxaflor-final-cancellation-order
 
 
 # Potential duplicate page?
@@ -1731,6 +1734,18 @@ https://www.epa.gov/cleanwaterrule/definition-waters-united-states-under-clean-w
 # -----
 # Now at: https://www.epa.gov/wotus-rule/appendix-d-legal-definition-traditional-navigable-waters
 http://epa.gov/wotus-rule/appendix-d-legal-definition-traditional-navigable-waters
+# -----
+# Now at: https://www.globalchange.gov/browse/reports/our-changing-planet-fiscal-year-1998-us-global-change-research-program
+http://www.globalchange.gov/browse/reports/our-changing-planet-fiscal-year-1998-us-global-change-research-program
+# -----
+# Now at: https://nca2014.globalchange.gov/highlights
+# http://nca2014.globalchange.gov/highlights
+# -----
+# Now at: https://earthdata.nasa.gov/esds/competitive-programs/measures/creating-unified-ocean-color-data-records-with-uncertainties
+https://earthdata.nasa.gov/community/community-data-system-programs/measures-projects/creating-unified-ocean-color-data-records-with-uncertainties
+# -----
+# Now at: https://nca2014.globalchange.gov/system/files_force/downloads/low/NCA3_Full_Report_22_Alaska_LowRes.pdf?download=1
+# http://nca2014.globalchange.gov/system/files_force/downloads/low/NCA3_Full_Report_22_Alaska_LowRes.pdf?download=1
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1835,6 +1850,10 @@ https://www.epa.gov/trinationalanalysis/chemicals-special-concern-2016-tri-natio
 http://epa.gov/citizen-science/additional-resources-citizen-science-environmental-protection
 https://www.epa.gov/faca/good-neighbor-environmental-board-charter-june-20-2016
 https://www.epa.gov/heat-islands/urban-and-rural-temperature-trends-proximity-large-us-cities-1951-2000
+https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/nevada
+https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/south-dakota
+https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/utah
+https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/wyoming
 # 
 # No longer exists via server completely gone
 # https://climate.dot.gov/
@@ -1980,7 +1999,7 @@ https://echo.epa.gov/facilities/facility-search/results?mediaSelected=water&stat
 https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
 https://www.epa.gov/sites/production/files/2019-04/documents/final_pndd_guidance_0.pdf
 https://www.epa.gov/sites/production/files/2015-08/documents/absolute-energy-rec-determination-5-22-13.pdf
-
+https://www.epa.gov/sites/production/files/2015-03/documents/repower_technologies_solar.pdf
 
 # Skip FTP for now
 # ftp://ftp.aoml.noaa.gov/phod/pub/lumpkin/drifter_climatology/monthly
