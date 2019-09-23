@@ -50,7 +50,7 @@ spec:
         - name: AWS_WORKING_BUCKET
           value: edgi-wm-db-internal-staging
         - name: CACHE_DATE_DIFFER
-          value: "2018-10-23T07:00:00Z"
+          value: "2019-09-22T00:00:00Z"
         - name: DATABASE_RDS
           valueFrom:
             secretKeyRef:
