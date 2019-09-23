@@ -5,7 +5,7 @@ connect to and modify EDGI's Kubernetes cluster.
 
 ## This Repository
 
-This repository contains templates that specify the configuration of the
+This repository contains YAML files that specify the configuration of the
 cluster. You will need a local copy.
 
 ```sh
@@ -79,33 +79,33 @@ ip-172-20-81-52.us-west-2.compute.internal    Ready     node      32d       v1.1
 
 ## Secrets
 
-Templates containing secret configuration parameters are stored in Keybase as
+YAML files containing secret configuration parameters are stored in Keybase as
 well. Copy them into your checkout of ``web-monitoring-kube`` like so:
 
 ```sh
-cp /keybase/team/edgi_wm_kube/secrets.production.yaml templates/production
-cp /keybase/team/edgi_wm_kube/secrets.staging.yaml templates/staging
-cp /keybase/team/edgi_wm_kube/ui-secrets.production.yaml templates/production
-cp /keybase/team/edgi_wm_kube/ui-secrets.staging.yaml templates/staging
+cp /keybase/team/edgi_wm_kube/secrets.production.yaml kubernetes/production
+cp /keybase/team/edgi_wm_kube/secrets.staging.yaml kubernetes/staging
+cp /keybase/team/edgi_wm_kube/ui-secrets.production.yaml kubernetes/production
+cp /keybase/team/edgi_wm_kube/ui-secrets.staging.yaml kubernetes/staging
 ```
 
 ## Services
 
-Services provide the network endpoints to access running pods. While most services contain no sensitive information (and are therefore in version control) a few web-monitoring services require sensitive information. Templates containing our local service configuration parameters are stored in Keybase as well. Copy them into your checkout of ``web-monitoring-kube`` like so:
+Services provide the network endpoints to access running pods. While most services contain no sensitive information (and are therefore in version control) a few web-monitoring services require sensitive information. Configuration files containing our local service configuration parameters are stored in Keybase as well. Copy them into your checkout of ``web-monitoring-kube`` like so:
 
 ```sh
-cp /keybase/team/edgi_wm_kube/services.production.yaml templates/production
-cp /keybase/team/edgi_wm_kube/services.staging.yaml templates/staging
+cp /keybase/team/edgi_wm_kube/services.production.yaml kubernetes/production
+cp /keybase/team/edgi_wm_kube/services.staging.yaml kubernetes/staging
 ```
 
 ## Getting Oriented
 
-In ``templates/``, there are separate directories corresponding to the
+In ``kubernetes/``, there are separate directories corresponding to the
 *namespaces* in the Kubernetes cluster.
 
 * ``kube-system`` -- cluter-wide objects related to capturing logs
 * ``production`` -- objects deployed to the production namespace
 * ``staging`` -- objects deployed to the staging namespace
 
-The contents of the templates in ``production/`` and ``staging/`` differ only by
-their ``namespace: ...`` parameter and the values of the secrets.
+The contents of the configuratin files in ``production/`` and ``staging/``
+differ only by their ``namespace: ...`` parameter and the values of the secrets.

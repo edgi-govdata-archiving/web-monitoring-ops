@@ -1,8 +1,9 @@
-templates/secrets.yaml
-templates/secrets.*.yaml
-templates/ui-secrets.yaml
-templates/ui-secrets.*.yaml
+kubernetes/secrets.yaml
+kubernetes/secrets.*.yaml
+kubernetes/ui-secrets.yaml
+kubernetes/ui-secrets.*.yaml
 *secrets*
 services.yaml
 services.*.yaml
 !examples/services.yaml
+scratch.*

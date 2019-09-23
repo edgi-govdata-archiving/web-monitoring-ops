@@ -188,7 +188,7 @@ Your cluster <HOSTED_ZONE> is ready
 ## Enable core metrics.
 
 ```
-kubectl apply -f templates/kube-system/metrics-server/
+kubectl apply -f kubernetes/kube-system/metrics-server/
 ```
 
 ## Enable logging.
@@ -203,8 +203,8 @@ aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/CloudWatchAgentS
 Enable logging.
 
 ```
-kubectl apply -f templates/kube-system/fluentd/fluentd.configmap.yaml
-kubectl apply -f templates/kube-system/fluentd/fluentd.cloudwatch.yaml
+kubectl apply -f kubernetes/kube-system/fluentd/fluentd.configmap.yaml
+kubectl apply -f kubernetes/kube-system/fluentd/fluentd.cloudwatch.yaml
 ```
 
 Events will be logged to a log group called "k8s".
@@ -234,7 +234,7 @@ Copy the files and fill values into the copies. (TODO: Provide more guidance
 here.)
 
 ```
-cp examples/services.yaml templates/${NAMESPACE}/services.yaml
+cp examples/services.yaml kubernetes/${NAMESPACE}/services.yaml
 ```
 
 
@@ -259,7 +259,7 @@ aws rds create-db-subnet-group --db-subnet-group-name web-monitoring-db-subnet -
 aws rds create-db-instance --cli-input-json "$(jq -n -f create-db.jq)"
 ```
 
-Enter this URI into the ``database_rds`` field in ``templates/${NAMESPACE}/secrets.yaml``:
+Enter this URI into the ``database_rds`` field in ``kubernetes/${NAMESPACE}/secrets.yaml``:
 
 ```
 echo -n postgresql://master:$DB_PASSWORD@rds:5432/web_monitoring_db | base64
@@ -272,7 +272,7 @@ status like so.
 aws rds describe-db-instances --db-instance-identifier $DB_INSTANCE_IDENTIFIER | jq -r .DBInstances[0].DBInstanceStatus
 ```
 
-Enter this address into the rds ``externalName`` field in ``templates/${NAMESPACE}/services.yaml``.
+Enter this address into the rds ``externalName`` field in ``kubernetes/${NAMESPACE}/services.yaml``.
 (It will be ``null`` until the database is done "creating".)
 
 ```
@@ -343,11 +343,11 @@ It should at first return ``"PENDING_VALIDATION`` and, when valid, ``ISSUED``.
 
 Enter the values of ``$API_ARN`` and ``$UI_ARN`` into the respective
 ``service.beta.kubernetes.io/aws-load-balancer-ssl-cert`` fields of
-``templates/${NAMESPACE}/services.yaml``.
+``kubernetes/${NAMESPACE}/services.yaml``.
 
 ## Set public api URL in ui configuration.
 
-Update the env var ``WEB_MONITORING_DB_URL`` in ``templates/${NAMESPACE}/ui-deployment.yaml``
+Update the env var ``WEB_MONITORING_DB_URL`` in ``kubernetes/${NAMESPACE}/ui-deployment.yaml``
 to ``api.<NAMESPACE>.<HOSTED_ZONE>``.
 
 ## Create secrets.
@@ -361,8 +361,8 @@ Copy the files and fill values into the copies. (TODO: Provide more guidance
 here.)
 
 ```
-cp examples/secrets.yaml templates/${NAMESPACE}/secrets.yaml
-cp examples/ui-secrets.yaml templates/${NAMESPACE}/ui-secrets.yaml
+cp examples/secrets.yaml kubernetes/${NAMESPACE}/secrets.yaml
+cp examples/ui-secrets.yaml kubernetes/${NAMESPACE}/ui-secrets.yaml
 ```
 
 ## Deploy
@@ -376,18 +376,18 @@ kubectl create namespace $NAMESPACE
 Next, deploy from the templates.
 
 ```
-kubectl create -f templates/${NAMESPACE}/secrets.yaml
-kubectl create -f templates/${NAMESPACE}/services.yaml
-kubectl create -f templates/${NAMESPACE}/api-deployment.yaml
-kubectl create -f templates/${NAMESPACE}/redis-master-deployment.yaml
-kubectl create -f templates/${NAMESPACE}/redis-slave-deployment.yaml
-kubectl create -f templates/${NAMESPACE}/redis-master-service.yaml
-kubectl create -f templates/${NAMESPACE}/redis-slave-service.yaml
-kubectl create -f templates/${NAMESPACE}/import-worker-deployment.yaml
-kubectl create -f templates/${NAMESPACE}/diffing-deployment.yaml
-kubectl create -f templates/${NAMESPACE}/diffing-service.yaml
-kubectl create -f templates/${NAMESPACE}/ui-secrets.yaml
-kubectl create -f templates/${NAMESPACE}/ui-deployment.yaml
+kubectl create -f kubernetes/${NAMESPACE}/secrets.yaml
+kubectl create -f kubernetes/${NAMESPACE}/services.yaml
+kubectl create -f kubernetes/${NAMESPACE}/api-deployment.yaml
+kubectl create -f kubernetes/${NAMESPACE}/redis-master-deployment.yaml
+kubectl create -f kubernetes/${NAMESPACE}/redis-slave-deployment.yaml
+kubectl create -f kubernetes/${NAMESPACE}/redis-master-service.yaml
+kubectl create -f kubernetes/${NAMESPACE}/redis-slave-service.yaml
+kubectl create -f kubernetes/${NAMESPACE}/import-worker-deployment.yaml
+kubectl create -f kubernetes/${NAMESPACE}/diffing-deployment.yaml
+kubectl create -f kubernetes/${NAMESPACE}/diffing-service.yaml
+kubectl create -f kubernetes/${NAMESPACE}/ui-secrets.yaml
+kubectl create -f kubernetes/${NAMESPACE}/ui-deployment.yaml
 ```
 
 ## Seed database (optional)
@@ -429,7 +429,7 @@ the database above, you can log in with ``seed-admin@example.com`` /
 
 ## Deploying configuration changes.
 
-If you update the secrets used in a deployment, but haven't changed the deployment itself, kubernetes will not apply the new secrets when you redeploy. Rather than delete and recreating the deployment, you can change the value of the ``INCREMENTAL_UPDATE`` within the affected deployement and then run ``kubectl replace -f templates/${NAMESPACE}/example-deployment.yaml``. Since the deployment is now different, kubernetes will perform the rolling update as desired, with your new secret values.
+If you update the secrets used in a deployment, but haven't changed the deployment itself, kubernetes will not apply the new secrets when you redeploy. Rather than delete and recreating the deployment, you can change the value of the ``INCREMENTAL_UPDATE`` within the affected deployement and then run ``kubectl replace -f kubernetes/${NAMESPACE}/example-deployment.yaml``. Since the deployment is now different, kubernetes will perform the rolling update as desired, with your new secret values.
 
 ## Troubleshooting
 
