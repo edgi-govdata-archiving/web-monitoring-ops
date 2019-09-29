@@ -1230,6 +1230,13 @@ https://www.epa.gov/lead/renovation-repair-and-painting-program-training-provide
 https://www.epa.gov/hfstudy/review-state-and-industry-spill-data-characterization-hydraulic-fracturing-related-spills-0
 https://www.epa.gov/superfund-redevelopment-initiative/superfund-redevelopment-videos
 https://www.epa.gov/pesticide-registration/sulfoxaflor-final-cancellation-order
+https://www.epa.gov/arc-x/strategies-climate-change-adaptation
+https://www.blm.gov/programs/lands-and-realty/regional-information/alaska/14c_Surveys
+https://cleanet.org/clean/literacy/tools/enewsletter.html
+https://www.epa.gov/pesticides/two-proposed-test-methods-and-guidance-antimicrobial-efficacy-testing
+https://www.fhwa.dot.gov/environment/sustainability/resilience/ongoing_and_current_research/gulf_coast_study/
+https://www.epa.gov/heat-islands/heat-island-related-links
+https://www.epa.gov/hwgenerators/frequent-questions-about-managing-hazardous-waste-academic-laboratories
 
 
 # Potential duplicate page?
@@ -1746,6 +1753,22 @@ https://earthdata.nasa.gov/community/community-data-system-programs/measures-pro
 # -----
 # Now at: https://nca2014.globalchange.gov/system/files_force/downloads/low/NCA3_Full_Report_22_Alaska_LowRes.pdf?download=1
 # http://nca2014.globalchange.gov/system/files_force/downloads/low/NCA3_Full_Report_22_Alaska_LowRes.pdf?download=1
+# -----
+# Now at: https://www.usgs.gov/products/data-and-tools/apis
+# Which we already track as: 199bfb43-ad50-41ef-8ca1-291ddf790a40
+# https://www.usgs.gov/products/data-and-tools/apis?field_topics_tid=All&field_state_tid=All&field_release_date_value[value]&sort_bef_combine=field_release_date_value%20DESC&sort_order=DESC&sort_by=field_release_date_value&page=1
+# -----
+# Now at: https://www.globalchange.gov/browse/indicators?f[0]=field_indicator_topics%3A103
+http://www.globalchange.gov/browse/indicators?f[0]=field_indicator_topics%3A103
+# -----
+# Now at: https://www.epa.gov/climateleadership/about-center-corporate-climate-leadership
+https://www.epa.gov/climateleadership/about-center
+# -----
+# Now at: https://www.epa.gov/ceam/whaem-bbm-files-us
+https://www.epa.gov/exposure-assessment-models/whaem2000-bbm-files-us
+# -----
+# Now at: https://earthdata.nasa.gov/esds/competitive-programs/measures/definitive-merged-gdt-data-set
+https://earthdata.nasa.gov/community/community-data-system-programs/measures-projects/definitive-merged-gdt-data-set
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1854,6 +1877,7 @@ https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-effor
 https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/south-dakota
 https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/utah
 https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/wyoming
+https://www.epa.gov/heat-islands/linking-urban-form-function-and-climate
 # 
 # No longer exists via server completely gone
 # https://climate.dot.gov/
@@ -2000,6 +2024,7 @@ https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
 https://www.epa.gov/sites/production/files/2019-04/documents/final_pndd_guidance_0.pdf
 https://www.epa.gov/sites/production/files/2015-08/documents/absolute-energy-rec-determination-5-22-13.pdf
 https://www.epa.gov/sites/production/files/2015-03/documents/repower_technologies_solar.pdf
+https://www.epa.gov/sites/production/files/2016-03/documents/transcript_-_the_jobs_impact_of_clean_energy.pdf
 
 # Skip FTP for now
 # ftp://ftp.aoml.noaa.gov/phod/pub/lumpkin/drifter_climatology/monthly
