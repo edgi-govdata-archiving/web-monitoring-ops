@@ -1237,6 +1237,8 @@ https://www.epa.gov/pesticides/two-proposed-test-methods-and-guidance-antimicrob
 https://www.fhwa.dot.gov/environment/sustainability/resilience/ongoing_and_current_research/gulf_coast_study/
 https://www.epa.gov/heat-islands/heat-island-related-links
 https://www.epa.gov/hwgenerators/frequent-questions-about-managing-hazardous-waste-academic-laboratories
+https://www.epa.gov/hfstudy/modeling-fault-activation-and-seismicity-injection-directly-fault-zone-associated-hydraulic
+https://www.epa.gov/hfstudy/analytical-chemical-methods-technical-workshop-participant-bios
 
 
 # Potential duplicate page?
