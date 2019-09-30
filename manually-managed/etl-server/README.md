@@ -9,7 +9,7 @@ Specifically, this server currently performs four tasks:
 3. ~Import data from Versionista~ (No longer used.) [(Versionista import script in web-monitoring-versionista-scraper)][versionista-import-script]
 4. Generate weekly analyst task spreadsheets. [(Analyst spreadsheet script in web-monitoring-versionista-scraper)][analyst-sheet-script]
 
-Each of these script is started from a short shell script (which manages environment variables, arguments, and logs) that is triggered on a schedule by `cron`.
+Each of these scripts is started from a short shell script (which manages environment variables, arguments, and logs) that is triggered on a schedule by `cron`.
 
 The repos where the underlying scripts live are simple `git` checkouts. (See below for details.)
 
