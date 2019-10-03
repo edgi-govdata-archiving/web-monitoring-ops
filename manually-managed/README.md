@@ -30,7 +30,7 @@ For details, see [`rds/README.md`](./rds/README.md).
 
 We currently run scheduled scripts for extracting data from external services (Versionista, the Wayback Machine) and sending it to [web-monitoring-db][-db] to be imported. These are managed via `cron` on a single EC2 VM.
 
-TBD
+For details, see [`etl-server/README.md`](./etl-server/README.md).
 
 
 ## IA Archiver
