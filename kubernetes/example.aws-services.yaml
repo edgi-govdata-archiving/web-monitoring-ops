@@ -1,4 +1,12 @@
 ---
+# EXAMPLE AWS SERVICES CONFIGURATION
+# Most of our deployments contain secret values that can be separated into a
+# special secrets file. Unfortunately, services don't support that. Since some
+# of our services also contain sensitive data, we keep them in a separate,
+# secure repository. This file serves as an example of them.
+
+# This configuration provides an `rds` service that gives deployments in the
+# cluster access to an RDS database.
 apiVersion: v1
 kind: Service
 metadata:
@@ -12,6 +20,8 @@ spec:
     targetPort: 5432
     protocol: TCP
 ---
+# This configuration creates the `api` service that lets external clients talk
+# to the web-monitoring-db deployments.
 apiVersion: v1
 kind: Service
 metadata:
@@ -33,6 +43,8 @@ spec:
     targetPort: 3000
   type: LoadBalancer
 ---
+# This configuration creates the `api` service that lets external clients talk
+# to the web-monitoring-ui deployments.
 apiVersion: v1
 kind: Service
 metadata:

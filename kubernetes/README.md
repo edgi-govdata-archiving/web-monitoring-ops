@@ -11,6 +11,11 @@ Configuration files are stored in directories with the same name as the namespac
 See [`0-setup-guide`](./0-setup-guide) for a guide to setting up a new cluster from scratch.
 
 
+## Secrets
+
+Our deployment needs access to some sensitive data, like credentials, ARNs, etc. We keep configurations for those in a separate secure repository, but they are still Kubernetes configurations that can be deployed the same way the rest of the configurations here are. **You can find example versions of these files named `example.*.yaml` in this directory.**
+
+
 ## Updating the Cluster
 
 We use the `kubectl` CLI client to update the cluster with new configurations. You’ll need to configure it on your computer with the address and keys for our cluster. Common workflows:

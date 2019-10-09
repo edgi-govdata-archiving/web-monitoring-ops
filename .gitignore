@@ -3,7 +3,7 @@ kubernetes/secrets.*.yaml
 kubernetes/ui-secrets.yaml
 kubernetes/ui-secrets.*.yaml
 *secrets*
+!kubernetes/example.*
 services.yaml
 services.*.yaml
-!examples/services.yaml
 scratch.*
