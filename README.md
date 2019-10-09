@@ -10,17 +10,27 @@ We currently run all our services in AWS:
 - *Scheduled jobs* are currently run on manually configured EC2 instances. See the [`manually-managed`](./manually-managed) directory for details.
 - We use a handful of AWS services like S3 and RDS. See the [`manually-managed`](./manually-managed) directory for details.
 
-**A note about secrets and private data:** While EDGI strives to work as much in the open as possible, a production deployment of software necessarily involves some secret data like account credentials. We maintain secret data in a private Git repo stored on Keybase, and layer that data on top of what’s in this repo. Get in touch with a project maintainer on Slack if you need access to it.
+**Incident Reports:** When major problems happen in production, we try and write up incident reports that describe what happened and how the problem was addressed. You can find these in the [`incidents` directory](./incidents).
 
 
-## Releasing/Publishing New Versions
+## Deploying Updates
 
-Most of our code repos automatically publish new releases (Docker images to https://hub.docker.com/u/envirodgi and packages to the relevant package managers) when code is pushed to the `release` branch. We usually create *merge commits* on the `release` branch that note the PRs included in the release or any other relevant notes (e.g. [`Release #503, #504`](https://github.com/edgi-govdata-archiving/web-monitoring-db/commit/67e4510d1f2a8c7f01542cc86a6361539ef77fa5)). Since most of our code is not widely distributed, we don’t currently include release notes that describe the changes in more detail.
-
-Docker images are tagged with the SHA-1 of the git commit they were built from. For example, the image `envirodgi/db-rails-server:ddc246819a039465e7711a1abd61f67c14b7a320` was built from [commit `ddc246819a039465e7711a1abd61f67c14b7a320`](https://github.com/edgi-govdata-archiving/web-monitoring-db/commit/ddc246819a039465e7711a1abd61f67c14b7a320) in web-monitoring-db.
+We separate the process of shipping new code into two parts: releases (semi-automatic) and deploys (manual).
 
 
-## Deploying Releases to Servers
+### Releasing New Versions
+
+Most of our repos automatically publish new releases when code is pushed to the `release` branch.
+
+- Docker images get published to https://hub.docker.com/u/envirodgi. Images are tagged with the SHA-1 of the git commit they were built from. For example, the image `envirodgi/db-rails-server:ddc246819a039465e7711a1abd61f67c14b7a320` was built from [commit `ddc246819a039465e7711a1abd61f67c14b7a320`](https://github.com/edgi-govdata-archiving/web-monitoring-db/commit/ddc246819a039465e7711a1abd61f67c14b7a320) in web-monitoring-db.
+
+
+- Packages/libraries get published to their relevant registries (e.g. [PyPI](https://pypi.org) or [NPM](https://npmjs.com)).
+
+We usually create *merge commits* on the `release` branch that note the PRs included in the release or any other relevant notes (e.g. [`Release #503, #504`](https://github.com/edgi-govdata-archiving/web-monitoring-db/commit/67e4510d1f2a8c7f01542cc86a6361539ef77fa5)). Since most of our code is not widely distributed, we don’t currently include release notes that describe the changes in more detail.
+
+
+### Deploying Releases to Servers
 
 Services running in Kubernetes always use the Docker images we release as above. Inside our Kubernetes cluster, we manage **two namespaces**: `staging` and `production`. The staging namespace has fewer instances of most services and operates against a smaller database that we might reset from time to time. It’s good for testing things. We typically deploy new code to both at the same time, but occasionally send new code only to staging or use a configuration variable to only turn the new code on in staging if it needs more rigorous testing. To update Kubernetes:
 
@@ -33,6 +43,11 @@ Services running in Kubernetes always use the Docker images we release as above.
 Manually managed servers (for our scheduled jobs) tend to each have their own process. Check the [`manually-managed`](./manually-managed) directory for details on each one.
 
 Manually managed AWS services like RDS or S3 are also described in [`manually-managed`](./manually-managed).
+
+
+## Secrets and Sensitive Data
+
+While EDGI strives to work as much in the open as possible, a production deployment of software necessarily involves some secret data like account credentials. We maintain secret data in a private Git repo stored on Keybase, and layer that data on top of what’s in this repo. Get in touch with a project maintainer on Slack if you need access to it.
 
 
 ## Code of Conduct
