@@ -1239,6 +1239,9 @@ https://www.epa.gov/heat-islands/heat-island-related-links
 https://www.epa.gov/hwgenerators/frequent-questions-about-managing-hazardous-waste-academic-laboratories
 https://www.epa.gov/hfstudy/modeling-fault-activation-and-seismicity-injection-directly-fault-zone-associated-hydraulic
 https://www.epa.gov/hfstudy/analytical-chemical-methods-technical-workshop-participant-bios
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/operations-and-production/onshore-orders
+https://www.usgs.gov/science/science-explorer?offset=100&lq=endangered+species
+https://www.blm.gov/programs/lands-and-realty/regional-information/idaho
 
 
 # Potential duplicate page?
@@ -1875,11 +1878,20 @@ https://www.epa.gov/trinationalanalysis/chemicals-special-concern-2016-tri-natio
 http://epa.gov/citizen-science/additional-resources-citizen-science-environmental-protection
 https://www.epa.gov/faca/good-neighbor-environmental-board-charter-june-20-2016
 https://www.epa.gov/heat-islands/urban-and-rural-temperature-trends-proximity-large-us-cities-1951-2000
+https://www.epa.gov/heat-islands/linking-urban-form-function-and-climate
+https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts
+https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/california
+https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/colorado
+https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/montana
 https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/nevada
 https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/south-dakota
 https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/utah
 https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/wyoming
-https://www.epa.gov/heat-islands/linking-urban-form-function-and-climate
+# ---
+# https://www.epa.gov/trinationalanalysis/land-disposal-2016-tri-national-analysis
+# Now only available in PDF form via https://www.epa.gov/trinationalanalysis/report-sections-2016-tri-national-analysis
+# Note the TRI NA site appears to have changed to only host web-native content for the latest report, in non-dated URLs like https://www.epa.gov/trinationalanalysis/land-disposal
+# ---
 # 
 # No longer exists via server completely gone
 # https://climate.dot.gov/
