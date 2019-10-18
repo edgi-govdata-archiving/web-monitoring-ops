@@ -2,10 +2,11 @@
 
 This machine is dedicated to pushing URLs we wish to monitor into the Internet Archive on a regular basis. It works by automating the archive’s “Save Page Now” (SPN) feature via [wayback-spn-client](https://github.com/Mr0grog/wayback-spn-client).
 
-At current, we save URLs from two lists:
+At current, we save URLs from three lists:
 
 - `nca-2018-documents.txt` List of all the actual pages in NCA 2018
 - `missing-from-ia.txt` List of URLs Web Monitoring analysts actively monitor (i.e. that are in our database) but that Wayback is not actively monitoring every day for us. **@Mr0grog manually updates this file frequently based on our [IA healtcheck script’s](https://github.com/edgi-govdata-archiving/web-monitoring-processing/blob/master/scripts/ia_healthcheck) output.**
+- `earthjustice-tsca-echa.txt` List of ECHA (European Chemicals Agency) pages related to EPA’s TSCA (Toxic Substances Control Act) planning. This list was originally based off research by partners at Earthjustice.
 
 This was initially an experiment to see if we could streamline the process of ensuring Wayback is archiving pages we care about, which used to be:
 
@@ -48,6 +49,8 @@ It has the following file layout:
 ├── README.md                       Information about this machine
 ├── archive-missing-from-ia.sh      Script to save URLs in missing-from-ia.txt
 ├── archive-nca-2018-documents.sh   Script to save URLs in nca-2018-documents.txt
+├── archive-tsca-echa.sh            Script to save URLs in earthjustice-tsca-echa.txt
+├── earthjustice-tsca-echa.txt      List of ECHA pages we track related to TSCA
 ├── missing-from-ia.txt             List of pages we track but that Wayback is not automatically tracking for us right now
 ├── nca-2018-documents.txt          List of documents (pages, PDFs, excel files) in NCA 2018
 ├── nca-2018-resources.txt          List of all URLs (resources) in NCA 2018
