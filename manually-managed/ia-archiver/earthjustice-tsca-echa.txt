@@ -1,0 +1,71 @@
+# Pages Earthjustice has found relevant to TSCA (Toxic Substances Control Act)
+# regulations, including reports from ECHA (European Chemicals Agency).
+# See also: http://blogs.edf.org/health/2019/05/02/industry-deletions-in-pv29-study-summaries-should-raise-alarm-bells-on-both-sides-of-the-atlantic/
+
+https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/chemical-substances-undergoing-prioritization-low
+https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/chemical-substances-undergoing-prioritization-high
+
+
+# A list of the chemicals that EPA has proposed for low priority status under
+# TSCA is available at: https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/chemical-substances-undergoing-prioritization-low
+# The ECHA dossiers for those chemicals are available at:
+https://echa.europa.eu/registration-dossier/-/registered-dossier/5167
+https://echa.europa.eu/registration-dossier/-/registered-dossier/8874
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1957
+https://hpvchemicals.oecd.org/UI/SIDS_Details.aspx?id=5A92DCC0-CC60-4CEF-A425-4577AC1293CE
+https://echa.europa.eu/registration-dossier/-/registered-dossier/19531
+https://echa.europa.eu/registration-dossier/-/registered-dossier/10349
+https://hpvchemicals.oecd.org/UI/SIDS_Details.aspx?id=013FF6CB-03DA-4C4B-9C86-339B6870BE3C
+https://echa.europa.eu/registration-dossier/-/registered-dossier/16127
+https://echa.europa.eu/registration-dossier/-/registered-dossier/14378
+https://echa.europa.eu/registration-dossier/-/registered-dossier/14380
+https://echa.europa.eu/registration-dossier/-/registered-dossier/11614
+https://echa.europa.eu/registration-dossier/-/registered-dossier/15937
+https://echa.europa.eu/registration-dossier/-/registered-dossier/13383
+https://echa.europa.eu/registration-dossier/-/registered-dossier/5774
+https://echa.europa.eu/registration-dossier/-/registered-dossier/20020
+https://echa.europa.eu/registration-dossier/-/registered-dossier/15048
+https://echa.europa.eu/registration-dossier/-/registered-dossier/14788
+https://www.echemportal.org/echemportal/substancesearch/substancesearch_execute.action;jsessionid=1EFF93F8F197BA8A53DDDC6956768964
+https://echa.europa.eu/registration-dossier/-/registered-dossier/16016
+https://echa.europa.eu/registration-dossier/-/registered-dossier/14412
+ 
+# A list of the chemicals that EPA has proposed for high priority status under
+# TSCA is available at https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/chemical-substances-undergoing-prioritization-high
+# The ECHA dossiers for those chemicals are available at:
+http://echa.europa.eu/registration-dossier/-/registered-dossier/10673/1
+https://echa.europa.eu/registration-dossier/-/registered-dossier/12721
+https://echa.europa.eu/registration-dossier/-/registered-dossier/14862
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1676
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1911
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1805
+https://echa.europa.eu/registration-dossier/-/registered-dossier/13734
+https://echa.europa.eu/registration-dossier/-/registered-dossier/23519
+https://echa.europa.eu/registration-dossier/-/registered-dossier/8188
+https://echa.europa.eu/registration-dossier/-/registered-dossier/14821
+https://echa.europa.eu/registration-dossier/-/registered-dossier/24092
+https://echa.europa.eu/registration-dossier/-/registered-dossier/15430
+https://echa.europa.eu/registration-dossier/-/registered-dossier/16486
+https://echa.europa.eu/registration-dossier/-/registered-dossier/13586
+https://echa.europa.eu/registration-dossier/-/registered-dossier/10565
+https://echa.europa.eu/registration-dossier/-/registered-dossier/13726
+https://echa.europa.eu/registration-dossier/-/registered-dossier/15358
+https://echa.europa.eu/registration-dossier/-/registered-dossier/8568
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1834
+https://echa.europa.eu/registration-dossier/-/registered-dossier/13519
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1354
+https://echa.europa.eu/registration-dossier/-/registered-dossier/7169
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1908
+https://echa.europa.eu/registration-dossier/-/registered-dossier/14862
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1676
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1911
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1805
+https://echa.europa.eu/registration-dossier/-/registered-dossier/15858
+https://echa.europa.eu/registration-dossier/-/registered-dossier/23039
+https://echa.europa.eu/registration-dossier/-/registered-dossier/14504
+https://echa.europa.eu/registration-dossier/-/registered-dossier/14760
+https://echa.europa.eu/registration-dossier/-/registered-dossier/24118
+https://echa.europa.eu/registration-dossier/-/registered-dossier/15972
+https://echa.europa.eu/registration-dossier/-/registered-dossier/15845
+https://echa.europa.eu/registration-dossier/-/registered-dossier/1878
+https://echa.europa.eu/registration-dossier/-/registered-dossier/5193

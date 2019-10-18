@@ -24,5 +24,8 @@
 # Three times a week archive all pages from National Climate Assessment 2018
 0 0 * * MON,WED,FRI /home/ubuntu/archive-nca-2018-documents.sh >> /var/log/cron-ia-archive.log 2>&1
 
+# Three times a week archive ECHA pages related to TSCA
+30 0 * * MON,WED,FRI /home/ubuntu/archive-tsca-echa.sh >> /var/log/cron-ia-archive.log 2>&1
+
 # For now, also archive pages in our DB that don't seem to be auto-tracked by Wayback
 0 1 * * MON,WED,FRI /home/ubuntu/archive-missing-from-ia.sh >> /var/log/cron-ia-archive.log 2>&1
