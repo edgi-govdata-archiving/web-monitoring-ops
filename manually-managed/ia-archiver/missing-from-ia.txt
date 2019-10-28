@@ -1242,6 +1242,20 @@ https://www.epa.gov/hfstudy/analytical-chemical-methods-technical-workshop-parti
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/operations-and-production/onshore-orders
 https://www.usgs.gov/science/science-explorer?offset=100&lq=endangered+species
 https://www.blm.gov/programs/lands-and-realty/regional-information/idaho
+https://www.blm.gov/basic/programs-energy-and-minerals-renewable-energy-right-way-block
+https://www.osha.gov/pls/oshaweb/owalink.query_links?src_doc_type=STANDARDS&src_unique_file=1926_1053&src_anchor_name=1926.1053(a)(1)(ii)
+https://www.blm.gov/programs/fish-and-wildlife/wildlife
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/alaska
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/alaska/Cook-Inlet-Units
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/alaska/NPR-A
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/california
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/eastern-states
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/idaho
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/new-mexico
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/new-mexico/scheduled-onsites
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/utah
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/wyoming
 
 
 # Potential duplicate page?
@@ -1774,6 +1788,13 @@ https://www.epa.gov/exposure-assessment-models/whaem2000-bbm-files-us
 # -----
 # Now at: https://earthdata.nasa.gov/esds/competitive-programs/measures/definitive-merged-gdt-data-set
 https://earthdata.nasa.gov/community/community-data-system-programs/measures-projects/definitive-merged-gdt-data-set
+# -----
+# But also consider the relevance. There is a whole family of pages here.
+# Now at: https://www.nesdis.noaa.gov/news-articles-archive?page=1&order=field_date&sort=asc
+http://www.nesdis.noaa.gov/news-articles-archive?page=1&order=field_date&sort=asc
+# -----
+# Now at: https://www.nesdis.noaa.gov/news-articles-archive?page=4&order=title&sort=asc
+http://www.nesdis.noaa.gov/news-articles-archive?page=4&order=title&sort=asc
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1810,6 +1831,9 @@ https://earthdata.nasa.gov/community/community-data-system-programs/measures-pro
 # ------
 # Now at: https://library.noaa.gov/About/Library-Network
 # https://www.lib.noaa.gov/about/lib_network.html
+# ------
+# Now at: https://www.ncei.noaa.gov/thredds/blended-global/oceanWinds.html
+# https://www.ncdc.noaa.gov/thredds/OceanWinds.html
 
 
 # No longer exists; has not existed for a long time
@@ -1857,6 +1881,7 @@ https://earthdata.nasa.gov/community/community-data-system-programs/measures-pro
 # https://www.blm.gov/wo/st/en/prog/energy/oil_and_gas/questions_and_answers.html
 # https://www.whitehouse.gov/administration/eop/ostp/pressroom?tid_1[796]=796&tid_1[666]=666&tid_1[476]=476&tid_1[581]=581&page=1
 https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%20the%20CWA%20and%20NPDES%20Program/Overview%20of%20the%20CWA%20and%20the%20NPDES%20Program%20-%20Presenter%20output/presentation.html
+# https://www.blm.gov/ak/st/en/prog/energy/coal.html
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
