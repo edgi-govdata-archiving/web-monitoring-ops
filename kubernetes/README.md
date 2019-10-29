@@ -65,6 +65,7 @@ Let’s say you want to deploy release `c5a9e6de994392f23967cef3b2b916ac4d6ca87d
     ui-7ff6d77fdb-s8ddp              1/1     Running   0          41d
     ```
 
+
 ### Restarting a Pod
 
 Kubernetes works by keeping an eye on everything in the cluster and constantly updating it to make sure it stays in spec with the configuration. Most of the time, Kubernetes will automatically restart a pod that is stuck in a bad state.
@@ -97,3 +98,26 @@ If you need to reset a pod manually for some reason, the easiest way is just to 
     ```
 
 3. Keep an eye on the recreation progress with `kubectl get pods`.
+
+
+### Check Jobs
+
+Kubernetes CronJobs work by *creating* Jobs on a set schedule. You can check the CronJobs with:
+
+```sh
+> kubectl get cronjobs
+```
+
+And check the concrete jobs they’ve created with:
+
+```sh
+> kubectl get jobs
+```
+
+And you’ll also see pods created for the different jobs when you `kubectl get pods`.
+
+**Get job run times.** `Kubectl` doesn’t give durations (oddly), so this jq snippet will do that:
+
+```sh
+> kubectl get jobs --namespace production --output json | jq '.items[] | (.status.completionTime | fromdateiso8601) as $completion | (.status.startTime | fromdateiso8601) as $start | {name: .metadata.name, date: .status.startTime, duration: ($completion - $start)}'
+```
