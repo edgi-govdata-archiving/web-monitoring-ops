@@ -1256,6 +1256,8 @@ https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/new-mexico
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/new-mexico/scheduled-onsites
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/utah
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/wyoming
+https://yosemite.epa.gov/sab/sabproduct.nsf/WebReportsbyYearCASAC!OpenView&Start=1&Count=800&Collapse=14
+https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/bonding/types-of-bonds
 
 
 # Potential duplicate page?
@@ -1810,6 +1812,12 @@ https://www.eia.gov/kids/energy.cfm?page=nonrenewable_home-basics-k.cfm
 # -----
 # Now at: https://www.fema.gov/TXMIT
 http://www.fema.gov/texas-disaster-mitigation
+# -----
+# Now at: https://science.gsfc.nasa.gov/solarsystem/dataarchives/
+http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCode=690.1&navTab=nav_about_us
+# -----
+# Now at: https://science.gsfc.nasa.gov/cisto/it/
+http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navOrgCode=606.1&navTab=nav_about_us
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1897,6 +1905,7 @@ http://www.fema.gov/texas-disaster-mitigation
 # https://www.whitehouse.gov/administration/eop/ostp/pressroom?tid_1[796]=796&tid_1[666]=666&tid_1[476]=476&tid_1[581]=581&page=1
 https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%20the%20CWA%20and%20NPDES%20Program/Overview%20of%20the%20CWA%20and%20the%20NPDES%20Program%20-%20Presenter%20output/presentation.html
 # https://www.blm.gov/ak/st/en/prog/energy/coal.html
+# https://www.blm.gov/wy/st/en/programs/energy/Coal_Resources/coalfaqs/rights_and_privileges.html   # See now (not same, but related): https://www.blm.gov/programs/energy-and-minerals/coal/coal-data
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
