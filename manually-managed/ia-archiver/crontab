@@ -29,3 +29,6 @@
 
 # For now, also archive pages in our DB that don't seem to be auto-tracked by Wayback
 0 1 * * MON,WED,FRI /home/ubuntu/archive-missing-from-ia.sh >> /var/log/cron-ia-archive.log 2>&1
+
+# TEMPORARY: Archive pages from ToxMap and ToxNet, which are shutting down
+0 8 * * MON,WED,FRI /home/ubuntu/archive-url-list.sh toxmap_toxnet >> /var/log/cron-ia-toxmap-toxnet.log 2>&1
