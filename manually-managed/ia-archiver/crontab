@@ -22,13 +22,13 @@
 # m h  dom mon dow   command
 
 # Three times a week archive all pages from National Climate Assessment 2018
-0 0 * * MON,WED,FRI /home/ubuntu/archive-nca-2018-documents.sh >> /var/log/cron-ia-archive.log 2>&1
+0 0 * * MON,WED,FRI /home/ubuntu/archive-url-list.sh nca-2018-documents >> /var/log/cron-ia-archive.log 2>&1
 
 # Three times a week archive ECHA pages related to TSCA
-30 0 * * MON,WED,FRI /home/ubuntu/archive-tsca-echa.sh >> /var/log/cron-ia-archive.log 2>&1
+30 0 * * MON,WED,FRI /home/ubuntu/archive-url-list.sh earthjustice-tsca-echa >> /var/log/cron-ia-archive.log 2>&1
 
 # For now, also archive pages in our DB that don't seem to be auto-tracked by Wayback
-0 1 * * MON,WED,FRI /home/ubuntu/archive-missing-from-ia.sh >> /var/log/cron-ia-archive.log 2>&1
+0 1 * * MON,WED,FRI /home/ubuntu/archive-url-list.sh missing-from-ia >> /var/log/cron-ia-archive.log 2>&1
 
 # TEMPORARY: Archive pages from ToxMap and ToxNet, which are shutting down
 0 8 * * MON,WED,FRI /home/ubuntu/archive-url-list.sh toxmap_toxnet >> /var/log/cron-ia-toxmap-toxnet.log 2>&1
