@@ -1258,6 +1258,11 @@ https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/utah
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/about/wyoming
 https://yosemite.epa.gov/sab/sabproduct.nsf/WebReportsbyYearCASAC!OpenView&Start=1&Count=800&Collapse=14
 https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/bonding/types-of-bonds
+https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/bonding
+https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/bonding/requirements
+https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/unauthorized-use
+https://www.blm.gov/programs/energy-and-minerals/coal/land-use-planning/lessee-qualifications
+https://www.blm.gov/learn/youth-and-educators/hands-on-the-land
 
 
 # Potential duplicate page?
@@ -1380,7 +1385,16 @@ http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode
 # Now at: https://science.gsfc.nasa.gov/astrophysics/xray/
 http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCode=662&navTab=nav_about_us
 # ------
-# Now at: https
+# Now at: https://science.gsfc.nasa.gov/solarsystem/p3g/
+http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&&navOrgCode=698&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/heliophysics/solar/
+http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&&navOrgCode=671&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/astrophysics/heasarc/
+http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&navOrgCode=660.1&navTab=nav_about_us
+# ------
+# Now at: https://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # ------
 # All of http://www.cpc.noaa.gov/
@@ -1819,6 +1833,18 @@ http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCod
 # Now at: https://science.gsfc.nasa.gov/cisto/it/
 http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navOrgCode=606.1&navTab=nav_about_us
 # -----
+# Now at: https://www.eia.gov/tools/faqs/faq.php?id=22&t=6
+http://www.eia.gov/tools/faqs/faq.cfm?id=22&t=6
+# -----
+# Now at: https://arpa-e.energy.gov/?q=arpa-e-programs/amped&order=title&sort=asc
+http://arpa-e.energy.gov/?q=arpa-e-programs/amped&order=title&sort=asc
+# -----
+# Now at: https://www.energy.gov/science/hep/listings/hep-highlights
+# https://science.energy.gov/hep/highlights/
+# -----
+# Now at: https://www.eia.gov/tools/faqs/faq.php?id=87&t=1
+http://www.eia.gov/tools/faqs/faq.cfm?id=87&t=1
+# -----
 # This page has possibly moved here, but we're not 100% whether to consider them the same.
 # New URL:
 https://www.epa.gov/aboutepa/about-health-and-environmental-risk-assessment-program
@@ -1912,6 +1938,8 @@ https://www.epa.gov/aboutepa/about-health-and-environmental-risk-assessment-prog
 https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%20the%20CWA%20and%20NPDES%20Program/Overview%20of%20the%20CWA%20and%20the%20NPDES%20Program%20-%20Presenter%20output/presentation.html
 # https://www.blm.gov/ak/st/en/prog/energy/coal.html
 # https://www.blm.gov/wy/st/en/programs/energy/Coal_Resources/coalfaqs/rights_and_privileges.html   # See now (not same, but related): https://www.blm.gov/programs/energy-and-minerals/coal/coal-data
+# https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B5C850324-7726-4F56-B82D-11061EA50855%7D&xsl=metadata_to_html_full
+# https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/2015/11notice4.html
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
