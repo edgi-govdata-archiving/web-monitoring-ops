@@ -101,7 +101,13 @@ https://www.epa.gov/statelocalenergy/role-communication-ensuring-sustained-behav
 https://www.epa.gov/statelocalclimate/gathering-and-using-state-level-energy-data
 https://earthdata.nasa.gov/library?page=17&filter=
 https://www.epa.gov/npdes/municipal-wastewater
+https://www.blm.gov/programs/fish-and-wildlife/wildlife/about
 https://www.blm.gov/programs/fish-and-wildlife/wildlife/about/colorado
+https://www.blm.gov/programs/fish-and-wildlife/wildlife/about/eastern-states
+https://www.blm.gov/programs/fish-and-wildlife/wildlife/about/idaho
+https://www.blm.gov/programs/fish-and-wildlife/wildlife/about/nevada
+https://www.blm.gov/programs/fish-and-wildlife/wildlife/about/utah
+https://www.blm.gov/programs/fish-and-wildlife/wildlife/about/Wyoming
 https://echo.epa.gov/login?destination=node/106
 https://www.epa.gov/water-research/nutrients-management-research
 https://www.usgs.gov/science/science-explorer?offset=80&lq=endangered+species
@@ -1263,6 +1269,11 @@ https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/bonding/req
 https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/unauthorized-use
 https://www.blm.gov/programs/energy-and-minerals/coal/land-use-planning/lessee-qualifications
 https://www.blm.gov/learn/youth-and-educators/hands-on-the-land
+https://yosemite.epa.gov/sab/sabproduct.nsf/WebReportsbyYearCASAC!OpenView&Start=1&Count=800&Collapse=5
+https://www.usgs.gov/science/science-explorer?offset=140&lq=climatology
+https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy/regional-information/california
+https://www.fhwa.dot.gov/environment/sustainability/energy/publications/
+https://www.fhwa.dot.gov/environment/sustainability/energy/policy/
 
 
 # Potential duplicate page?
@@ -1360,6 +1371,9 @@ http://sncaadvisorycommittee.noaa.gov/Home/Disclaimer.aspx
 # We probably need to systematically analyze all the science.gsfc.nasa.gov URLs
 http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCode=670&navTab=nav_about_us
 # ------
+# Now at: https://science.gsfc.nasa.gov/astrophysics/astroparticles/
+http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&navOrgCode=661&navTab=nav_about_us
+# ------
 # Now at: https://science.gsfc.nasa.gov/earth/hydrology/
 # Same setup as above. Digging into this, it may have always been here, and the
 # "old" URL we have is just Versionista doing some ineffective crawling for us.
@@ -1452,6 +1466,9 @@ http://www.eia.gov/consumption/data.php
 # Now at: https://science.gsfc.nasa.gov/astrophysics/osc/
 # See earlier examples of https://science.gsfc.nasa.gov/ redirects
 http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navOrgCode=660.2&navTab=nav_about_us
+# -----
+# Now at: https://science.gsfc.nasa.gov/solarsystem/magnetospheres/
+http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navOrgCode=695&navTab=nav_about_us
 # -----
 # Now at: https://www.osha.gov/enforcement/directives/cpl-02-00-149
 https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=DIRECTIVES&p_id=4503
@@ -1850,6 +1867,24 @@ http://www.eia.gov/tools/faqs/faq.cfm?id=87&t=1
 https://www.epa.gov/aboutepa/about-health-and-environmental-risk-assessment-program
 # Old URL (already actively tracked):
 # https://www.epa.gov/aboutepa/about-human-health-risk-assessment-program
+# -----
+# Now at: https://www.eia.gov/tools/faqs/faq.php?id=75&t=11
+http://www.eia.gov/tools/faqs/faq.cfm?id=75&t=11
+# -----
+# Now at: https://arpa-e.energy.gov/?q=project-tech-areas/storage&page=1
+http://arpa-e.energy.gov/?q=project-tech-areas/storage&page=1
+# -----
+# Now at: https://sncaadvisorycommittee.noaa.gov/Portals/0/Meeting-Documents/SNCA_Federal_Register_Notice.pdf
+http://sncaadvisorycommittee.noaa.gov/Portals/0/Meeting-Documents/SNCA_Federal_Register_Notice.pdf
+# -----
+# Now at: https://www.nesdis.noaa.gov/news-articles-archive?page=5&order=field_date&sort=desc
+http://www.nesdis.noaa.gov/news-articles-archive?page=5&order=field_date&sort=desc
+# -----
+# Now at: https://www.blm.gov/programs/energy-and-minerals/renewable-energy/wind-energy/permitting-and-development/land-use-planning
+https://www.blm.gov/site-page/programs-energy-and-minerals-renewable-energy-wind-energy-permitting-and-development-land
+# -----
+# Now at: https://sncaadvisorycommittee.noaa.gov/Meetings/Meeting-Documents
+http://sncaadvisorycommittee.noaa.gov/Meetings/Meeting-Documents
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1940,6 +1975,8 @@ https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%2
 # https://www.blm.gov/wy/st/en/programs/energy/Coal_Resources/coalfaqs/rights_and_privileges.html   # See now (not same, but related): https://www.blm.gov/programs/energy-and-minerals/coal/coal-data
 # https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B5C850324-7726-4F56-B82D-11061EA50855%7D&xsl=metadata_to_html_full
 # https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/2015/11notice4.html
+# https://www.data.gov/dataset?_organization_limit=0&tags=american+samoa&groups=climate5434&organization=dhs-gov
+# https://www.blm.gov/wy/st/en/programs/energy/Coal_Resources/coalfaqs/exploration.print.html
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
