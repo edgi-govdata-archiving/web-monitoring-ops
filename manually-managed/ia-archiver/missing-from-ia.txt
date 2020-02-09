@@ -1274,6 +1274,10 @@ https://www.usgs.gov/science/science-explorer?offset=140&lq=climatology
 https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy/regional-information/california
 https://www.fhwa.dot.gov/environment/sustainability/energy/publications/
 https://www.fhwa.dot.gov/environment/sustainability/energy/policy/
+https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/nonenergy-leasable-materials
+https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/nonenergy-leasable-materials/potash
+https://www.bsee.gov/guidance-and-regulations/regulations/production-safety-systems-rule
+https://www.justice.gov/enrd/attorney-employment?position=1&tid%5B222%5D=222&practice_area=All&field_va_location_administrative_area=All&order=field_va_location_administrative_area&sort=asc
 
 
 # Potential duplicate page?
@@ -1885,6 +1889,12 @@ https://www.blm.gov/site-page/programs-energy-and-minerals-renewable-energy-wind
 # -----
 # Now at: https://sncaadvisorycommittee.noaa.gov/Meetings/Meeting-Documents
 http://sncaadvisorycommittee.noaa.gov/Meetings/Meeting-Documents
+# -----
+# Now at: https://www.blm.gov/programs/lands-and-realty/nevada/wpccrda
+https://www.blm.gov/site-page/programs-lands-and-realty-regional-information-nevada-wpccrda
+# -----
+# Now at: https://www.blm.gov/programs/lands-and-realty
+https://www.blm.gov/programs/land-and-realty
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
