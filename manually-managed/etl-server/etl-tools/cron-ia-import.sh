@@ -14,5 +14,5 @@ export LOG_LEVEL=INFO
 # We typically keep this at 3-5 days to accomodate for any slow indexing
 # on Wayback's part.
 # They're experiencing major issues right now, so it's set higher.
-wm import ia-known-pages --from 192 --parallel 35 1>&2
+wm import ia-known-pages --from 192 --parallel 10 1>&2
 echo "Internet Archive import completed at `date`" 1>&2
