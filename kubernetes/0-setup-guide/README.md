@@ -2,8 +2,8 @@
 
 You need:
 
-* the aws CLI and kubernetes CLI ([install instructions](https://github.com/aws-samples/aws-workshop-for-kubernetes/blob/master/prereqs.adoc#aws-cli-and-kubernetes-cli))
-* kops ([install instructions](https://github.com/aws-samples/aws-workshop-for-kubernetes/tree/master/cluster-install#install-kops))
+* the aws CLI and kubernetes CLI ([install instructions](https://github.com/aws-samples/aws-workshop-for-kubernetes/tree/master/01-path-basics/101-start-here#configure-the-aws-cli) [[🕑 permalink]](https://github.com/aws-samples/aws-workshop-for-kubernetes/blob/083c56e8f0fb0d7e7a7f4422fed13ff2c3496907/prereqs.adoc#aws-cli-and-kubernetes-cli))
+* kops ([install instructions](https://github.com/aws-samples/aws-workshop-for-kubernetes/tree/master/01-path-basics/101-start-here#install-kops) [[🕑 permalink]](https://github.com/aws-samples/aws-workshop-for-kubernetes/tree/083c56e8f0fb0d7e7a7f4422fed13ff2c3496907/cluster-install#install-kops))
 * jq  ([install instructions](https://stedolan.github.io/jq/download/))
 
 If you are trying to deploy changes to EDGI's Kubernetes cluster, you also need:
@@ -453,4 +453,4 @@ Check that the RDS is publicly accessible and that the security groups
 
 * https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 * https://kubernetes.io/docs/tutorials/kubernetes-basics/
-* https://github.com/aws-samples/aws-workshop-for-kubernetes/tree/master/developer-concepts
+* https://github.com/aws-samples/aws-workshop-for-kubernetes/tree/master/01-path-basics/103-kubernetes-concepts [[🕑 permalink]](https://github.com/aws-samples/aws-workshop-for-kubernetes/tree/083c56e8f0fb0d7e7a7f4422fed13ff2c3496907/developer-concepts)
