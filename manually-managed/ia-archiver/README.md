@@ -47,13 +47,12 @@ It has the following file layout:
 ```
 /home/ubuntu/
 ├── README.md                       Information about this machine
-├── archive-missing-from-ia.sh      Script to save URLs in missing-from-ia.txt
-├── archive-nca-2018-documents.sh   Script to save URLs in nca-2018-documents.txt
-├── archive-tsca-echa.sh            Script to save URLs in earthjustice-tsca-echa.txt
+├── archive-url-list.sh             Script to save URLs listed in a .txt file
 ├── earthjustice-tsca-echa.txt      List of ECHA pages we track related to TSCA
 ├── missing-from-ia.txt             List of pages we track but that Wayback is not automatically tracking for us right now
 ├── nca-2018-documents.txt          List of documents (pages, PDFs, excel files) in NCA 2018
 ├── nca-2018-resources.txt          List of all URLs (resources) in NCA 2018
+├── partner-urls.txt                List of pages we track for other, non-environment partners
 └── wayback-spn-client              Git clone of https://github.com/Mr0grog/wayback-spn-client
 ```
 

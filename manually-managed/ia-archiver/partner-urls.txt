@@ -1,0 +1,4 @@
+# Pages we ensure get archived for partner groups also interested in government
+# accountability, but may not be directly related to EDGI's environmental or
+# science monitoring.
+https://turbotax.intuit.com/lp/yoy/guarantees/

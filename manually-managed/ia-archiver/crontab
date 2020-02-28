@@ -29,3 +29,6 @@
 
 # For now, also archive pages in our DB that don't seem to be auto-tracked by Wayback
 0 1 * * MON,WED,FRI /home/ubuntu/archive-url-list.sh missing-from-ia >> /var/log/cron-ia-archive.log 2>&1
+
+# Other partner pages, once a week
+0 4 * * MON /home/ubuntu/archive-url-list.sh partner-urls >> /var/log/cron-ia-archive.log 2>&1
