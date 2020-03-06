@@ -1278,6 +1278,11 @@ https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/nonenergy-l
 https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/nonenergy-leasable-materials/potash
 https://www.bsee.gov/guidance-and-regulations/regulations/production-safety-systems-rule
 https://www.justice.gov/enrd/attorney-employment?position=1&tid%5B222%5D=222&practice_area=All&field_va_location_administrative_area=All&order=field_va_location_administrative_area&sort=asc
+https://www.epa.gov/pa/teaser-events/125279/566273?field_channel_tid_op=or&&web_area_op=word&web_area=EPA%20in%20Pennsylvania%2C%20UIC%2C%20Ambler%2C%20brownfields%2C%20G3&title_op=%3D&title=&field_keywords_tid=region3&&&&&&&&&&field_geographic_locations_tid[967]=967&&&timestamp=&event_start_date[offset]=&event_start_date[value]=&field_searchable_collection_value=All
+https://www.niehs.nih.gov/research/programs/nas/index.cfm
+https://www.niehs.nih.gov/about/stewardship/index.cfm
+https://www.blm.gov/programs/energy-and-minerals/renewable-energy/wind-energy/permitting-and-development/right-of-way
+https://www.justice.gov/enrd/internships?position=2&tid%5B222%5D=222&practice_area=All&field_va_location_administrative_area=All&order=name&sort=asc
 
 
 # Potential duplicate page?
@@ -1349,6 +1354,7 @@ https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-le
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-2012_og_lease_sales=2&qt-co_2013_lease_sales=1
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=1&qt-2012_og_lease_sales=0
 https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/colorado?qt-energy_colorado_2016_lease_sales=0&qt-colorado_2014_oil_and_gas_lease_=1&qt-2012_og_lease_sales=3
+https://www.niehs.nih.gov/health/materials/a_human_health_perspective_on_climate_change_full_report_508.pdf
 
 
 # USGS Science Explorer has changed drastically and maybe collapsed all the old versions together:
@@ -1411,6 +1417,15 @@ http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&&navOrgCod
 # ------
 # Now at: https://science.gsfc.nasa.gov/astrophysics/heasarc/
 http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&navOrgCode=660.1&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/cisto/svs/
+http://science.gsfc.nasa.gov/earth/biosphere/index.cfm?fuseAction=home.main&navOrgCode=606.4&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/heliophysics/geospace/
+http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&&navOrgCode=673&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/earth/hydrology/
+http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCode=617&navTab=nav_about_us
 # ------
 # Now at: https://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
@@ -1895,6 +1910,9 @@ https://www.blm.gov/site-page/programs-lands-and-realty-regional-information-nev
 # -----
 # Now at: https://www.blm.gov/programs/lands-and-realty
 https://www.blm.gov/programs/land-and-realty
+# -----
+# Now at: https://www.eia.gov/kids/for-teachers/lesson-plans/pdfs/Kids_Energy_Source_poster.zip
+http://www.eia.gov/kids/resources/teachers/pdfs/energy&%20machines_prim.pdf
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1987,6 +2005,8 @@ https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%2
 # https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/2015/11notice4.html
 # https://www.data.gov/dataset?_organization_limit=0&tags=american+samoa&groups=climate5434&organization=dhs-gov
 # https://www.blm.gov/wy/st/en/programs/energy/Coal_Resources/coalfaqs/exploration.print.html
+# https://www.blm.gov/ak/st/en/prog/energy/oil_gas/oil_gas_regs.html
+# https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/historical_index/protests/June2009.print.html
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
