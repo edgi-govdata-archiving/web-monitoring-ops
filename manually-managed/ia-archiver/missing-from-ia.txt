@@ -1427,6 +1427,9 @@ http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&&navOrgCo
 # Now at: https://science.gsfc.nasa.gov/earth/hydrology/
 http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCode=617&navTab=nav_about_us
 # ------
+# Now at: https://science.gsfc.nasa.gov/solarsystem/atmosenvironments/
+http://science.gsfc.nasa.gov/earth/gcdc/index.cfm?fuseAction=home.main&navOrgCode=699&navTab=nav_about_us
+# ------
 # Now at: https://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # ------
@@ -2007,6 +2010,7 @@ https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%2
 # https://www.blm.gov/wy/st/en/programs/energy/Coal_Resources/coalfaqs/exploration.print.html
 # https://www.blm.gov/ak/st/en/prog/energy/oil_gas/oil_gas_regs.html
 # https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/historical_index/protests/June2009.print.html
+# https://www.niehs.nih.gov/topics/natural-world/index.htm
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
