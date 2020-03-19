@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name:  rails-server
-        image: envirodgi/db-rails-server:9192777306b2bc9400518e2a6f285c81d84ca9a5
+        image: envirodgi/db-rails-server:99f9bf2f1437b33193afa52420ed7789b07feebd
         imagePullPolicy: Always
         ports: 
         - containerPort: 3000
@@ -115,4 +115,4 @@ spec:
               name: app-secrets
               key: token_private_key
         - name: INCREMENTAL_UPDATE
-          value: "5"
+          value: "6"
