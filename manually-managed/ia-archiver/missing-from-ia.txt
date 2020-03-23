@@ -1362,6 +1362,11 @@ https://www.usgs.gov/science/science-explorer?offset=20&lq=endangered+species
 https://www.usgs.gov/science/science-explorer?lq=Plant+Communities&classification=Web+Page
 
 
+# CDC Advisory Committees (they were mostly removed; these two remain)
+https://www.cdc.gov/about/advisory.htm
+https://www.cdc.gov/tribal/tac
+
+
 # MOVED PAGES
 # These are pages that have moved since we started capturing them. If they are
 # in this list, they redirect to the new location, so our captures are OK, but
