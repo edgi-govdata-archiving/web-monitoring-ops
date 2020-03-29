@@ -1,0 +1,31 @@
+# URLs related to SARS-NCov-2
+
+# EPA Coronavirus site
+https://www.epa.gov/coronavirus
+https://www.epa.gov/coronavirus/forms/contact-us-about-coronavirus-covid-19
+https://www.epa.gov/coronavirus/frequent-questions-about-coronavirus-disease-covid-19
+https://www.epa.gov/coronavirus/coronavirus-and-drinking-water-and-wastewater
+https://www.epa.gov/coronavirus/press-releases-related-coronavirus-disease-covid-19
+https://www.epa.gov/coronavirus/where-can-i-find-most-date-information-and-resources-about-coronavirus-disease-covid-19
+https://www.epa.gov/coronavirus/what-emerging-viral-pathogens-claim
+https://www.epa.gov/coronavirus/how-do-i-get-my-companys-product-listed
+https://www.epa.gov/coronavirus/will-epa-take-enforcement-action-against-companies-making-false-claims-their
+https://www.epa.gov/coronavirus/i-want-use-product-kill-sars-cov-2-it-isnt-list-it-effective-against-sars-cov-2
+https://www.epa.gov/coronavirus/why-do-some-products-follow-disinfection-directions-human-coronavirus-and-other-products
+https://www.epa.gov/coronavirus/why-are-some-products-listed-here-not-other-disinfectants-lists
+https://www.epa.gov/coronavirus/can-i-apply-product-using-method-not-specified-directions-use
+https://www.epa.gov/coronavirus/how-does-epa-know-these-products-work-sars-cov-2
+https://www.epa.gov/coronavirus/i-cant-tell-if-product-im-interested-list-or-not-can-you-help-me
+https://www.epa.gov/coronavirus/why-arent-hand-sanitizers-listed-epas-list-n-disinfectants-use-against-sars-cov-2
+https://www.epa.gov/coronavirus/tap-water-safe-use-hand-washing
+https://www.epa.gov/coronavirus/do-i-need-boil-my-drinking-water
+https://www.epa.gov/coronavirus/what-should-i-do-if-im-concerned-about-my-drinking-water
+https://www.epa.gov/coronavirus/drinking-tap-water-safe
+https://www.epa.gov/coronavirus/do-i-need-buy-bottled-water-or-store-drinking-water
+https://www.epa.gov/coronavirus/what-epas-role-ensuring-drinking-water-remains-safe
+https://www.epa.gov/coronavirus/can-i-get-covid-19-wastewater-or-sewage
+https://www.epa.gov/coronavirus/will-my-septic-system-treat-covid-19
+https://www.epa.gov/coronavirus/do-wastewater-treatment-plants-treat-covid-19
+https://www.epa.gov/coronavirus/should-wastewater-workers-take-extra-precautions-protect-themselves-covid-19-virus
+https://www.epa.gov/coronavirus/water-utility-resources-covid-19-pandemic
+https://www.epa.gov/coronavirus/statement-epa-administrator-wheeler-president-trumps-coronavirus-address
