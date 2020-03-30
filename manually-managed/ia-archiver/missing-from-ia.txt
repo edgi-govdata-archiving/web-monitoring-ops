@@ -19,7 +19,6 @@ https://www.epa.gov/greenpower/requirements-green-power-partnership
 https://www.epa.gov/aboutepa/about-national-vehicle-and-fuel-emissions-laboratory-nvfel
 https://www.epa.gov/renewable-fuel-standard-program/valero-albion-approval
 https://www.epa.gov/aboutepa/organization-chart-epas-region-10-office
-https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/index.cfm
 http://epa.gov/greeningepa/nepa-review-form-montgomery-boilergenerator-replacement-project
 https://www.ferc.gov/EventCalendar/EventDetails.aspx?ID=8601&CalType=%20&CalendarID=101&Date=01/09/2017&View=Listview
 http://climate.nasa.gov/news/2385/coral-mission-to-raise-reef-studies-to-new-level
@@ -514,7 +513,6 @@ https://www.phmsa.dot.gov/hazmat-program-management-data-and-statistics/risk-and
 https://www.epa.gov/indoor-air-quality-iaq/federal-interagency-committee-indoor-air-quality
 http://www.eia.gov/tools/faqs/faq.cfm?id=268&t=6
 https://science.energy.gov/bes/highlights/2015/bes-2015-12-b/
-https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/cancer/index.cfm
 https://www.epa.gov/statelocalenergy/avert-user-manual%E2%80%9D
 https://www.epa.gov/aboutepa/office-wastewater-management-annual-reports
 https://www.epa.gov/ambler/borit-cag-meeting-february-1-2017
@@ -626,7 +624,6 @@ https://www.epa.gov/arc-x/pennsylvania-protects-coldwater-fisheries-and-water-qu
 https://science.energy.gov/emslweb/facilities/virtual-tour
 http://www.nssl.noaa.gov/projects/vortexse/
 http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&navOrgCode=606.4&navTab=nav_about_us
-https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/asthma/index.cfm
 https://science.energy.gov/bes/highlights/2016/bes-2016-06-g/
 https://www.epa.gov/climateleadership/improving-environmental-sustainability-supply-chains-best-practices
 https://science.energy.gov/pso/about/
@@ -647,7 +644,6 @@ https://www.epa.gov/rmp/chemical-safety-alert-first-responders-environmental-lia
 https://www.epa.gov/statelocalclimate/renewable-portfolio-standards-rps-and-renewable-energy-certificates-recs
 https://data.globalchange.gov/report/nca4/chapter/air-quality/figure/ozone
 https://www.epa.gov/careers/current-job-openings-epa
-https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/health/topics/agents/climate-change/index.cfm
 https://www.epa.gov/arc-x/climate-adaptation-and-erosion-sedimentation
 https://www.epa.gov/rmp/how-submit-risk-management-plan-rmp-epa
 http://www.eia.gov/petroleum/supply/monthly/
@@ -1285,6 +1281,20 @@ https://www.blm.gov/programs/energy-and-minerals/renewable-energy/wind-energy/pe
 https://www.justice.gov/enrd/internships?position=2&tid%5B222%5D=222&practice_area=All&field_va_location_administrative_area=All&order=name&sort=asc
 
 
+# Duplicates
+https://www.niehs.nih.gov/about/od/ocpl/contact/
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/cancer/index.cfm
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/health/topics/agents/climate-change/index.cfm
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/index.cfm
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/asthma/index.cfm
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/heat_related_morbidity/index.cfm
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/funding/acquisitions/index.cfm
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/cardiovascular_diseases/index.cfm
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/mental_health/index.cfm
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/sustainable_development/index.cfm
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/health_impacts/foodborne_diseases/index.cfm
+https://www.niehs.nih.gov/about/od/ocpl/contact/index.cfm?additionalTranslation=true&autoFillURL=https://www.niehs.nih.gov/research/programs/geh/climatechange/index.cfm
+
 # Potential duplicate page?
 # This is the same content as: https://www.epa.gov/climateleadership/f-ghg-emissions-reduction-efforts-2014-flat-panel-display-supplier-profiles
 https://www.epa.gov/climateleadership/f-ghg-emissions-reduction-efforts-2014-flat-panel-display-supplier-profiles-0
@@ -1437,6 +1447,9 @@ http://science.gsfc.nasa.gov/earth/gcdc/index.cfm?fuseAction=home.main&navOrgCod
 # ------
 # Now at: https://science.gsfc.nasa.gov/solarsystem/magnetospheres/
 http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&navOrgCode=695&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/astrophysics/
+http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode=660&navTab=nav_about_us
 # ------
 # Now at: https://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
