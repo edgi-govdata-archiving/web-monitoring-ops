@@ -1,3 +1,6 @@
+# This list tracks pages that *should* be getting scraped by Internet Archive's
+# internal scrapers ever day, but do not currently appear to be. We use SPN to
+# make sure they get saved at least once ever few days.
 https://www.fema.gov/national-flood-insurance-program-flood-hazard-mapping/mt-ez-form-instructions
 https://www.fema.gov/flood-insurance-manual/flood-insurance-manual-effective-may-1-2005
 https://www.epa.gov/economic-and-cost-analysis-air-pollution-regulations/economic-impact-analyses-air-pollution
@@ -1409,7 +1412,7 @@ http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode
 http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&&navOrgCode=698&navTab=nav_about_us
 # ------
 # Now at: https://science.gsfc.nasa.gov/earth/pressreleases
-Same setup as above.
+# Same setup as above.
 http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=highlight_prweb.main&navOrgCode=610&navTab=nav_about_us
 # ------
 # Now at: https://science.gsfc.nasa.gov/astrophysics/instruments/
@@ -2380,3 +2383,28 @@ https://www.doi.gov/BOEM-Videos/
 https://www.doi.gov/BOEM-Newsroom/
 https://www.doi.gov/WhoWeAre/RegionalOffices/Pacific/index.htm
 https://www.doi.gov/GPRA/
+
+
+# PFAS-Related EPA Pages
+https://www.epa.gov/chemical-research/research-and-polyfluoroalkyl-substances-pfas
+https://www.epa.gov/chemical-research/status-epa-research-and-development-pfas
+https://www.epa.gov/pfas/epas-pfas-action-plan
+https://www.epa.gov/water-research/pfas-methods-and-guidance-sampling-and-analyzing-water-and-other-environmental-media
+https://www.epa.gov/chemical-research/pfas-research-summary
+https://www.epa.gov/chemical-research/technologies-reducing-pfas-drinking-water-fact-sheet
+https://www.epa.gov/sciencematters/understanding-pfas-environment
+https://www.epa.gov/sciencematters/reducing-pfas-drinking-water-treatment-technologies
+https://www.epa.gov/sciencematters/epa-researchers-use-innovative-approach-find-pfas-environment
+https://www.epa.gov/sciencematters/epa-toxicologists-focus-innovative-research-pfas-compounds
+https://comptox.epa.gov/dashboard/chemical_lists/EPAPFASRESEARCH
+https://www.epa.gov/pfas
+https://www.epa.gov/pfas/basic-information-pfas
+https://www.epa.gov/pfas/epa-actions-address-pfas
+https://www.epa.gov/pfas/pfas-national-leadership-summit-and-engagement
+https://www.epa.gov/pfas/pfas-laws-and-regulations
+https://www.epa.gov/pfas/pfas-communication-and-outreach-tools
+https://www.epa.gov/pfas/epa-pfas-data-and-tools
+https://www.epa.gov/pfas/us-state-resources-about-pfas
+https://www.epa.gov/pfas/site-specific-information
+https://www.epa.gov/pfas/treating-pfas-drinking-water
+https://www.epa.gov/pfas/pfas-what-you-need-know-infographic
