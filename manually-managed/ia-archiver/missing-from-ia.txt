@@ -1943,6 +1943,9 @@ http://www.eia.gov/kids/resources/teachers/pdfs/energy&%20machines_prim.pdf
 # -----
 # Now at: https://sncaadvisorycommittee.noaa.gov/Announcements
 http://sncaadvisorycommittee.noaa.gov/Announcements
+# -----
+# Now at: https://www.boem.gov/regions/atlantic-ocs-region
+https://www.boem.gov/Atlantic-Region/
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
