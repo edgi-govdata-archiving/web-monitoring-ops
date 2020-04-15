@@ -2411,3 +2411,13 @@ https://www.epa.gov/pfas/us-state-resources-about-pfas
 https://www.epa.gov/pfas/site-specific-information
 https://www.epa.gov/pfas/treating-pfas-drinking-water
 https://www.epa.gov/pfas/pfas-what-you-need-know-infographic
+
+# Additions requested by Gretchen for EPA Unconventional Oil and Gas pages
+# https://github.com/edgi-govdata-archiving/web-monitoring/issues/151
+https://www.epa.gov/uog
+https://www.epa.gov/uog/process-unconventional-natural-gas-production
+https://www.epa.gov/uog/memorandum-understanding-between-state-review-oil-and-natural-gas-environmental-regulations
+https://www.epa.gov/uog/memorandum-understanding-between-state-new-mexico-and-epa-governance-produced-water-new-mexico
+https://www.epa.gov/uog/2017-correspondence-between-epa-and-oil-and-gas-associations-about-epa-compliance-assurance
+https://www.epa.gov/uog/materials-february-2018-oil-and-natural-gas-roundtable
+https://www.epa.gov/uog/new-owner-audit-program-agreement-oil-and-natural-gas-exploration-and-production-facilities

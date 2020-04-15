@@ -7,3 +7,4 @@ kubernetes/ui-secrets.*.yaml
 services.yaml
 services.*.yaml
 scratch.*
+.DS_Store
