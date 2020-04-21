@@ -38,6 +38,8 @@ spec:
           value: "#a1d76a"
         - name: DIFFER_COLOR_DELETION
           value: "#e8a4c8"
+        - name: DIFFER_PARALLELISM
+          value: "4"
         - name: SENTRY_DSN
           valueFrom:
             secretKeyRef:
