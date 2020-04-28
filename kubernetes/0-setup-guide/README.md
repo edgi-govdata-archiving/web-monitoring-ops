@@ -99,6 +99,9 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
+Capture the passphrase in a file, and share the private key and the passphrase
+securely with collaborators.
+
 ## Create S3 Bucket to store cluster state
 
 Create a bucket an S3 bucket to store cluster state. We include a random string
