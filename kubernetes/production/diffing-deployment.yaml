@@ -1,9 +1,12 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: diffing
   namespace: production
 spec:
+  selector:
+    matchLabels:
+      app: diffing-server
   replicas: 4
   template:
     metadata:

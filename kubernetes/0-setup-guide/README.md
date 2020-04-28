@@ -158,7 +158,15 @@ cluster resources. Be patient: the command can take awhile to indicate that it i
 working.
 
 ```
-kops create cluster --name $HOSTED_ZONE --zones $AWS_AVAILABILITY_ZONES --yes --ssh-public-key=~/.ssh/web-monitoring-kube.pub --state=$KOPS_STATE_STORE
+kops create cluster \
+  --name $HOSTED_ZONE \
+  --zones $AWS_AVAILABILITY_ZONES \
+  --ssh-public-key=~/.ssh/web-monitoring-kube.pub \
+  --state=$KOPS_STATE_STORE \
+  --node-count=4 \
+  --node-size=t3.medium \
+  --master-size=t3.medium \
+  --yes
 ```
 
 See additional options in kops for controlling the specific zones of the nodes.
@@ -295,7 +303,7 @@ created to show that we control the domain that we would like to certify.
 Obtain this name and value.
 
 ```
-export API_RES_REC=$(aws acm describe-certificate --certificate-arn $UI_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
+export API_RES_REC=$(aws acm describe-certificate --certificate-arn $API_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
 export UI_RES_REC=$(aws acm describe-certificate --certificate-arn $UI_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
 ```
 
@@ -339,6 +347,10 @@ aws acm describe-certificate --certificate-arn $UI_ARN | jq .Certificate.Status
 ```
 
 It should at first return ``"PENDING_VALIDATION`` and, when valid, ``ISSUED``.
+
+FIXME: Add note about adding a CAA record
+https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting-DNS-validation.html
+https://docs.aws.amazon.com/acm/latest/userguide/setup-caa.html
 
 ## Set certificate ARNs in api and ui services.
 

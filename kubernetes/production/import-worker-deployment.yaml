@@ -1,9 +1,12 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: import-worker
   namespace: production
 spec:
+  selector:
+    matchLabels:
+      app: import-worker
   replicas: 4
   template:
     metadata:
