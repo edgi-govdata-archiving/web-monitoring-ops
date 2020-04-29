@@ -11,7 +11,7 @@ Adding new URLs involves 2 main steps:
 
 ## Steps
 
-### **Add URLs to Internet Archive Wayback Machine**
+### **Add URLs to Internet Archive's Wayback Machine**
 1. First, we want to make sure that at least one snapshot is saved to IAWM via Save Page Now (SPN)
 - Clone [wayback-spn-client](https://github.com/Mr0grog/wayback-spn-client)
 - Create a `.txt` file with the list of new URLs to be tracked, one URL per line.
