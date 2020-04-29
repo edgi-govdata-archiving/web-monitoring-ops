@@ -9,39 +9,41 @@ Adding new URLs involves 2 main steps:
 * Add URLs to the Internet Archive's Wayback Machine
 * Add URLs to Scanner's database
 
+## Prerequsites
+- Have a clone of [web-monitoring-ops](https://github.com/edgi-govdata-archiving/web-monitoring-ops) repository
+
 ## Steps
 
 ### **Add URLs to Internet Archive Wayback Machine**
-1. First, we want to make sure that at least one snapshot is saved to IAWM via Save Page Now (SPN)
+1. First, we want to make sure 
 - Clone [wayback-spn-client](https://github.com/Mr0grog/wayback-spn-client)
-- Create a `.txt` file with the list of new URLs to be tracked, one URL per line.
+- Create a `.txt` file with the list of new URLs to be tracked
 - From `wayback-spn-client` repo: 
     - `> node index.js path/to/your/url/list.txt`
         - This process takes about 30sec per url
         - Make sure output doesn't contain errors
 
-2. Then, we want to make sure the URLs are being continually captured by [ia-archiver](https://github.com/edgi-govdata-archiving/web-monitoring-ops/tree/master/manually-managed/ia-archiver)
-- Clone [web-monitoring-ops](https://github.com/edgi-govdata-archiving/web-monitoring-ops)
+From `web-monitoring-ops` repo:
 - Add URLs to `web-monitoring-ops/manually-managed/ia-archiver/missing-from-ia.txt`
-    - Remember to add a comment describing why the URLs were added
-- Commit `missing-from-ia.txt` back to the repo. 
+    - Add a comment describing why the URLs were added
+- Commit `missing-from-ia.txt` back to the repo.
     - In general, we don't use PRs for updating the `missing-from-ia.txt`. Commit to `master` if you're comfortable doing so.
 - Copy to `ia-archiver` server from `web-monitoring-ops`
     ```
-    > scp manually-managed/ia-archiver/missing-from-ia.txt ubuntu@<Public-DNS>:/home/ubuntu/
+    > scp manually-managed/ia-archiver/missing-from-ia.txt ubuntu@<ipaddress>:/home/ubuntu/
     ```
 - Inform Internet Archive about added URLs in the Scanner slack channel. 
     - Usually @mr0grog does this to keep our point-of-contact with the Internet Archive consistent
 
 ### **Adding URLs to Scanner's database**
 * Clone [web-monitoring-processing](https://github.com/edgi-govdata-archiving/web-monitoring-processing)
-* Be sure to follow all [installation instructions](https://github.com/edgi-govdata-archiving/web-monitoring-processing/#installation-instructions) carefully
+* Be sure to follow all installation instructions carefully
 * You will need to have write permissions and credentials to our database. Add those to `.env` file.
 * For each URL:
-    - `> wm import ia <URL> --tag "tag1" "tag2" --maintainer "maintainer1" "maintainer2" `
-        - Be sure to add a `tag` and `maintainer` It's possible to add more than one. You can use the [API explorer](https://api.monitoring.envirodatagov.org/) to look for examples from related, existing records
+    - `> wm import ia <URL> --tag "tag" --maintainer "maintainer"`
+        - Be sure to add a `tag` and `maintainer`. You can use the [API explorer](https://api.monitoring.envirodatagov.org/) to look for examples from related, existing records
 
-* Watch for a job import ID, so you know the import was successful. Also, you can check the existence of the new record at [api.monitoring.envirodatagov.org](api.monitoring.envirodatagov.org)
+* Watch for a job import ID, so you know the import was successful. Also, can double check at [api.monitoring.envirodatagov.org](api.monitoring.envirodatagov.org)
 
 * IF URLS WERE NOT ABLE TO BE SAVED TO THE WAYBACK MACHINE via SPN (Save Page Now), you will have to add the pages to the database manually instead of using `wm import`.
     1. SSH into a live server via Kubernetes:
@@ -50,7 +52,7 @@ Adding new URLs involves 2 main steps:
         # List available pods
         > kubectl get pods --namespace production
         # Pick an `api-` or `import-worker-` pod (basically, one of the DB pods) and log in
-        > kubectl exec -it --namespace production <name of pod> -- /bin/bash
+        > kubectl exec -it <name of pod> /bin/bash --namespace production
 
         # Open the Rails console once you are logged into the pod
         > rails c
@@ -65,3 +67,4 @@ Adding new URLs involves 2 main steps:
         > new_page.add_tag('NAME OF TAG')
         > new_page.add_maintainer('NAME OF MAINTAINER')
         ```
+        
