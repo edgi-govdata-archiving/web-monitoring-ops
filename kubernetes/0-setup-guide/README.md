@@ -401,6 +401,7 @@ kubectl create -f kubernetes/${NAMESPACE}/diffing-deployment.yaml
 kubectl create -f kubernetes/${NAMESPACE}/diffing-service.yaml
 kubectl create -f kubernetes/${NAMESPACE}/ui-secrets.yaml
 kubectl create -f kubernetes/${NAMESPACE}/ui-deployment.yaml
+kubectl create -f kubernetes/${NAMESPACE}/status-update-job.yaml
 ```
 
 ## Seed database (optional)

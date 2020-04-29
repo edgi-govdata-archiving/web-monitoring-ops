@@ -1,10 +1,15 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis-slave
   namespace: staging
 spec:
-  replicas: 2
+  selector:
+    matchLabels:
+      app: redis
+      role: slave
+      tier: backend
+  replicas: 1
   template:
     metadata:
       labels:
