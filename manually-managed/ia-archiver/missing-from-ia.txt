@@ -2421,3 +2421,11 @@ https://www.epa.gov/uog/memorandum-understanding-between-state-new-mexico-and-ep
 https://www.epa.gov/uog/2017-correspondence-between-epa-and-oil-and-gas-associations-about-epa-compliance-assurance
 https://www.epa.gov/uog/materials-february-2018-oil-and-natural-gas-roundtable
 https://www.epa.gov/uog/new-owner-audit-program-agreement-oil-and-natural-gas-exploration-and-production-facilities
+
+# We're interested in tracking Georgia's DPH pages about COVID-19 since there is rumor of them doctoring numbers.
+https://dph.georgia.gov/health-topics/coronavirus-covid-19
+https://dph.georgia.gov/what-covid-19
+https://dph.georgia.gov/novelcoronavirus
+https://dph.georgia.gov/covid-19-daily-status-report
+https://dph.georgia.gov/preparing-and-responding-covid-19
+https://georgia.gov/covid-19-state-services-georgia
