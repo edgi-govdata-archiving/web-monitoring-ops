@@ -1,3 +1,4 @@
+# Custom Fluentd Config File
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -5,14 +6,14 @@ metadata:
   name: fluentd-config
   namespace: kube-system
 data:
+  # For the built-in, default version of this file, see:
+  # https://github.com/fluent/fluentd-kubernetes-daemonset/blob/master/docker-image/v1.10/debian-cloudwatch/conf/fluent.conf
   fluent.conf: |
     @include /fluentd/etc/kubernetes.conf
     # Amend tags before the cloudwatch_logs plugin picks them up. Modifies
     # the name of the destination AWS cloudwatch log stream..
     <match kubernetes.var.log.containers.*.log>
-      @type record_reformer
-      renew_record false
-      enable_ruby true
+      @type record_modifier
       tag ${record['kubernetes']['namespace_name']}.${record['kubernetes']['labels']['app']||record['kubernetes']['labels']['k8s-app']}.${record['kubernetes']['container_name']}.log
     </match>
     <match **>

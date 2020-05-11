@@ -158,7 +158,15 @@ cluster resources. Be patient: the command can take awhile to indicate that it i
 working.
 
 ```
-kops create cluster --name $HOSTED_ZONE --zones $AWS_AVAILABILITY_ZONES --yes --ssh-public-key=~/.ssh/web-monitoring-kube.pub --state=$KOPS_STATE_STORE
+kops create cluster \
+  --name $HOSTED_ZONE \
+  --zones $AWS_AVAILABILITY_ZONES \
+  --ssh-public-key=~/.ssh/web-monitoring-kube.pub \
+  --state=$KOPS_STATE_STORE \
+  --node-count=4 \
+  --node-size=t3.medium \
+  --master-size=t3.medium \
+  --yes
 ```
 
 See additional options in kops for controlling the specific zones of the nodes.
@@ -188,9 +196,46 @@ Your cluster <HOSTED_ZONE> is ready
 
 ## Enable core metrics.
 
+Kubernetes has an API for metrics (it provides information like memory and CPU usage), but the component that implements it is not automatically installed by Kops, so we need to install it ourselves. The [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) ships a standard configuration file, which we’ve customized slightly to work with Kubernetes. Apply the configuration to set it up:
+
 ```
 kubectl apply -f kubernetes/kube-system/metrics-server/
 ```
+
+Then test whether it’s working by running:
+
+```
+kubectl top node
+# You should see output like:
+NAME                                          CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%
+ip-172-22-123-62.us-west-2.compute.internal   37m          1%     1247Mi          32%
+ip-172-22-48-122.us-west-2.compute.internal   93m          4%     1271Mi          33%
+ip-172-22-60-15.us-west-2.compute.internal    54m          2%     1271Mi          33%
+ip-172-22-90-37.us-west-2.compute.internal    29m          1%     911Mi           24%
+ip-172-22-100-48.us-west-2.compute.internal   58m          2%     1349Mi          35%
+```
+
+**It may take a few minutes before it’s ready.** If, after several minutes, you’re still seeing output like `error: metrics not available yet`, you should take a look at the logs to see what might be going wrong:
+
+```sh
+$ kubectl --namespace kube-system get pods
+# Find the pod name of the metrics server (it'll be `metrics-server-<abc>-<xyz>`)
+$ kubectl --namespace kube-system logs -f <name_of_metrics_server>
+```
+
+If you see messages including `request failed - "401 Unauthorized"`, you may need to edit the Kops cluster configuration to make Kubelet (the program that mainly runs each Kubernetes node) does auth. (See [GitHub issue #5706](https://github.com/kubernetes/kops/issues/5706#issuecomment-419447753) for more.) Run `kops edit cluster` and make sure the `kubelet` section has the following:
+
+```yaml
+kubelet:
+    anonymousAuth: false
+    authorizationMode: Webhook
+    authenticationTokenWebhook: true
+```
+
+Then update the cluster by running:
+1. `kops update cluster` and make sure the changes look correct.
+2. `kops update cluster --yes` to actually apply them.
+3. `kops rolling-update cluster --yes` to update each node.
 
 ## Enable logging.
 
@@ -295,7 +340,7 @@ created to show that we control the domain that we would like to certify.
 Obtain this name and value.
 
 ```
-export API_RES_REC=$(aws acm describe-certificate --certificate-arn $UI_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
+export API_RES_REC=$(aws acm describe-certificate --certificate-arn $API_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
 export UI_RES_REC=$(aws acm describe-certificate --certificate-arn $UI_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
 ```
 
@@ -339,6 +384,16 @@ aws acm describe-certificate --certificate-arn $UI_ARN | jq .Certificate.Status
 ```
 
 It should at first return ``"PENDING_VALIDATION`` and, when valid, ``ISSUED``.
+
+**If validation fails,** it may include a note about needing a `CAA` record (these DNS records dictate what certificate authorities, like Amazon, should be trusted to issue an SSL certificate for you). That means you’ll probably need to create a `CAA` DNS record authorizing AWS to issue an SSL certificate for you. The value of the record should be:
+
+```
+0 issue "amazontrust.com"
+```
+
+For more info, see:
+- https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting-DNS-validation.html
+- https://docs.aws.amazon.com/acm/latest/userguide/setup-caa.html
 
 ## Set certificate ARNs in api and ui services.
 
@@ -389,6 +444,7 @@ kubectl create -f kubernetes/${NAMESPACE}/diffing-deployment.yaml
 kubectl create -f kubernetes/${NAMESPACE}/diffing-service.yaml
 kubectl create -f kubernetes/${NAMESPACE}/ui-secrets.yaml
 kubectl create -f kubernetes/${NAMESPACE}/ui-deployment.yaml
+kubectl create -f kubernetes/${NAMESPACE}/status-update-job.yaml
 ```
 
 ## Seed database (optional)

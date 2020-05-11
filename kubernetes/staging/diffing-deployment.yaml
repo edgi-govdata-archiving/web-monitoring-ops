@@ -1,9 +1,12 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: diffing
   namespace: staging
 spec:
+  selector:
+    matchLabels:
+      app: diffing-server
   replicas: 2
   template:
     metadata:
@@ -39,7 +42,7 @@ spec:
         - name: DIFFER_COLOR_DELETION
           value: "#e8a4c8"
         - name: DIFFER_PARALLELISM
-          value: "4"
+          value: "2"
         - name: SENTRY_DSN
           valueFrom:
             secretKeyRef:
