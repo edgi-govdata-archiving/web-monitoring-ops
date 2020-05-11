@@ -1,9 +1,17 @@
-# This file, which includes all configs for the
-# Metrics Server, is sourced from metrics-server's
-# Releases.
+# Metrics server (https://github.com/kubernetes-sigs/metrics-server) is an
+# official part of Kubernetes and provides part of its API, but is not built-in
+# and not included automatically by Kops. (There are alternative components
+# for implementing the metrics API, so Kops is punting by not making a choice
+# for us here.)
+#
+# This file, which includes all configs for the Metrics Server, is sourced from
+# metrics-server's Releases.
 #
 # Version: 0.3.6
 # https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml
+#
+# We've added some minor customizations to the default configuration, which are
+# marked with comments beginning with `# EDGI:`
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
@@ -94,6 +102,9 @@ spec:
         args:
           - --cert-dir=/tmp
           - --secure-port=4443
+          # EDGI: this argument is needed to work with our basic Kops setup.
+          - --kubelet-insecure-tls
+          # /EDGI
         ports:
         - name: main-port
           containerPort: 4443

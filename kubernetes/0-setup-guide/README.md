@@ -196,9 +196,39 @@ Your cluster <HOSTED_ZONE> is ready
 
 ## Enable core metrics.
 
+Kubernetes has an API for metrics (it provides information like memory and CPU usage), but the component that implements it is not automatically installed by Kops, so we need to install it ourselves. The [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) ships a standard configuration file, which we’ve customized slightly to work with Kubernetes. Apply the configuration to set it up:
+
 ```
 kubectl apply -f kubernetes/kube-system/metrics-server/
 ```
+
+Then test whether it’s working by running:
+
+```
+kubectl top node
+```
+
+**It may take a few minutes before it’s ready.** If, after several minutes, you’re still seeing output like `error: metrics not available yet`, you should take a look at the logs to see what might be going wrong:
+
+```sh
+$ kubectl --namespace kube-system get pods
+# Find the pod name of the metrics server (it'll be `metrics-server-<abc>-<xyz>`)
+$ kubectl --namespace kube-system logs -f <name_of_metrics_server>
+```
+
+If you see messages including `request failed - "401 Unauthorized"`, you may need to edit the Kops cluster configuration to make Kubelet (the program that mainly runs each Kubernetes node) does auth. (See [GitHub issue #5706](https://github.com/kubernetes/kops/issues/5706#issuecomment-419447753) for more.) Run `kops edit cluster` and make sure the `kubelet` section has the following:
+
+```yaml
+kubelet:
+    anonymousAuth: false
+    authorizationMode: Webhook
+    authenticationTokenWebhook: true
+```
+
+Then update the cluster by running:
+1. `kops update cluster` and make sure the changes look correct.
+2. `kops update cluster --yes` to actually apply them.
+3. `kops rolling-update cluster --yes` to update each node.
 
 ## Enable logging.
 
