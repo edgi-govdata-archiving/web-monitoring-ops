@@ -1,3 +1,24 @@
+# Configure Fluentd for sending our application logs to Cloudwatch.
+# -----------------------------------------------------------------
+# The main thrust of this is setting up a daemonset to deploy fluentd to every
+# node, and then using a configmap (see `fluentd.configmap.yaml`) to create a
+# custom fluentd config file.
+#
+# This configuration is based on Fluentd's example Kubernetes Cloudwatch
+# config at:
+# https://github.com/fluent/fluentd-kubernetes-daemonset/blob/master/fluentd-daemonset-cloudwatch-rbac.yaml
+#
+# Modifications are marked with `EDGI:`.
+#
+# Some useful documentation:
+# - Fluentd Kubernetes docs:
+#   https://docs.fluentd.org/container-deployment/kubernetes
+# - README for the container we're using:
+#   https://github.com/fluent/fluentd-kubernetes-daemonset
+# - Medium Tutorial:
+#   https://medium.com/kubernetes-tutorials/cluster-level-logging-in-kubernetes-with-fluentd-e59aa2b6093a
+# - Examples in Fluentd PRs:
+#   https://github.com/fluent/fluentd-kubernetes-daemonset/pull/349#issuecomment-579097659
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -37,7 +58,7 @@ subjects:
   namespace: kube-system
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: fluentd
@@ -45,16 +66,19 @@ metadata:
   labels:
     k8s-app: fluentd-logging
     version: v1
-    kubernetes.io/cluster-service: "true"
 spec:
+  selector:
+    matchLabels:
+      k8s-app: fluentd-logging
+      version: v1
   template:
     metadata:
       annotations:
+        # EDGI: use us-west-2a availability zone
         iam.amazonaws.com/role: us-west-2a.staging.kubernetes.ruist.io-service-role
       labels:
         k8s-app: fluentd-logging
         version: v1
-        kubernetes.io/cluster-service: "true"
     spec:
       serviceAccount: fluentd
       serviceAccountName: fluentd
@@ -63,20 +87,24 @@ spec:
         effect: NoSchedule
       containers:
       - name: fluentd
-        image: fluent/fluentd-kubernetes-daemonset:cloudwatch
+        image: fluent/fluentd-kubernetes-daemonset:v1-debian-cloudwatch
         env:
           - name: LOG_GROUP_NAME
             value: "k8s"
+          # EDGI: use us-west-2 region
           - name: AWS_REGION
             value: "us-west-2"
-          - name: FLUENT_UID
-            value: "0"
+          # EDGI: set a custom fluentd config (see volumes/volumeMounts below).
           - name: FLUENTD_CONF
             value: web-monitoring/fluent.conf
+          # EDGI: TODO: are these still needed? Not sure where they are used.
+          - name: FLUENT_UID
+            value: "0"
           - name: K8S_NODE_NAME
             valueFrom:
               fieldRef:
                 fieldPath: spec.nodeName
+          # /EDGI
         resources:
           limits:
             memory: 200Mi
@@ -89,6 +117,7 @@ spec:
         - name: varlibdockercontainers
           mountPath: /var/lib/docker/containers
           readOnly: true
+        # EDGI: Mount the volume with our custom config
         - name: config-vol
           mountPath: /fluentd/etc/web-monitoring
       terminationGracePeriodSeconds: 30
@@ -99,6 +128,7 @@ spec:
       - name: varlibdockercontainers
         hostPath:
           path: /var/lib/docker/containers
+      # EDGI: Place our custom config from fluentd.configmap.yaml on disk
       - name: config-vol
         configMap:
           name: fluentd-config
