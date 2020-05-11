@@ -206,6 +206,13 @@ Then test whether it’s working by running:
 
 ```
 kubectl top node
+# You should see output like:
+NAME                                          CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%
+ip-172-22-123-62.us-west-2.compute.internal   37m          1%     1247Mi          32%
+ip-172-22-48-122.us-west-2.compute.internal   93m          4%     1271Mi          33%
+ip-172-22-60-15.us-west-2.compute.internal    54m          2%     1271Mi          33%
+ip-172-22-90-37.us-west-2.compute.internal    29m          1%     911Mi           24%
+ip-172-22-100-48.us-west-2.compute.internal   58m          2%     1349Mi          35%
 ```
 
 **It may take a few minutes before it’s ready.** If, after several minutes, you’re still seeing output like `error: metrics not available yet`, you should take a look at the logs to see what might be going wrong:
