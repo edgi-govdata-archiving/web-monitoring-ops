@@ -385,9 +385,15 @@ aws acm describe-certificate --certificate-arn $UI_ARN | jq .Certificate.Status
 
 It should at first return ``"PENDING_VALIDATION`` and, when valid, ``ISSUED``.
 
-FIXME: Add note about adding a CAA record
-https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting-DNS-validation.html
-https://docs.aws.amazon.com/acm/latest/userguide/setup-caa.html
+**If validation fails,** it may include a note about needing a `CAA` record (these DNS records dictate what certificate authorities, like Amazon, should be trusted to issue an SSL certificate for you). That means you’ll probably need to create a `CAA` DNS record authorizing AWS to issue an SSL certificate for you. The value of the record should be:
+
+```
+0 issue "amazontrust.com"
+```
+
+For more info, see:
+- https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting-DNS-validation.html
+- https://docs.aws.amazon.com/acm/latest/userguide/setup-caa.html
 
 ## Set certificate ARNs in api and ui services.
 
