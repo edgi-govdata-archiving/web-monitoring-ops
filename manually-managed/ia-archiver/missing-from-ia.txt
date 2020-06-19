@@ -2386,7 +2386,8 @@ https://www.doi.gov/BOEM-Videos/
 https://www.doi.gov/BOEM-Newsroom/
 https://www.doi.gov/WhoWeAre/RegionalOffices/Pacific/index.htm
 https://www.doi.gov/GPRA/
-
+https://www.doi.gov/about
+https://www.doi.gov/recreation
 
 # PFAS-Related EPA Pages
 https://www.epa.gov/chemical-research/research-and-polyfluoroalkyl-substances-pfas
@@ -2429,3 +2430,9 @@ https://dph.georgia.gov/novelcoronavirus
 https://dph.georgia.gov/covid-19-daily-status-report
 https://dph.georgia.gov/preparing-and-responding-covid-19
 https://georgia.gov/covid-19-state-services-georgia
+
+# ACE-related EPA pages
+https://www.epa.gov/stationary-sources-air-pollution/affordable-clean-energy-rule
+https://www.epa.gov/stationary-sources-air-pollution/proposal-affordable-clean-energy-ace-rule
+https://www.epa.gov/stationary-sources-air-pollution/electric-utility-generating-units-repealing-clean-power-plan-0
+https://www.epa.gov/climate-change
