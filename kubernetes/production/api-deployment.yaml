@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name:  rails-server
-        image: envirodgi/db-rails-server:873a631d81969b226aa9b8ff4e32dd464704ef6b
+        image: envirodgi/db-rails-server:116bc40ff29424ea387437e1de3538a974282e55
         imagePullPolicy: Always
         ports: 
         - containerPort: 3000
