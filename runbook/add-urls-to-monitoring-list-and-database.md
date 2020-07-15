@@ -38,7 +38,7 @@ Adding new URLs involves 2 main steps:
 * Be sure to follow all [installation instructions](https://github.com/edgi-govdata-archiving/web-monitoring-processing/#installation-instructions) carefully
 * You will need to have write permissions and credentials to our database. Add those to `.env` file.
 * For each URL:
-    - `> wm import ia <URL> --tag "tag1" "tag2" --maintainer "maintainer1" "maintainer2" `
+    - `> wm import ia <URL> --tag "tag1" --tag "tag2" --maintainer "maintainer1" -- maintainer "maintainer2" `
         - Be sure to add a `tag` and `maintainer` It's possible to add more than one. You can use the [API explorer](https://api.monitoring.envirodatagov.org/) to look for examples from related, existing records
 
 * Watch for a job import ID, so you know the import was successful. Also, you can check the existence of the new record at [api.monitoring.envirodatagov.org](api.monitoring.envirodatagov.org)
