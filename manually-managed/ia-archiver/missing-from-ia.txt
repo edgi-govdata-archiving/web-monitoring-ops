@@ -2436,3 +2436,25 @@ https://www.epa.gov/stationary-sources-air-pollution/affordable-clean-energy-rul
 https://www.epa.gov/stationary-sources-air-pollution/proposal-affordable-clean-energy-ace-rule
 https://www.epa.gov/stationary-sources-air-pollution/electric-utility-generating-units-repealing-clean-power-plan-0
 https://www.epa.gov/climate-change
+
+# EPA Guidance pages. EPA has until July 31st, 2020 to add documents to this portal, and after that, any guidance that is not in this portal is considered null and void.
+https://www.epa.gov/guidance
+https://www.epa.gov/guidance/guidance-documents-managed-office-air-and-radiation
+https://www.epa.gov/guidance/guidance-documents-managed-office-chemical-safety-and-pollution-prevention-ocspp
+https://www.epa.gov/guidance/guidance-documents-managed-office-enforcement-and-compliance-assurance
+https://www.epa.gov/guidance/guidance-documents-managed-office-general-counsel
+https://www.epa.gov/guidance/guidance-documents-managed-office-international-and-tribal-affairs
+https://www.epa.gov/guidance/guidance-documents-managed-office-land-and-emergency-management
+https://www.epa.gov/guidance/guidance-documents-managed-office-research-and-development
+https://www.epa.gov/guidance/guidance-documents-managed-office-water
+https://www.epa.gov/guidance/guidance-documents-managed-epa-regional-offices
+https://www.epa.gov/guidance/region-1-guidance-documents
+https://www.epa.gov/guidance/region-2-guidance-documents
+https://www.epa.gov/guidance/region-3-guidance-documents
+https://www.epa.gov/guidance/region-4-guidance-documents
+https://www.epa.gov/guidance/region-5-guidance-documents
+https://www.epa.gov/guidance/region-6-guidance-documents
+https://www.epa.gov/guidance/region-7-guidance-documents
+https://www.epa.gov/guidance/region-8-guidance-documents
+https://www.epa.gov/guidance/region-9-guidance-documents
+https://www.epa.gov/guidance/region-10-guidance-documents
