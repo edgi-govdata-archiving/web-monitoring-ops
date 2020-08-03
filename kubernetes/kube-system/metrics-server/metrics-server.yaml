@@ -7,8 +7,8 @@
 # This file, which includes all configs for the Metrics Server, is sourced from
 # metrics-server's Releases.
 #
-# Version: 0.3.6
-# https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml
+# Version: 0.3.7
+# https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.7/components.yaml
 #
 # We've added some minor customizations to the default configuration, which are
 # marked with comments beginning with `# EDGI:`
@@ -97,7 +97,7 @@ spec:
         emptyDir: {}
       containers:
       - name: metrics-server
-        image: k8s.gcr.io/metrics-server-amd64:v0.3.6
+        image: k8s.gcr.io/metrics-server/metrics-server:v0.3.7
         imagePullPolicy: IfNotPresent
         args:
           - --cert-dir=/tmp
