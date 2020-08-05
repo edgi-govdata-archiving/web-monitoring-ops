@@ -70,6 +70,7 @@ https://faq.coronavirus.gov/parents-and-children/
 https://faq.coronavirus.gov/pregnancy/
 https://faq.coronavirus.gov/funerals/
 https://faq.coronavirus.gov/animals/
+https://faq.coronavirus.gov/animals/why-are-animals-being-tested-when-people-cant/
 https://faq.coronavirus.gov/k12-childcare/
 https://faq.coronavirus.gov/water-transmission/
 https://faq.coronavirus.gov/rumors/
@@ -80,6 +81,12 @@ https://faq.coronavirus.gov/spread/how-does-the-virus-spread/
 https://faq.coronavirus.gov/protect-yourself/am-i-at-risk-for-covid-19-in-the-united-states/
 https://faq.coronavirus.gov/symptoms-and-testing/what-are-the-symptoms-and-complications-that-covid-19-can-cause/
 https://faq.coronavirus.gov/symptoms-and-testing/should-i-be-tested-for-covid-19/
+# ---
+https://faq.coronavirus.gov/water-transmission/can-the-covid-19-virus-spread-through-pools-and-hot-tubs/
+# Redirects to: https://faq.coronavirus.gov/can-the-covid-19-virus-spread-through-pools-and-hot-tubs/
+# ---
+https://faq.coronavirus.gov/funerals/are-department-of-veterans-affairs-national-cemetaries-open/
+# Redirects to: https://faq.coronavirus.gov/are-department-of-veterans-affairs-national-cemeteries-open/
 
 # Digital.gov
 https://digital.gov/resources/coronavirus-covid19-guidance-for-us-government/
@@ -150,10 +157,12 @@ https://www.cdc.gov/coronavirus/2019-ncov/travelers/map-and-travel-notices.html
 https://www.cdc.gov/coronavirus/2019-ncov/travelers/from-other-countries.html
 https://www.cdc.gov/coronavirus/2019-ncov/travelers/faqs.html
 https://www.cdc.gov/coronavirus/2019-ncov/travelers/communication-resources.html
+https://www.cdc.gov/coronavirus/2019-ncov/travelers/map/3162020/map-coronavirus.html
 https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/index.html
 https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/testing-in-us.html
 https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/world-map.html
 https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cdc-in-action.html
+https://www.cdc.gov/coronavirus/2019-ncov/prepare/index.html
 https://www.cdc.gov/coronavirus/2019-ncov/prepare/disinfecting-building-facility.html
 https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/guidance-for-schools.html
 https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/schools-faq.html

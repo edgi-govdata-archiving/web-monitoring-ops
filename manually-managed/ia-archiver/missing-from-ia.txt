@@ -116,7 +116,6 @@ https://www.usgs.gov/science/science-explorer?offset=80&lq=endangered+species
 https://www.epa.gov/heat-islands/austin-heat-island-mitigation
 http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode=612&navTab=nav_about_us
 https://www.epa.gov/indoor-air-quality-iaq/energy-savings-plus-health-indoor-air-quality-guidelines-multifamily-building
-https://science.energy.gov/hep/highlights/2016/hep-2016-12-aa/?p=1
 http://climate.nasa.gov/quizzes/clouds-aerosols-quiz/
 https://science.energy.gov/np/highlights/2016/np-2016-07-b/
 https://www.epa.gov/aboutepa/about-national-center-environmental-research-ncer
@@ -1282,6 +1281,29 @@ https://www.niehs.nih.gov/research/programs/nas/index.cfm
 https://www.niehs.nih.gov/about/stewardship/index.cfm
 https://www.blm.gov/programs/energy-and-minerals/renewable-energy/wind-energy/permitting-and-development/right-of-way
 https://www.justice.gov/enrd/internships?position=2&tid%5B222%5D=222&practice_area=All&field_va_location_administrative_area=All&order=name&sort=asc
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/utah
+https://www.usgs.gov/science/science-explorer/Mapping%2C+Remote+Sensing%2C+and+Geospatial+Data
+https://www.usgs.gov/connect/headquarters
+https://www.blm.gov/programs/energy-and-minerals/coal/land-use-planning/coal-exploration-licenses
+https://www.blm.gov/programs/energy-and-minerals/coal
+https://www.blm.gov/learn/youth-and-educators
+https://www.blm.gov/programs/lands-and-realty/regional-information/arizona
+https://www.epa.gov/renewable-fuel-standard-program/joule-unlimited-technologies-approval
+https://www.gfdl.noaa.gov/land-ecosystems-and-hydrology/
+https://www.cdc.gov/about/advisory/advcharter.htm
+https://www.epa.gov/statelocalclimate/energy-star-home-improvement-resource-overview
+https://www.epa.gov/ftta/epa-reports-congress-technology-transfer
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/oil-and-gas-statistics
+https://earthdata.nasa.gov/library?page=24&filter=
+https://www.gfdl.noaa.gov/hurricane-portal/
+https://www.epa.gov/renewable-fuel-standard-program/sme-carrollton-approval
+https://www.epa.gov/re-powering/national-maps-solar-photovoltaics-pv-and-concentrated-solar-power-potential
+https://esgdata.gfdl.noaa.gov/projects/esgf-gfdl/
+https://www.gfdl.noaa.gov/research_highlight/
+https://www.blm.gov/learn/science-in-the-blm
+https://www.epa.gov/economic-and-cost-analysis-air-pollution-regulations
+https://www.fhwa.dot.gov/environment/
+https://earthdata.nasa.gov/library?page=4&filter=&sortby=Size&order=asc
 
 
 # Duplicates
@@ -1453,6 +1475,24 @@ http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&navOrgCode=695
 # ------
 # Now at: https://science.gsfc.nasa.gov/astrophysics/
 http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode=660&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/sci/
+http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCode=600&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/earth/geodesy/
+http://science.gsfc.nasa.gov/earth/index.cfm?fuseAction=home.main&navOrgCode=61A&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/cisto/svs/
+http://science.gsfc.nasa.gov/earth/cryosphere/index.cfm?fuseAction=home.main&navOrgCode=606.4&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/solarsystem/atmosenvironments/
+http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCode=699&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/earth/
+http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode=610&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/solarsystem/magnetospheres/
+http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCode=695&navTab=nav_about_us
 # ------
 # Now at: https://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
@@ -1946,6 +1986,58 @@ http://sncaadvisorycommittee.noaa.gov/Announcements
 # -----
 # Now at: https://www.boem.gov/regions/atlantic-ocs-region
 https://www.boem.gov/Atlantic-Region/
+# -----
+# Now at: https://www.energy.gov/science/listings/university-highlights?page=4&p=1
+https://science.energy.gov/universities/highlights/?page=4&p=1
+# -----
+# Now at: https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download/?cid=stelprdb1270250&ext=pdf
+https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1270250&ext=pdf
+# -----
+# Now at: https://enviro.epa.gov/
+https://www3.epa.gov/enviro/facts/rcrainfo/search.html
+# ------
+# Now at: https://www.epa.gov/energy-independence
+https://www.epa.gov/cleanpowerplantoolbox/market-based-mechanisms-design-and-operation
+# ------
+# Now at: https://www.aoml.noaa.gov/phod/tsg/index.php
+http://www.aoml.noaa.gov/phod/tsg/index.php
+# ------
+# Now at: https://psl.noaa.gov/data/gridded/tables/arctic.html
+https://www.esrl.noaa.gov/psd/data/gridded/tables/arctic.html
+# ------
+# Now at: https://www.epa.gov/airmarkets/power-sector-modeling
+https://www.epa.gov/airmarkets/clean-air-markets-power-sector-modeling
+# ------
+# Now at: https://www.aoml.noaa.gov/phod/sardac/products/index.php
+http://www.aoml.noaa.gov/phod/sardac/products/index.php
+# ------
+# Now at: https://esrl.noaa.gov/csl/groups/csl7/measurements/2004NEAQSITCT/P3/DataDownload/index.php?page=/csd/groups/csd7/measurements/2004NEAQSITCT/P3/DataDownload/
+https://esrl.noaa.gov/csd/groups/csd7/measurements/2004NEAQSITCT/P3/DataDownload/index.php?page=/csd/groups/csd7/measurements/2004NEAQSITCT/P3/DataDownload/
+# ------
+# Now at: https://www.energy.gov/science/hep/articles/shattering-protons-high-energy-collisions-confirms-higgs-boson-production
+https://science.energy.gov/hep/highlights/2016/hep-2016-12-aa/?p=1
+# ------
+# Now at: https://arpa-e.energy.gov/?q=arpa-e-programs/beest&order=title&sort=asc
+http://arpa-e.energy.gov/?q=arpa-e-programs/beest&order=title&sort=asc
+# ------
+# This is kind of a not-correct redirect.
+# Now at: https://www.epa.gov/energy-independence
+https://www.epa.gov/cleanpowerplan/fact-sheet-clean-power-plan-numbers
+# ------
+# Now at: https://www.epa.gov/climateleadership/climate-leadership-webinar-greenhouse-gas-management-resources-small-businesses
+https://www.epa.gov/climateleadership/greenhouse-gas-management-resources-small-businesses
+# ------
+# Now at: https://www.epa.gov/greeningepa/nepa-review-form-edison-building-209-bay-renovation
+http://epa.gov/greeningepa/nepa-review-form-edison-building-209-bay-renovation
+# ------
+# Now at: https://www.eia.gov/tools/faqs/faq.php?id=207&t=21
+http://www.eia.gov/tools/faqs/faq.cfm?id=207&t=21
+# ------
+# Now at: https://www.epa.gov/greenpower/green-power-partnership-eligible-scope-participation
+https://www.epa.gov/greenpower/green-power-partnership-scope
+# ------
+# Now at: https://www.nrel.gov/hydrogen/storage.html
+http://www.nrel.gov/hydrogen/proj_storage.html?print
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -1985,6 +2077,19 @@ https://www.boem.gov/Atlantic-Region/
 # ------
 # Now at: https://www.ncei.noaa.gov/thredds/blended-global/oceanWinds.html
 # https://www.ncdc.noaa.gov/thredds/OceanWinds.html
+# -----
+# Now at: https://pcmdi.llnl.gov/mips/cmip5/
+# http://cmip-pcmdi.llnl.gov/cmip5/
+# NOTE: may want to add the successor project, https://pcmdi.llnl.gov/CMIP6/
+# -----
+# Now at: https://sncaadvisorycommittee.noaa.gov/Portals/0/Meeting-Documents/Reference-Documents/Communicating-Science-Effectively-A-Research-Agenda.pdf
+http://sncaadvisorycommittee.noaa.gov/Portals/0/Meeting-Documents/Reference-Documents/Communicating-Science-Effectively-A-Research-Agenda.pdf
+# ------
+# Now at: https://www.boem.gov/environment/environmental-assessment/nepa/national-environmental-policy-act-nepa
+https://www.boem.gov/National-Environmental-Policy-Act/
+# ------
+# Now at: https://psl.noaa.gov/data/obs/surfacefluxobs/soil/soil.php
+https://www.esrl.noaa.gov/psd/data/obs/surfacefluxobs/soil/soil.php
 
 
 # No longer exists; has not existed for a long time
@@ -2044,6 +2149,12 @@ https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%2
 # https://www.niehs.nih.gov/activities/coloring/index.htm
 # https://www.blm.gov/co/st/en/BLM_Programs/geographical_sciences/gis/GeospatialData/Coal_Leases.html
 # https://www.blm.gov/wy/st/en/programs/energy/Oil_and_Gas/Leasing/EOIs.print.html
+# https://www.blm.gov/wy/st/en/resources/public_room/gis/metadata/own.html
+# https://www.whitehouse.gov/administration/eop/ceq/press_releases?tid=956&page=2
+# https://www.data.gov/dataset?_organization_limit=0&groups=climate5434&tags=illinois&organization=dhs-gov
+# http://research.noaa.gov/LinkClick.aspx?fileticket=MyxrcrDQahc%3D&tabid=1401&portalid=7&mid=7761
+# http://research.noaa.gov/LinkClick.aspx?fileticket=MyxrcrDQahc%3D&tabid=1401&portalid=7&mid=7761
+https://www.boem.gov/Oil-and-Gas-Energy-Program/
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
@@ -2074,6 +2185,9 @@ https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-effor
 https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/south-dakota
 https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/utah
 https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-efforts/wyoming
+https://www.epa.gov/dc/notice-intent-extend-public-comment-period-draft-phase-i-ms4-permit-district-columbia
+https://www.epa.gov/research/research-laboratories-and-centers-fact-sheet
+https://www.blm.gov/programs/energy-and-minerals/renewable-energy/wind-energy/data
 # ---
 # https://www.epa.gov/trinationalanalysis/land-disposal-2016-tri-national-analysis
 # Now only available in PDF form via https://www.epa.gov/trinationalanalysis/report-sections-2016-tri-national-analysis
@@ -2220,6 +2334,7 @@ https://echo.epa.gov/facilities/facility-search/results?mediaSelected=water&stat
 # https://earthdata.nasa.gov/files/NASA_SOP_2012_A_new_pole_hole.pdf
 # https://www.epa.gov/sites/production/files/2013-08/documents/asthma_trifold_korean.pdf
 # https://yosemite.epa.gov/sab/sabproduct.nsf/231FC7CE7BA83840852574B200404DFE/$File/EPA-CASAC-08-020-unsigned.pdf
+# http://sncaadvisorycommittee.noaa.gov/Portals/0/Documents-Page/FRN_2017-02894.pdf
 
 # ...Except these PDFs
 https://www.epa.gov/sites/production/files/2015-08/documents/pndd.pdf
