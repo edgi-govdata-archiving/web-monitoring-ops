@@ -1304,6 +1304,10 @@ https://www.blm.gov/learn/science-in-the-blm
 https://www.epa.gov/economic-and-cost-analysis-air-pollution-regulations
 https://www.fhwa.dot.gov/environment/
 https://earthdata.nasa.gov/library?page=4&filter=&sortby=Size&order=asc
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/operations-and-production/the-gold-book
+https://www.blm.gov/programs/fish-and-wildlife/wildlife/featured-projects/idaho
+https://www.ncdc.noaa.gov/nexradinv/
+https://www.epa.gov/land-research/ground-water-modeling-research
 
 
 # Duplicates
@@ -1493,6 +1497,9 @@ http://science.gsfc.nasa.gov/earth/acd/index.cfm?fuseAction=home.main&navOrgCode
 # ------
 # Now at: https://science.gsfc.nasa.gov/solarsystem/magnetospheres/
 http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCode=695&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/cisto/nccs/
+http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCode=606.2&navTab=nav_about_us
 # ------
 # Now at: https://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
@@ -2038,6 +2045,24 @@ https://www.epa.gov/greenpower/green-power-partnership-scope
 # ------
 # Now at: https://www.nrel.gov/hydrogen/storage.html
 http://www.nrel.gov/hydrogen/proj_storage.html?print
+# ------
+# Now at: https://www.osha.gov/news/speeches
+https://www.osha.gov/pls/oshaweb/owasrch.search_form?p_doc_type=SPEECHES&p_toc_level=0&p_keyvalue=
+# ------
+# Now at: https://esrl.noaa.gov/csl/groups/csl7/instruments/
+https://esrl.noaa.gov/csd/groups/csd7/instruments/
+# ------
+# Now at: https://esrl.noaa.gov/csl/groups/csl3/measurements/wfip2/
+https://esrl.noaa.gov/csd/groups/csd3/measurements/wfip2/
+# ------
+# Now at: https://www.energy.gov/science/listings/university-highlights?page=14
+https://science.energy.gov/universities/highlights/?page=14
+# ------
+# Now at: https://esrl.noaa.gov/csl/groups/csl7/measurements/2017uwfps/ground.html
+https://esrl.noaa.gov/csd/groups/csd7/measurements/2017uwfps/ground.html
+# ------
+# Now at: https://www.energy.gov/science/bes/articles/confined-water-fahrenheit-451
+https://science.energy.gov/bes/highlights/2016/bes-2016-11-h/
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -2088,8 +2113,13 @@ http://sncaadvisorycommittee.noaa.gov/Portals/0/Meeting-Documents/Reference-Docu
 # Now at: https://www.boem.gov/environment/environmental-assessment/nepa/national-environmental-policy-act-nepa
 https://www.boem.gov/National-Environmental-Policy-Act/
 # ------
-# Now at: https://psl.noaa.gov/data/obs/surfacefluxobs/soil/soil.php
-https://www.esrl.noaa.gov/psd/data/obs/surfacefluxobs/soil/soil.php
+# https://www.esrl.noaa.gov/psd/data/obs/surfacefluxobs/soil/soil.php
+# Now at:
+https://psl.noaa.gov/data/obs/surfacefluxobs/soil/soil.php
+# ------
+# http://www.nrel.gov/news/features/2016/33699
+# Now at:
+https://www.nrel.gov/news/features/2016/33699.html
 
 
 # No longer exists; has not existed for a long time
@@ -2155,6 +2185,8 @@ https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%2
 # http://research.noaa.gov/LinkClick.aspx?fileticket=MyxrcrDQahc%3D&tabid=1401&portalid=7&mid=7761
 # http://research.noaa.gov/LinkClick.aspx?fileticket=MyxrcrDQahc%3D&tabid=1401&portalid=7&mid=7761
 https://www.boem.gov/Oil-and-Gas-Energy-Program/
+# https://www.ferc.gov/EventCalendar/EventDetails.aspx?ID=2118&CalType=%20&Date=8/9/2005&CalendarID=116
+# http://www.nrel.gov/news/press/2007/524
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
@@ -2252,6 +2284,11 @@ https://www.blm.gov/programs/energy-and-minerals/renewable-energy/wind-energy/da
 # No longer exists; redirects to non-equivalent page
 # https://www.epa.gov/statelocalclimate/state-energy-co2-emissions
 # https://www.epa.gov/statelocalclimate/state-public-utility-commission-overview-energy-and-environment-officials
+# https://science.energy.gov/bes/highlights/2015/bes-2015-08-c/
+# https://science.energy.gov/~/media/sc-1/pdf/2013/103013_Dehmer_CSST.pdf
+# https://science.energy.gov/news/presentations-and-testimony/2011/
+# https://science.energy.gov/sbir/highlights/2015/
+# https://science.energy.gov/bes/highlights/2015/bes-2015-07-a/
 
 
 # These were alwasy 404s, not sure why we have them listed in the first place
@@ -2342,6 +2379,7 @@ https://www.epa.gov/sites/production/files/2019-04/documents/final_pndd_guidance
 https://www.epa.gov/sites/production/files/2015-08/documents/absolute-energy-rec-determination-5-22-13.pdf
 https://www.epa.gov/sites/production/files/2015-03/documents/repower_technologies_solar.pdf
 https://www.epa.gov/sites/production/files/2016-03/documents/transcript_-_the_jobs_impact_of_clean_energy.pdf
+https://www.epa.gov/sites/production/files/2016-03/documents/jobs_and_economic_impacts_from_wind_power_development_-_nrels_jedi_model.pdf
 
 # Skip FTP for now
 # ftp://ftp.aoml.noaa.gov/phod/pub/lumpkin/drifter_climatology/monthly
