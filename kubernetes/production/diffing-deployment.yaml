@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: processing
-        image: envirodgi/processing:ecbb05f85fb56c659849b821a7d098a394a8cfe2
+        image: envirodgi/processing:d46eb343705e8e25ddecfa8ff53fe15ba172cf53
         imagePullPolicy: Always
         ports:
         - containerPort: 80
