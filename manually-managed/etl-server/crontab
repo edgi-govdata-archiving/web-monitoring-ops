@@ -41,3 +41,6 @@
 # Daily Internet Archive Import
 # 30 3 * * * /home/ubuntu/etl-tools/cron-ia-import.sh >> /var/log/cron-ia-import.log 2>&1
 30 3 * * * /home/ubuntu/etl-tools/cron-ia-import.sh >> "/var/log/cron-ia-import/import-$(date +\%Y-\%m-\%dT\%H-\%M_\%S).log" 2>&1
+
+# Clean out import logs from > 25 days ago
+0 3 * * * find /var/log/cron-ia-import/* -mtime +25 -exec rm {} \;
