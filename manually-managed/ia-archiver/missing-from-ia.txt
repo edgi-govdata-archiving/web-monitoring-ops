@@ -1308,6 +1308,7 @@ https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/operations-and-prod
 https://www.blm.gov/programs/fish-and-wildlife/wildlife/featured-projects/idaho
 https://www.ncdc.noaa.gov/nexradinv/
 https://www.epa.gov/land-research/ground-water-modeling-research
+https://www.fhwa.dot.gov/environment/sustainability/resilience/index.cfm
 
 
 # Duplicates
@@ -2049,6 +2050,20 @@ http://www.nrel.gov/hydrogen/proj_storage.html?print
 # Now at: https://www.osha.gov/news/speeches
 https://www.osha.gov/pls/oshaweb/owasrch.search_form?p_doc_type=SPEECHES&p_toc_level=0&p_keyvalue=
 # ------
+# Now at: https://www.energy.gov/science/bes/articles/confined-water-fahrenheit-451
+https://science.energy.gov/bes/highlights/2016/bes-2016-11-h/
+# ------
+# Now at: https://www.nrel.gov/wind/data-tools.html
+http://www.nrel.gov/wind/data-tools.html
+# ------
+# Now at: https://www.energy.gov/science/science-innovation/office-science-user-facilities
+https://science.energy.gov/user-facilities/
+# ------
+# Now at: https://www.epa.gov/greeningepa/electronics-stewardship-epa
+http://epa.gov/greeningepa/electronics-stewardship-epa
+# ------
+# TODO: review *all* esrl.noaa.gov/csd URLs; csd -> crl change may be common
+# ------
 # Now at: https://esrl.noaa.gov/csl/groups/csl7/instruments/
 https://esrl.noaa.gov/csd/groups/csd7/instruments/
 # ------
@@ -2061,8 +2076,8 @@ https://science.energy.gov/universities/highlights/?page=14
 # Now at: https://esrl.noaa.gov/csl/groups/csl7/measurements/2017uwfps/ground.html
 https://esrl.noaa.gov/csd/groups/csd7/measurements/2017uwfps/ground.html
 # ------
-# Now at: https://www.energy.gov/science/bes/articles/confined-water-fahrenheit-451
-https://science.energy.gov/bes/highlights/2016/bes-2016-11-h/
+# Now at: https://esrl.noaa.gov/csl/groups/csl3/measurements/lvos/
+https://esrl.noaa.gov/csd/groups/csd3/measurements/lvos/
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -2282,13 +2297,17 @@ https://www.blm.gov/programs/energy-and-minerals/renewable-energy/wind-energy/da
 # https://climate.dot.gov/topics.html
 #
 # No longer exists; redirects to non-equivalent page
+# TODO: audit all statelocalclimate pages in particular, they probably *all*
+#       fit in this category.
 # https://www.epa.gov/statelocalclimate/state-energy-co2-emissions
 # https://www.epa.gov/statelocalclimate/state-public-utility-commission-overview-energy-and-environment-officials
+# https://www.epa.gov/statelocalclimate/deciding-how-quantify-emissions-reductions-clean-energy
 # https://science.energy.gov/bes/highlights/2015/bes-2015-08-c/
 # https://science.energy.gov/~/media/sc-1/pdf/2013/103013_Dehmer_CSST.pdf
 # https://science.energy.gov/news/presentations-and-testimony/2011/
 # https://science.energy.gov/sbir/highlights/2015/
 # https://science.energy.gov/bes/highlights/2015/bes-2015-07-a/
+# https://science.energy.gov/user-facilities/news/
 
 
 # These were alwasy 404s, not sure why we have them listed in the first place
