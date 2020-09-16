@@ -37,7 +37,6 @@ https://science.energy.gov/feedback?survey=1&Found=1&URL=http://science.energy.g
 https://www.epa.gov/aboutepa/epa-region-3-mid-atlantic
 https://www.transportation.gov/print/123751?title=Surface%20Transportation%20Planning&url=https%3A//www.transportation.gov/sustainability/climate/surface-transportation-planning
 https://www.nrcs.usda.gov/wps/portal/nrcs/main/national/energy/renewable
-https://www.epa.gov/ftta/frequently-asked-questions
 https://www.epa.gov/sciencematters/epa-science-matters-newsletter-epa-recovery-champions-help-effort-save-threatened-owl
 https://www.epa.gov/re-powering/epanrel-fact-sheet-geothermal-technology
 https://www.usgs.gov/science/science-explorer?lq=Restoration+of+Protected+Areas&classification=Data
@@ -1309,6 +1308,8 @@ https://www.blm.gov/programs/fish-and-wildlife/wildlife/featured-projects/idaho
 https://www.ncdc.noaa.gov/nexradinv/
 https://www.epa.gov/land-research/ground-water-modeling-research
 https://www.fhwa.dot.gov/environment/sustainability/resilience/index.cfm
+https://www.epa.gov/renewable-fuel-standard-program/renewable-fuel-standard-rfs2-final-rule-additional-resources
+https://www.epa.gov/climateleadership/benefits-greening-transportation-supply-chain-webinar
 
 
 # Duplicates
@@ -1501,6 +1502,9 @@ http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCod
 # ------
 # Now at: https://science.gsfc.nasa.gov/cisto/nccs/
 http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCode=606.2&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/astrophysics/heasarc/
+http://science.gsfc.nasa.gov/earth/cryosphere/index.cfm?fuseAction=home.main&navOrgCode=660.1&navTab=nav_about_us
 # ------
 # Now at: https://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
@@ -2078,6 +2082,15 @@ https://esrl.noaa.gov/csd/groups/csd7/measurements/2017uwfps/ground.html
 # ------
 # Now at: https://esrl.noaa.gov/csl/groups/csl3/measurements/lvos/
 https://esrl.noaa.gov/csd/groups/csd3/measurements/lvos/
+# ------
+# Now at: https://www.epa.gov/ftta/frequently-asked-questions-about-federal-technology-transfer-act-program
+https://www.epa.gov/ftta/frequently-asked-questions
+# ------
+# Now at: https://www.energy.gov/science/office-science-lab-appraisal-process
+https://science.energy.gov/lp/laboratory-appraisal-process/
+# ------
+# Now at: https://www.epa.gov/greeningepa/epa-sustainability-progress
+http://epa.gov/greeningepa/epa-sustainability-progress
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -2135,6 +2148,13 @@ https://psl.noaa.gov/data/obs/surfacefluxobs/soil/soil.php
 # http://www.nrel.gov/news/features/2016/33699
 # Now at:
 https://www.nrel.gov/news/features/2016/33699.html
+# ------
+# Now at: https://www.epa.gov/state-localclimate/climate-showcase-communities-program
+https://www.epa.gov/climate-and-energy-resources-state-local-and-tribal-governments/climate-showcase-communities-program
+# ------
+# http://www.nrel.gov/technical-assistance/publications.html
+# Now at:
+https://www.nrel.gov/state-local-tribal/publications.html
 
 
 # No longer exists; has not existed for a long time
@@ -2202,6 +2222,7 @@ https://www.epa.gov/npdes/outreach_files/web-based_training/2014/Overview%20of%2
 https://www.boem.gov/Oil-and-Gas-Energy-Program/
 # https://www.ferc.gov/EventCalendar/EventDetails.aspx?ID=2118&CalType=%20&Date=8/9/2005&CalendarID=116
 # http://www.nrel.gov/news/press/2007/524
+https://www3.epa.gov/climatechange/kids/solutions/actions/more.html
 #
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
@@ -2235,6 +2256,7 @@ https://www.blm.gov/programs/fish-and-wildlife/sagegrouse/state-sagegrouse-effor
 https://www.epa.gov/dc/notice-intent-extend-public-comment-period-draft-phase-i-ms4-permit-district-columbia
 https://www.epa.gov/research/research-laboratories-and-centers-fact-sheet
 https://www.blm.gov/programs/energy-and-minerals/renewable-energy/wind-energy/data
+# https://www.epa.gov/air-research/air-climate-and-energy-research-updates
 # ---
 # https://www.epa.gov/trinationalanalysis/land-disposal-2016-tri-national-analysis
 # Now only available in PDF form via https://www.epa.gov/trinationalanalysis/report-sections-2016-tri-national-analysis
@@ -2522,7 +2544,6 @@ https://www.doi.gov/WhoWeAre/AS-IA/OFECR/index.htm
 https://www.doi.gov/WhoWeAre/RegionalOffices/EasternOklahoma/index.htm
 https://www.doi.gov/News/RSS/index.htm
 https://www.doi.gov/WhoWeAre/RegionalOffices/RockyMountain/index.htm
-https://www.doi.gov/Calevents/index.htm
 https://www.doi.gov/PrivacyStatement/index.htm
 https://www.doi.gov/WhoWeAre/BIA/OIS/HumanServices/IndianChildWelfareAct/index.htm
 https://www.doi.gov/WhoWeAre/AS-IA/ORM/TribalInput/index.htm
@@ -2594,14 +2615,6 @@ https://www.epa.gov/uog/memorandum-understanding-between-state-new-mexico-and-ep
 https://www.epa.gov/uog/2017-correspondence-between-epa-and-oil-and-gas-associations-about-epa-compliance-assurance
 https://www.epa.gov/uog/materials-february-2018-oil-and-natural-gas-roundtable
 https://www.epa.gov/uog/new-owner-audit-program-agreement-oil-and-natural-gas-exploration-and-production-facilities
-
-# We're interested in tracking Georgia's DPH pages about COVID-19 since there is rumor of them doctoring numbers.
-https://dph.georgia.gov/health-topics/coronavirus-covid-19
-https://dph.georgia.gov/what-covid-19
-https://dph.georgia.gov/novelcoronavirus
-https://dph.georgia.gov/covid-19-daily-status-report
-https://dph.georgia.gov/preparing-and-responding-covid-19
-https://georgia.gov/covid-19-state-services-georgia
 
 # ACE-related EPA pages
 https://www.epa.gov/stationary-sources-air-pollution/affordable-clean-energy-rule

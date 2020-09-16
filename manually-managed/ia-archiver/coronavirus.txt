@@ -82,6 +82,7 @@ https://faq.coronavirus.gov/protect-yourself/am-i-at-risk-for-covid-19-in-the-un
 https://faq.coronavirus.gov/symptoms-and-testing/what-are-the-symptoms-and-complications-that-covid-19-can-cause/
 https://faq.coronavirus.gov/symptoms-and-testing/should-i-be-tested-for-covid-19/
 https://faq.coronavirus.gov/travel/should-i-cancel-my-international-travel/
+https://faq.coronavirus.gov/financial-help/i-am-not-typically-required-to-file-a-tax-return/
 # ---
 https://faq.coronavirus.gov/water-transmission/can-the-covid-19-virus-spread-through-pools-and-hot-tubs/
 # Redirects to: https://faq.coronavirus.gov/can-the-covid-19-virus-spread-through-pools-and-hot-tubs/
@@ -977,3 +978,11 @@ https://www.cisa.gov/publication/covid-19-election-resources
 https://www.cisa.gov/keywords/covid-19
 https://www.cisa.gov/keywords/coronavirus
 https://www.cisa.gov/news/2020/03/19/cisa-releases-guidance-essential-critical-infrastructure-workers-during-covid-19
+
+# We're interested in tracking Georgia's DPH pages about COVID-19 since there is rumor of them doctoring numbers.
+https://dph.georgia.gov/health-topics/coronavirus-covid-19
+https://dph.georgia.gov/what-covid-19
+https://dph.georgia.gov/novelcoronavirus
+https://dph.georgia.gov/covid-19-daily-status-report
+https://dph.georgia.gov/preparing-and-responding-covid-19
+https://georgia.gov/covid-19-state-services-georgia
