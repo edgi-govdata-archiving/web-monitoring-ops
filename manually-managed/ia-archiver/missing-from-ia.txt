@@ -1310,6 +1310,9 @@ https://www.epa.gov/land-research/ground-water-modeling-research
 https://www.fhwa.dot.gov/environment/sustainability/resilience/index.cfm
 https://www.epa.gov/renewable-fuel-standard-program/renewable-fuel-standard-rfs2-final-rule-additional-resources
 https://www.epa.gov/climateleadership/benefits-greening-transportation-supply-chain-webinar
+https://www.glerl.noaa.gov//metdata/status/status_archive/
+https://www1.ncdc.noaa.gov/pub/data/uscrn/products/hourly02/
+https://www.epa.gov/trinationalanalysis
 
 
 # Duplicates
@@ -2091,6 +2094,18 @@ https://science.energy.gov/lp/laboratory-appraisal-process/
 # ------
 # Now at: https://www.epa.gov/greeningepa/epa-sustainability-progress
 http://epa.gov/greeningepa/epa-sustainability-progress
+# ------
+# Now at: https://www.energy.gov/science/listings/science-highlights?page=11
+https://science.energy.gov/news/highlights/?page=11
+# ------
+# Now at: https://www.nrel.gov/accessibility.html
+http://www.nrel.gov/accessibility.html
+# ------
+# Now at: https://www.aoml.noaa.gov/phod/research/tav/coldtongue/
+http://www.aoml.noaa.gov/phod/research/tav/coldtongue/
+# ------
+# Now at: https://www.nrel.gov/workingwithus/small-business.html
+http://www.nrel.gov/workingwithus/small-business.html
 
 
 # NOAA NCDC Data Sets have moved, but there's not an easy one-to-one mapping for URLs. These need some care:
@@ -2223,7 +2238,17 @@ https://www.boem.gov/Oil-and-Gas-Energy-Program/
 # https://www.ferc.gov/EventCalendar/EventDetails.aspx?ID=2118&CalType=%20&Date=8/9/2005&CalendarID=116
 # http://www.nrel.gov/news/press/2007/524
 https://www3.epa.gov/climatechange/kids/solutions/actions/more.html
+https://www.blm.gov/wy/st/en/info/NEPA/documents/hdd/transwest.html
+# ---
+# This one is a bit interesting: there are still lots of links around the
+# science.gsfc.nasa.gov site to it, but it seems to be removed. The URL we had:
+http://science.gsfc.nasa.gov/earth/giss/index.cfm?fuseAction=home.main&navOrgCode=603&navTab=nav_about_us
+# redirects to: https://science.gsfc.nasa.gov/admin/
+# which then redirects to a 404 at: https://science.gsfc.nasa.gov/sed/index.cfm?fuseAction=public.invalid&navOrgCode=600&CFID=22650418&CFTOKEN=12927360
+# Most recent memento Wayback has of the /admin/ URL is from:
+#  2017-01-23T03:48:58Z
 #
+# ---
 # No longer exists via 403
 https://www.epa.gov/heat-islands/energy-saving-potentials-and-air-quality-benefits-urban-heat-island-mitigation
 https://www.epa.gov/sciencematters/meet-epa-scientist-swinburne-aj-jason-augustine-phd
@@ -2324,12 +2349,15 @@ https://www.blm.gov/programs/energy-and-minerals/renewable-energy/wind-energy/da
 # https://www.epa.gov/statelocalclimate/state-energy-co2-emissions
 # https://www.epa.gov/statelocalclimate/state-public-utility-commission-overview-energy-and-environment-officials
 # https://www.epa.gov/statelocalclimate/deciding-how-quantify-emissions-reductions-clean-energy
+# https://www3.epa.gov/statelocalclimate/local-examples-climate-action
 # https://science.energy.gov/bes/highlights/2015/bes-2015-08-c/
 # https://science.energy.gov/~/media/sc-1/pdf/2013/103013_Dehmer_CSST.pdf
 # https://science.energy.gov/news/presentations-and-testimony/2011/
 # https://science.energy.gov/sbir/highlights/2015/
 # https://science.energy.gov/bes/highlights/2015/bes-2015-07-a/
 # https://science.energy.gov/user-facilities/news/
+# https://science.energy.gov/relatedsites
+# https://science.energy.gov/grants/lab-announcements/
 
 
 # These were alwasy 404s, not sure why we have them listed in the first place

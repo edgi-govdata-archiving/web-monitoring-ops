@@ -986,3 +986,17 @@ https://dph.georgia.gov/novelcoronavirus
 https://dph.georgia.gov/covid-19-daily-status-report
 https://dph.georgia.gov/preparing-and-responding-covid-19
 https://georgia.gov/covid-19-state-services-georgia
+
+
+##############################
+# Duplicates that need fixing
+#
+# http://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html
+# https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fprotect%2Fprevent.html
+# https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention.html
+# https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?utm_content=buffer26e31&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+# https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?partnerId=ed-14783067-1201007953
+# https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?utm_content=121688910&utm_medium=social&utm_source=twitter&hss_channel=tw-1017844990804971520
+# https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?utm_medium=email&utm_source=govdelivery
+# https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention.html&utm_content=122384487&utm_medium=social&utm_source=twitter&hss_channel=tw-474178674
+#
