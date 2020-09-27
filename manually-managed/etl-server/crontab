@@ -29,7 +29,7 @@
 
 # Weekly analyst sheets generated from our DB
 # Delayed by 24 hours this week
-45 10 * * TUE /home/ubuntu/web-monitoring-versionista-scraper/cron-tracking-team-db.sh versionista1 186.75 6.75 2>> /var/log/cron-versionista-db-sheets.log
+# 45 10 * * TUE /home/ubuntu/web-monitoring-versionista-scraper/cron-tracking-team-db.sh versionista1 186.75 6.75 2>> /var/log/cron-versionista-db-sheets.log
 
 # Weekly analyst sheets for health data (GovWebWatch)
 # GovWebWatch support is disabled by request of both EDGI and GovWebWatch. Please do not re-enable without agreement of all parties.
@@ -39,7 +39,6 @@
 0 0 * * * /home/ubuntu/etl-tools/cron-ia-healthcheck.sh >> /var/log/cron-ia-healthcheck.log 2>&1
 
 # Daily Internet Archive Import
-# 30 3 * * * /home/ubuntu/etl-tools/cron-ia-import.sh >> /var/log/cron-ia-import.log 2>&1
 30 3 * * * /home/ubuntu/etl-tools/cron-ia-import.sh >> "/var/log/cron-ia-import/import-$(date +\%Y-\%m-\%dT\%H-\%M_\%S).log" 2>&1
 
 # Clean out import logs from > 25 days ago

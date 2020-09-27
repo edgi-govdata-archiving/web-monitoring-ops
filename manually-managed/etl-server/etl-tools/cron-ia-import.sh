@@ -3,8 +3,12 @@
 echo "" 1>&2
 echo "[`date`] Starting Internet Archive Import" 1>&2
 source "$HOME/etl-tools/.env.internetarchive"
-source /opt/conda/etc/profile.d/conda.sh
-conda activate web-monitoring-etl
+
+# Initialize Pyenv and enter the relevant virtualenv
+export PATH="/home/ubuntu/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+pyenv activate web-monitoring-etl
 
 export LOG_LEVEL=INFO
 UNPLAYBACKABLE_CACHE="$HOME/etl-tools/unplaybackable.json"
