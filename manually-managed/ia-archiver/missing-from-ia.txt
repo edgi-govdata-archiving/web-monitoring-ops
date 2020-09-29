@@ -1313,6 +1313,7 @@ https://www.epa.gov/climateleadership/benefits-greening-transportation-supply-ch
 https://www.glerl.noaa.gov//metdata/status/status_archive/
 https://www1.ncdc.noaa.gov/pub/data/uscrn/products/hourly02/
 https://www.epa.gov/trinationalanalysis
+https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/montana-dakotas
 
 
 # Duplicates
@@ -1508,6 +1509,9 @@ http://science.gsfc.nasa.gov/earth/gmao/index.cfm?fuseAction=home.main&navOrgCod
 # ------
 # Now at: https://science.gsfc.nasa.gov/astrophysics/heasarc/
 http://science.gsfc.nasa.gov/earth/cryosphere/index.cfm?fuseAction=home.main&navOrgCode=660.1&navTab=nav_about_us
+# ------
+# Now at: https://science.gsfc.nasa.gov/spso/
+http://science.gsfc.nasa.gov/earth/cryosphere/index.cfm?fuseAction=home.main&navOrgCode=605&navTab=nav_about_us
 # ------
 # Now at: https://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
 # http://www.space.commerce.gov/business-with-noaa/commercial-weather-data-pilot-cwdp/
@@ -2449,6 +2453,7 @@ https://www.epa.gov/sites/production/files/2015-08/documents/absolute-energy-rec
 https://www.epa.gov/sites/production/files/2015-03/documents/repower_technologies_solar.pdf
 https://www.epa.gov/sites/production/files/2016-03/documents/transcript_-_the_jobs_impact_of_clean_energy.pdf
 https://www.epa.gov/sites/production/files/2016-03/documents/jobs_and_economic_impacts_from_wind_power_development_-_nrels_jedi_model.pdf
+https://yosemite.epa.gov/sab/sabproduct.nsf/5726D6BCFBB99B50852570CA0078099E/$File/casacl02001resp.pdf
 
 # Skip FTP for now
 # ftp://ftp.aoml.noaa.gov/phod/pub/lumpkin/drifter_climatology/monthly
