@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: processing
-        image: envirodgi/web-monitoring-diff:0.1.2rc1
+        image: envirodgi/web-monitoring-diff:0.1.2
         imagePullPolicy: Always
         ports: 
         - containerPort: 80
