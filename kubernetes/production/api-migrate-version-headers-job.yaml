@@ -1,21 +1,21 @@
-apiVersion: apps/v1
-kind: Deployment
+# This manages a long-running data migration on the API servers.
+# 
+# Migration: data:20210605_fill_version_headers_from_source_metadata[force,start_date,end_date]
+# Description: Moves version headers from `source_metadata.headers` to a new
+# top-level `headers` field.
+apiVersion: batch/v1
+kind: Job
 metadata:
-  name: import-worker
+  name: api-migrate-version-headers-job
   namespace: production
 spec:
-  selector:
-    matchLabels:
-      app: import-worker
-  replicas: 4
   template:
-    metadata:
-      labels:
-        app: import-worker
     spec:
+      restartPolicy: OnFailure
       containers:
-      - name: db-import-worker
-        image: envirodgi/db-import-worker:69802f857b354eda800a3d2ca55287a78241fde3
+      - name: api-migrate-version-headers-job
+        image: envirodgi/db-status-update-job:69802f857b354eda800a3d2ca55287a78241fde3
+        command: ["bundle", "exec", "rake", "data:20210605_fill_version_headers_from_source_metadata"]
         imagePullPolicy: Always
         resources:
           requests:
@@ -27,10 +27,6 @@ spec:
         env:
         - name: ALLOWED_ARCHIVE_HOSTS
           value: "https://edgi-wm-versionista.s3.amazonaws.com/ https://edgi-wm-versionista.s3-us-west-2.amazonaws.com/ https://edgi-versionista-archive.s3.amazonaws.com/ https://edgi-wm-archive.s3.amazonaws.com/ https://edgi-wm-archive.s3.us-west-2.amazonaws.com/"
-        # Set to "true" to be safe/conservative on what kinds of diffs to try
-        # If we suddenly see the diff server going nuts, maybe uncomment this.
-        # - name: ANALYSIS_REQUIRE_MEDIA_TYPE
-        #   value: "true"
         - name: AUTO_ANNOTATION_USER
           valueFrom:
             secretKeyRef:
@@ -76,8 +72,6 @@ spec:
             secretKeyRef:
               name: app-secrets
               key: postmark_api_token
-        - name: QUEUES
-          value: "mailers,import,analysis"
         - name: RACK_ENV
           value: production
         - name: RAILS_ENV
@@ -88,11 +82,6 @@ spec:
           value: enabled
         - name: REDIS_URL
           value: redis://redis-master:6379
-        - name: REDIS_CACHE_URL
-          valueFrom:
-            secretKeyRef:
-              name: app-secrets
-              key: redis_cache_url
         - name: SECRET_KEY_BASE
           valueFrom:
             secretKeyRef:
@@ -109,4 +98,4 @@ spec:
               name: app-secrets
               key: token_private_key
         - name: INCREMENTAL_UPDATE
-          value: "6"
+          value: "1"
