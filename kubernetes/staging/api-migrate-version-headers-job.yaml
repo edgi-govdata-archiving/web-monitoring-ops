@@ -1,24 +1,22 @@
-apiVersion: apps/v1
-kind: Deployment
+# This manages a long-running data migration on the API servers.
+# 
+# Migration: data:20210605_fill_version_headers_from_source_metadata[force,start_date,end_date]
+# Description: Moves version headers from `source_metadata.headers` to a new
+# top-level `headers` field.
+apiVersion: batch/v1
+kind: Job
 metadata:
-  name: api
+  name: api-migrate-version-headers-job
   namespace: staging
 spec:
-  selector:
-    matchLabels:
-      app: api
-  replicas: 2
   template:
-    metadata:
-      labels:
-        app: api
     spec:
+      restartPolicy: OnFailure
       containers:
-      - name:  rails-server
-        image: envirodgi/db-rails-server:69802f857b354eda800a3d2ca55287a78241fde3
+      - name: api-migrate-version-headers-job
+        image: envirodgi/db-status-update-job:69802f857b354eda800a3d2ca55287a78241fde3
+        command: ["bundle", "exec", "rake", "data:20210605_fill_version_headers_from_source_metadata"]
         imagePullPolicy: Always
-        ports: 
-        - containerPort: 3000
         resources:
           requests:
             memory: "256Mi"
@@ -26,18 +24,9 @@ spec:
           limits:
             memory: "1024Mi"
             cpu: "1500m"
-        readinessProbe:
-          tcpSocket:
-            port: 3000
-          initialDelaySeconds: 5
-          periodSeconds: 10
-        livenessProbe:
-          tcpSocket:
-            port: 3000
-          initialDelaySeconds: 5
         env:
         - name: ALLOWED_ARCHIVE_HOSTS
-          value: "https://edgi-wm-versionista.s3.amazonaws.com/ https://edgi-wm-versionista.s3-us-west-2.amazonaws.com/ https://edgi-versionista-archive.s3.amazonaws.com/ https://edgi-wm-archive-staging.s3.amazonaws.com/ https://edgi-wm-archive-staging.s3.us-west-2.amazonaws.com/"
+          value: "https://edgi-wm-versionista.s3.amazonaws.com/ https://edgi-wm-versionista.s3-us-west-2.amazonaws.com/ https://edgi-versionista-archive.s3.amazonaws.com/ https://edgi-wm-archive.s3.amazonaws.com/ https://edgi-wm-archive.s3.us-west-2.amazonaws.com/"
         - name: AUTO_ANNOTATION_USER
           valueFrom:
             secretKeyRef:
@@ -49,7 +38,7 @@ spec:
               name: app-secrets
               key: aws_access_key_id
         - name: AWS_ARCHIVE_BUCKET
-          value: edgi-wm-archive-staging
+          value: edgi-wm-archive
         - name: AWS_REGION
           value: us-west-2
         - name: AWS_SECRET_ACCESS_KEY
@@ -58,7 +47,9 @@ spec:
               name: app-secrets
               key: aws_secret_access_key
         - name: AWS_WORKING_BUCKET
-          value: edgi-wm-db-internal-staging
+          value: edgi-wm-db-internal
+        - name: CACHE_DATE_DIFFER
+          value: "2019-09-22T00:00:00Z"
         - name: DATABASE_URL
           valueFrom:
             secretKeyRef:
@@ -66,9 +57,6 @@ spec:
               key: database_rds
         - name: DIFFER_DEFAULT
           value: http://diffing:80
-        - name: CACHE_DATE_DIFFER
-          value: "2020-11-24T20:30:00Z"
-        # TODO: consider making this not a secret
         - name: HOST_URL
           value: "https://api-staging.monitoring.envirodatagov.org/"
         - name: LANG
@@ -94,11 +82,6 @@ spec:
           value: enabled
         - name: REDIS_URL
           value: redis://redis-master:6379
-        - name: REDIS_CACHE_URL
-          valueFrom:
-            secretKeyRef:
-              name: app-secrets
-              key: redis_cache_url
         - name: SECRET_KEY_BASE
           valueFrom:
             secretKeyRef:
@@ -115,4 +98,4 @@ spec:
               name: app-secrets
               key: token_private_key
         - name: INCREMENTAL_UPDATE
-          value: "5"
+          value: "1"
