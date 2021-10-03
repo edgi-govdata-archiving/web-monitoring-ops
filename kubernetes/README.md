@@ -18,7 +18,7 @@ Our deployment needs access to some sensitive data, like credentials, ARNs, etc.
 
 ## Updating the Cluster
 
-We use the `kubectl` CLI client to update the cluster with new configurations. You’ll need to configure it on your computer with the address and keys for our cluster. Common workflows:
+We use the `kubectl` CLI client to update the resources in the cluster with new configurations. You’ll need to configure it on your computer with the address and keys for our cluster. Common workflows:
 
 
 ### Deploying a New Release
@@ -121,3 +121,28 @@ And you’ll also see pods created for the different jobs when you `kubectl get 
 ```sh
 > kubectl get jobs --namespace production --output json | jq '.items[] | (.status.completionTime | fromdateiso8601) as $completion | (.status.startTime | fromdateiso8601) as $start | {name: .metadata.name, date: .status.startTime, duration: ($completion - $start)}'
 ```
+
+
+### Updating Kubernetes Itself
+
+Kubernetes has new releases every few months, and it’s important to keep our cluster running a reasonably up-to-date version, both to alleviate security issues and to make future upgrades straightforward. We use [kOps](https://kops.sigs.k8s.io/) to manage our Kubernetes install on AWS. kOps does not always update as frequently as Kubernetes itself, but the kOps team does a pretty good job of making things reliable, so we tend to stick with Kubernetes versions that production releases of kOps supports.
+
+First, [get yourself a copy of kOps](https://kops.sigs.k8s.io/getting_started/install/) and keep it up to date. If you’re on a Mac, *Homebrew* is the easiest way to get it:
+
+```sh
+$ brew update && brew install kop
+```
+
+Then, to update the cluster, follow the instructions at: https://kops.sigs.k8s.io/operations/updates_and_upgrades/#upgrading-kubernetes
+
+Some things to keep in mind:
+
+- You'll probably want to set up the `KOPS_STATE_STORE` environment variable. It points to the S3 bucket where our cluster state information is stored (contact another team member for the bucket name):
+
+    ```sh
+    $ export KOPS_STATE_STORE='s3://<name_of_s3_bucket>'
+    ```
+
+- NEVER update across multiple major releases (e.g. don’t update from Kubernetes 1.21.x to 1.23.x). Doing this in the past has frequently caused issues. If there have been multiple major relases, follow the “manual update” instructions all the way through once for each major version. Verify the cluster is in good shape and everything is running correctly (can you reach the API? can you view the UI?) between each.
+
+- The `kops rolling-update cluster` command can take a really long time — anywhere from 10 to 40 minutes. That’s OK! To see progress in slightly more detail, you can keep an eye on EC2 instances in the AWS web console (you can see them launching and shutting down there before they might be visible to kOps).
