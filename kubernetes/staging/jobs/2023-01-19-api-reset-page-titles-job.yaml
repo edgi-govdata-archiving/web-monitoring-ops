@@ -2,15 +2,15 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: 2023-01-19-api-reset-page-titles-job2
+  name: 2023-01-19-api-reset-page-titles-job3
   namespace: staging
 spec:
   template:
     spec:
       restartPolicy: OnFailure
       containers:
-      - name: 2023-01-19-api-reset-page-titles-job2
-        image: envirodgi/db-status-update-job:fb9625c618014f2404f3193d1d751380787d2a48
+      - name: 2023-01-19-api-reset-page-titles-job3
+        image: envirodgi/db-status-update-job:099d22a884f74f8afdcff414d405e05e50757a27
         command: ["bundle", "exec", "rake", "data:20230119_reset_page_titles"]
         imagePullPolicy: Always
         resources:
