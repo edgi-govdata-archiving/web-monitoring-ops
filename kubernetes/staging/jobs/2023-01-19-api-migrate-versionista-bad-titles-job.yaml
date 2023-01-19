@@ -1,0 +1,102 @@
+# This manages a long-running data migration on the API servers.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: 2023-01-19-api-migrate-versionista-bad-titles-job
+  namespace: staging
+spec:
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+      - name: 2023-01-19-api-migrate-versionista-bad-titles-job
+        image: envirodgi/db-status-update-job:216cb87edbfbf4973f3d9b226d1ab92ab164d6a2
+        command: ["bundle", "exec", "rake", "data:20230119_remove_bad_versionista_titles"]
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "100m"
+          limits:
+            memory: "1024Mi"
+            cpu: "1500m"
+        env:
+          - name: ALLOWED_ARCHIVE_HOSTS
+            value: "https://edgi-wm-versionista.s3.amazonaws.com/ https://edgi-wm-versionista.s3-us-west-2.amazonaws.com/ https://edgi-wm-archive-staging.s3.amazonaws.com/ https://edgi-wm-archive-staging.s3.us-west-2.amazonaws.com/"
+          - name: AUTO_ANNOTATION_USER
+            valueFrom:
+              secretKeyRef:
+                name: app-secrets
+                key: auto_annotation_user
+          - name: AWS_ACCESS_KEY_ID
+            valueFrom:
+              secretKeyRef:
+                name: app-secrets
+                key: aws_access_key_id
+          - name: AWS_ARCHIVE_BUCKET
+            value: edgi-wm-archive-staging
+          - name: AWS_REGION
+            value: us-west-2
+          - name: AWS_SECRET_ACCESS_KEY
+            valueFrom:
+              secretKeyRef:
+                name: app-secrets
+                key: aws_secret_access_key
+          - name: AWS_WORKING_BUCKET
+            value: edgi-wm-db-internal-staging
+          - name: CACHE_DATE_DIFFER
+            value: "2019-09-22T00:00:00Z"
+          - name: DATABASE_RDS
+            valueFrom:
+              secretKeyRef:
+                name: app-secrets
+                key: database_rds
+          - name: DIFFER_DEFAULT
+            value: http://diffing:80
+          - name: HOST_URL
+            value: "https://api-staging.monitoring.envirodatagov.org/"
+          - name: LANG
+            value: en_US.UTF-8
+          - name: MAIL_SENDER
+            value: website.monitoring@envirodatagov.org
+          - name: MAX_COLLECTION_PAGE_SIZE
+            value: "1000"
+          - name: NEW_RELIC_AGENT_ENABLED
+            value: "false"
+          - name: POSTMARK_API_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: app-secrets
+                key: postmark_api_token
+          - name: RACK_ENV
+            value: production
+          - name: RAILS_ENV
+            value: production
+          - name: RAILS_LOG_TO_STDOUT
+            value: enabled
+          - name: RAILS_SERVE_STATIC_FILES
+            value: enabled
+          - name: REDIS_URL
+            value: redis://redis-master:6379
+          - name: REDIS_CACHE_URL
+            valueFrom:
+              secretKeyRef:
+                name: app-secrets
+                key: redis_cache_url
+          - name: SECRET_KEY_BASE
+            valueFrom:
+              secretKeyRef:
+                name: app-secrets
+                key: secret_key_base
+          - name: SENTRY_DSN
+            valueFrom:
+              secretKeyRef:
+                name: app-secrets
+                key: sentry_dsn
+          - name: TOKEN_PRIVATE_KEY
+            valueFrom:
+              secretKeyRef:
+                name: app-secrets
+                key: token_private_key
+          - name: INCREMENTAL_UPDATE
+            value: "1"
