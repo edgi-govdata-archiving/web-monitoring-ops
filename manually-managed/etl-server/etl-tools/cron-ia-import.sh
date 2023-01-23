@@ -19,5 +19,13 @@ UNPLAYBACKABLE_CACHE="$HOME/etl-tools/unplaybackable.json"
 # We typically keep this at 3-5 days to accomodate for any slow indexing
 # on Wayback's part.
 # They're experiencing major issues right now, so it's set higher.
-wm import ia-known-pages --from 192 --parallel 10 --unplaybackable "$UNPLAYBACKABLE_CACHE" 1>&2
+
+# TEMP: reduce Wayback connections and rate seems like we've been
+# experiencing higher connection issues, and I'm wondering if we
+# got reset because they're *still* using IP instead of user agent.
+export WAYBACK_RATE_LIMIT=10
+
+# Timeout: SIGTERM after 12 hours, SIGKILL if it's still running 15 minutes later.
+timeout --foreground --kill-after 15m 12h wm import ia-known-pages --from 192 --parallel 10 --unplaybackable "$UNPLAYBACKABLE_CACHE" --precheck 1>&2
+
 echo "Internet Archive import completed at `date`" 1>&2
