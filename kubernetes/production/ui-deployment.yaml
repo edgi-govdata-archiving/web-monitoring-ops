@@ -68,5 +68,7 @@ spec:
             secretKeyRef:
               name: ui-secrets
               key:  web_monitoring_db_url
+        - name: ALLOW_PUBLIC_VIEW
+          value: 'true'
         - name: INCREMENTAL_UPDATE
           value: "1"
