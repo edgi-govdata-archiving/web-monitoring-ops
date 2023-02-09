@@ -64,10 +64,7 @@ spec:
               name: ui-secrets
               key:  google_task_sheet_id
         - name: WEB_MONITORING_DB_URL
-          valueFrom:
-            secretKeyRef:
-              name: ui-secrets
-              key:  web_monitoring_db_url
+          value: "https://api.monitoring-staging.envirodatagov.org/"
         - name: ALLOW_PUBLIC_VIEW
           value: 'true'
         - name: INCREMENTAL_UPDATE
