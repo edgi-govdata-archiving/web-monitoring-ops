@@ -6,8 +6,7 @@ This repository contains instructions and configuration files for EDGI’s deplo
 
 We currently run all our services in AWS:
 
-- *Services* are managed by [Kubernetes](https://kubernetes.io/). See the [`kubernetes`](./kubernetes) directory for details.
-- *Scheduled jobs* are currently run on manually configured EC2 instances. See the [`manually-managed`](./manually-managed) directory for details.
+- *Services* and *Scheduled Jobs* are managed by [Kubernetes](https://kubernetes.io/). See the [`kubernetes`](./kubernetes) directory for details.
 - We use a handful of AWS services like S3 and RDS. See the [`manually-managed`](./manually-managed) directory for details.
 
 **Incident Reports:** When major problems happen in production, we try and write up incident reports that describe what happened and how the problem was addressed. You can find these in the [`incidents` directory](./incidents).

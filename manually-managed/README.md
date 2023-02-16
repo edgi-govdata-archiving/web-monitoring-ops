@@ -50,16 +50,17 @@ To protect the production instance of the API from from abuse, we point the DNS 
     - It uses a `per-ip-rate-limit` rule to block IP addresses requesting over a certain rate.
 
 
-## ETL
-
-We currently run scheduled scripts for extracting data from external services (Versionista, the Wayback Machine) and sending it to [web-monitoring-db][-db] to be imported. These are managed via `cron` on a single EC2 VM.
-
-For details, see [`etl-server/README.md`](./etl-server/README.md).
-
-
 ## 📦 Deprecated Services
 
 ⚠️ These services used to be managed manually, but have either been shut down or moved to a different, automated approach. The documentation here is for historical reference.
+
+
+### ETL
+
+**These are now all Kubernetes `CronJob` resources.** We used to run scheduled scripts for extracting data from external services (Versionista, the Wayback Machine) and sending it to [web-monitoring-db][-db] to be imported via `cron` an a single EC2 VM. For details, see [`etl-server/README.md`](./etl-server/README.md).
+
+For details, see [`etl-server/README.md`](./etl-server/README.md).
+
 
 ### IA Archiver
 
