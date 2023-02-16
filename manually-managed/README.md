@@ -57,16 +57,19 @@ We currently run scheduled scripts for extracting data from external services (V
 For details, see [`etl-server/README.md`](./etl-server/README.md).
 
 
-## IA Archiver
+## 📦 Deprecated Services
 
-We have an EC2 VM named `ia-archiver` that pushes lists of URLs to the Internet Archive’s “Save Page Now” feature on a regular basis. More information about this is in [`ia-archiver`](./ia-archiver). It’s mainly just an implementation of [wayback-spn-client].
+⚠️ These services used to be managed manually, but have either been shut down or moved to a different, automated approach. The documentation here is for historical reference.
+
+### IA Archiver
+
+**We no longer do this.** We have an EC2 VM named `ia-archiver` that pushes lists of URLs to the Internet Archive’s “Save Page Now” feature on a regular basis. More information about this is in [`ia-archiver`](./ia-archiver). It’s mainly just an implementation of [wayback-spn-client].
 
 
 [-db]: https://github.com/edgi-govdata-archiving/web-monitoring-db
 [wayback-spn-client]: https://github.com/Mr0grog/wayback-spn-client
 
-## Metrics Server
 
-We use Elasticserach and its Kibana front-end for metrics collection and
-visualization. See the metrics-server directory in this repository for
-provisioning and configuration details.
+### Metrics Server
+
+**We no longer maintain a metrics service.** We ised to use Elasticserach and its Kibana front-end for metrics collection and visualization. See the metrics-server directory in this repository for provisioning and configuration details.

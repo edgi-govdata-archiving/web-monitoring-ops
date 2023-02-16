@@ -1,3 +1,6 @@
+**⚠️ This server is no longer used! ⚠️** This documentation is for historical reference.
+
+
 # Provisioning and Configuring the Metrics Server
 
 ## Overview

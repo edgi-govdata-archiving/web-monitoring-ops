@@ -62,7 +62,7 @@ This is an open-source project, and works because of contributors like you! See 
 
 ## License & Copyright
 
-Copyright (C) 2017-2019 Environmental Data and Governance Initiative (EDGI)
+Copyright (C) 2017-2023 Environmental Data and Governance Initiative (EDGI)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.0.
 

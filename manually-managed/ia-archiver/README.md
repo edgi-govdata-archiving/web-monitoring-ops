@@ -1,3 +1,6 @@
+**⚠️ This server is no longer used! ⚠️** This documentation is for historical reference.
+
+
 # IA Archiver
 
 This machine is dedicated to pushing URLs we wish to monitor into the Internet Archive on a regular basis. It works by automating the archive’s “Save Page Now” (SPN) feature via [wayback-spn-client](https://github.com/Mr0grog/wayback-spn-client).
