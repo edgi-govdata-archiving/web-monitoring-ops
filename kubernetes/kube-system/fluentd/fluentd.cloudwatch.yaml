@@ -27,7 +27,7 @@ metadata:
   namespace: kube-system
 
 ---
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: fluentd
@@ -45,7 +45,7 @@ rules:
 
 ---
 kind: ClusterRoleBinding
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: fluentd
 roleRef:
@@ -100,6 +100,14 @@ spec:
           # EDGI: TODO: are these still needed? Not sure where they are used.
           - name: FLUENT_UID
             value: "0"
+          # EDGI: custom exclude path and parser to work around matching errors
+          # (both `_EXCLUDE_PATH` and `_PARSER_TYPE` below)
+          # https://github.com/fluent/fluentd-kubernetes-daemonset/issues/434
+          - name: FLUENT_CONTAINER_TAIL_EXCLUDE_PATH
+            value: /var/log/containers/fluent*
+          - name: FLUENT_CONTAINER_TAIL_PARSER_TYPE
+            # value: /^(?<time>.+) (?<stream>stdout|stderr)( (?<logtag>.))? (?<log>.*)$/
+            value: cri
           - name: K8S_NODE_NAME
             valueFrom:
               fieldRef:
