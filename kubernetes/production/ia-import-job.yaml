@@ -4,9 +4,7 @@ metadata:
   name: ia-import-job
   namespace: production
 spec:
-  # FIXME: schedule *should* be "30 3 * * *". Current schedule is a test.
-  # schedule: "30 3 * * *"
-  schedule: "20 18 * * *"
+  schedule: "30 3 * * *"
   jobTemplate:
     spec:
       template:
@@ -14,6 +12,8 @@ spec:
           restartPolicy: Never
           # Kill after 12 hours. Sometimes it gets stuck!
           activeDeadlineSeconds: 43200
+          # Graceful shutdown can take a while here.
+          terminationGracePeriodSeconds: 600
           containers:
           - name: ia-import-job
             image: envirodgi/processing:latest
