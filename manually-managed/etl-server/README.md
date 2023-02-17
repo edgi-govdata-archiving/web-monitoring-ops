@@ -1,3 +1,6 @@
+**⚠️ This server is no longer used! ⚠️** This documentation is for historical reference.
+
+
 # ETL Server
 
 This machine runs ETL (Extract, Transform, and Load) scripts to pull page & version data out of other services (like the Internet Archive or Versionista) and import it into a [web-monitoring-db][] instance. The core code for most of that lives in other web-monitoring-* repositories; this server just uses cron and some very simple bash scripts to execute them and save logs.
