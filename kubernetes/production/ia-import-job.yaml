@@ -7,6 +7,8 @@ spec:
   schedule: "30 3 * * *"
   concurrencyPolicy: Replace
   startingDeadlineSeconds: 600  # 10 minutes
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
   jobTemplate:
     spec:
       # Ensuring the pod only runs once is a little complex. backoffLimit
