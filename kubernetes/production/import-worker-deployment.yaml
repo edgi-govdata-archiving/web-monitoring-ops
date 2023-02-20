@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: import-worker
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
