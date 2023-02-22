@@ -246,7 +246,35 @@ aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/CloudWatchAgentS
 aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy --role-name masters.kube.monitoring.envirodatagov.org
 ```
 
-Enable logging.
+That policy allows reading and writing almost any metrics and logs. If you want a more restricted policy, you can add the following two objects to the `Statement` array to the above two roles (`nodes.kube.monitoring.envirodatagov.org` and `masters.kube.monitoring.envirodatagov.org`) in the IAM web console:
+
+```js
+{
+    "Action": [
+        "logs:GetLogEvents",
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams"
+    ],
+    "Effect": "Allow",
+    "Resource": "*"
+},
+{
+    "Action": [
+        "logs:PutLogEvents",
+        "logs:CreateLogGroup",
+        "logs:PutRetentionPolicy",
+        "logs:CreateLogStream",
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams"
+    ],
+    "Effect": "Allow",
+    "Resource": "arn:aws:logs:*:*:log-group:k8s:*"
+}
+```
+
+(These allow reading any logs, and writing only to streams in the `k8s` group. Adjust the group name if changing [the group in the configs below](https://github.com/edgi-govdata-archiving/web-monitoring-ops/blob/c8f75782da1060caeca3b1792abc42dc53de0cf7/kubernetes/kube-system/fluentd/fluentd.cloudwatch.yaml#L92-L93).)
+
+Now to actually enable logging:
 
 ```
 kubectl apply -f kubernetes/kube-system/fluentd/fluentd.configmap.yaml
