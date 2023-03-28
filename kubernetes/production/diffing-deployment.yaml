@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: diffing-server
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       labels:
