@@ -77,8 +77,6 @@ spec:
               value: enabled
             - name: RAILS_SERVE_STATIC_FILES
               value: enabled
-            - name: REDIS_URL
-              value: redis://redis-master:6379
             - name: SECRET_KEY_BASE
               valueFrom:
                 secretKeyRef:
