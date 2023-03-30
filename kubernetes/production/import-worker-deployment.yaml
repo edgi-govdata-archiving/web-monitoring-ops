@@ -86,11 +86,12 @@ spec:
           value: enabled
         - name: RAILS_SERVE_STATIC_FILES
           value: enabled
-        - name: REDIS_CACHE_URL
-          valueFrom:
-            secretKeyRef:
-              name: app-secrets
-              key: redis_cache_url
+        # Redis cache is disabled in favor of just relying on CloudFront.
+        # - name: REDIS_CACHE_URL
+        #   valueFrom:
+        #     secretKeyRef:
+        #       name: app-secrets
+        #       key: redis_cache_url
         - name: SECRET_KEY_BASE
           valueFrom:
             secretKeyRef:
