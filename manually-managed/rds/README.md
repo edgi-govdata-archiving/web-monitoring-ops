@@ -4,27 +4,43 @@ The Postgres database that backs [web-monitoring-db][] is managed through Amazon
 
 ## Databases
 
-We have two databases:
+`web-monitoring-db-production-a` is the production database (the `-a` is because it is the successor to an older produciton database). It is configured as:
 
-1. `web-monitoring-db-production-a` is the production database (the `-a` is because it is the successor to an older produciton database). It is configured as:
+- Instance: **db.t4g.medium** (This doesn’t really have as much RAM as we’d like for big queries. It’s cost-effective for our current usage, however.)
+- Database: **Postgres 14.x**
+- Storage: **20+ GB Standard SSD** with autoscaling
+- VPC: **Same VPC as Kubernetes**
+- Security Groups: **Kubernetes security group** + **custom Postgres security group** for external access.
+- Custom parameter group based on the defaults. The JSON configuration for the parameter group is in [`web-monitoring-db-production-a-params.json`][web-monitoring-db-production-a-params] [(see below)](#other-notes), but with these modifications:
+    - `work_mem` 16 MB (much bigger than default, which is 1 MB, but not huge)
+    - `shared_buffers` 2/5 of available memory
+    - `effective_cache_size` 3/4 of available memory
 
-    - Instance: **db.t3.medium** (This doesn’t really have as much RAM as we’d like for big queries, and we expect that if we make the system public access, this will definitely have to be upgraded. It’s cost-effective for our current usage, however.)
-    - Database: **Postgres 11.x**
-    - Storage: **20+ GB Standard SSD** with autoscaling
-    - VPC: **Same VPC as Kubernetes**
-    - Security Groups: **Kubernetes security group** + **custom Postgres security group** for external access.
-    - Custom parameter group based on the defaults. The JSON configuration for the parameter group is in [`web-monitoring-db-production-a-params.json`][web-monitoring-db-production-a-params] [(see below)](#other-notes), but with these modifications:
-        - `work_mem` 16 MB (much bigger than default, which is 1 MB, but not huge)
-        - `shared_buffers` 2/5 of available memory
-        - `effective_cache_size` 3/4 of available memory
+(We used to have a separate staging database, but the staging deployment has been turned off.)
 
-2. `web-monitoring-db-staging-aws-west2a` is the staging database. It is configured as:
-    - Instance: **db.t2.small**
-    - Database: **Postgres 9.x**
-    - Storage: **20 GB Standard SSD**
-    - VPC: **Default VPC**
-    - Security Groups: **Default**
-    - Parameters: **Default**
+
+## Upgrading
+
+The database should be set to automatically update minor releases. However, major releases need to be done manually:
+
+1. Create a new parameter group for the intended Postgres version. Parameter groups are specific to major database versions, so you need to make one for the version you are upgrading to before upgrading the database.
+
+    1. In the RDS section of the AWS console, select “Parameter Groups” in the sidebar.
+    2. Click the “Create Parameter Group” button.
+    3. Choose the appropriate Postgres version and fill in a name and description and click “create.”
+    4. Click on the new parameter group to view its details, then click “Edit parameters” in the top right to edit.
+    5. Find the parameters we customize (noted above) and set them to match the values from the old parameter group. You can use the [`web-monitoring-db-production-a-params.json`](./web-monitoring-db-production-a-params.json) file in this repo to get the values or look at the old group in the AWs console.
+    6. Click “save” in the top-right.
+
+2. Modify the database.
+
+    1. In the RDS section of the AWS console, select “Databases” in the sidebar.
+    2. Click on the database you want to upgrade to change its details.
+    3. Click “modify” in the top right.
+    4. Choose the desired Postgres version, and further down on the page, choose the new parameter group you created in step 1.
+    5. On the next screen, confirm that the major version and the parameter group are the only things that are changing.
+    6. Choose whether to schedule the upgrade for you next maintenance window (recommended in most cases) or to do it right away, and save!
+    7. The upgrade will probably take 5-15 minutes. You can see the database’s status in the database list view from step 2.1.
 
 
 ## References
