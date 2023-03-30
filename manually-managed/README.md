@@ -5,18 +5,11 @@ While most of our infrastructure is managed with Kubernetes, several stateful se
 
 ## Redis Cache
 
-We use Redis for caching and for queuing in Rails (that is, in [web-monitoring-db][-db]). Our Redis caching instance is currently hand-managed as an EC2 machine on AWS. Its current configuration (excepting the password) can be found in [`redis-cache.conf`](./redis-cache.conf). It also has an elastic IP.
+We use Redis for caching in Rails (that is, in [web-monitoring-db][-db]). Our Redis caching instance is currently hand-managed as an EC2 machine on AWS. Its current configuration (excepting the password) can be found in [`redis-cache.conf`](./redis-cache.conf). It also has an elastic IP.
 
 The VM and other related resources (e.g. Elastic IP) are named `wm-cache-*`.
 
 This should *probably* be a cluster (and maybe managed via AWS Elasticache?), but this has been working alright for now.
-
-
-## Redis Queues
-
-The asynchronous jobs that are part of the [web-monitoring-db][-db] codebase (for importing data, sending e-mails, and auto-analyzing versions) are based on Redis. At current, they are managed within Kubernetes, but that means they are prone to losing their state. These should be moved to AWS Elasticache or some manually managed system in the future (we may also move off Redis for our queues, too).
-
-TBD
 
 
 ## Postgres via RDS
