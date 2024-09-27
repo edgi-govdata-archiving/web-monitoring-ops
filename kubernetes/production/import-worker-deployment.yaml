@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: db-import-worker
-        image: envirodgi/db-import-worker:117df7c59a608f1f4b6d13bbedd892a8d40d4514
+        image: envirodgi/db-import-worker:f8832418974545ac7d40a23baec7228c3dfbb27f
         imagePullPolicy: Always
         resources:
           requests:
