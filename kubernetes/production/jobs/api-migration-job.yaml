@@ -15,14 +15,14 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: api-migration-job
+  name: api-migration-job-2024-11-19-1
   namespace: production
 spec:
   template:
     spec:
       restartPolicy: OnFailure
       containers:
-      - name: api-migration-job
+      - name: api-migration-job-2024-11-19-1
         image: envirodgi/db-status-update-job:latest
         command: ["bundle", "exec", "rake", "db:migrate"]
         imagePullPolicy: Always
@@ -85,8 +85,6 @@ spec:
           value: production
         - name: RAILS_ENV
           value: production
-        - name: RAILS_LOG_TO_STDOUT
-          value: enabled
         - name: RAILS_SERVE_STATIC_FILES
           value: enabled
         - name: SECRET_KEY_BASE

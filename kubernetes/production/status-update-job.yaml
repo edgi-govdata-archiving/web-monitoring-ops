@@ -12,7 +12,7 @@ spec:
           restartPolicy: OnFailure
           containers:
           - name: db-status-update-job
-            image: envirodgi/db-status-update-job:a1cb125f6390386c770fc341f8f790e56ab90a95
+            image: envirodgi/db-status-update-job:bcd654282df2b366c4cbfa709a57a46cc780547b
             imagePullPolicy: Always
             resources:
               requests:
@@ -73,8 +73,6 @@ spec:
               value: production
             - name: RAILS_ENV
               value: production
-            - name: RAILS_LOG_TO_STDOUT
-              value: enabled
             - name: RAILS_SERVE_STATIC_FILES
               value: enabled
             - name: SECRET_KEY_BASE
@@ -93,4 +91,4 @@ spec:
                   name: app-secrets
                   key: token_private_key
             - name: INCREMENTAL_UPDATE
-              value: "1"
+              value: "2"
