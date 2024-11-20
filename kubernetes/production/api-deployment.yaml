@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name:  rails-server
-        image: envirodgi/db-rails-server:a1cb125f6390386c770fc341f8f790e56ab90a95
+        image: envirodgi/db-rails-server:3a35204c042c21b3bdfc5053e614344997d65b09
         imagePullPolicy: Always
         ports: 
         - containerPort: 3000
@@ -91,8 +91,6 @@ spec:
           value: production
         - name: RAILS_ENV
           value: production
-        - name: RAILS_LOG_TO_STDOUT
-          value: enabled
         - name: RAILS_SERVE_STATIC_FILES
           value: enabled
         # Redis cache is disabled in favor of just relying on CloudFront.

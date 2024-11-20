@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: db-import-worker
-        image: envirodgi/db-import-worker:a1cb125f6390386c770fc341f8f790e56ab90a95
+        image: envirodgi/db-import-worker:3a35204c042c21b3bdfc5053e614344997d65b09
         imagePullPolicy: Always
         resources:
           requests:
@@ -82,8 +82,6 @@ spec:
           value: production
         - name: RAILS_ENV
           value: production
-        - name: RAILS_LOG_TO_STDOUT
-          value: enabled
         - name: RAILS_SERVE_STATIC_FILES
           value: enabled
         # Redis cache is disabled in favor of just relying on CloudFront.
