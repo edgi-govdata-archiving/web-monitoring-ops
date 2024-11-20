@@ -85,6 +85,8 @@ spec:
           value: production
         - name: RAILS_ENV
           value: production
+        - name: RAILS_LOG_TO_STDOUT
+          value: enabled
         - name: RAILS_SERVE_STATIC_FILES
           value: enabled
         - name: SECRET_KEY_BASE
