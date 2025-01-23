@@ -106,6 +106,6 @@ spec:
               name: app-secrets
               key: token_private_key
         - name: API_READ_ONLY
-          value: "true"
+          value: "false"
         - name: INCREMENTAL_UPDATE
           value: "6"
