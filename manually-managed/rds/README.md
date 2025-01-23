@@ -4,14 +4,14 @@ The Postgres database that backs [web-monitoring-db][] is managed through Amazon
 
 ## Databases
 
-`web-monitoring-db-production-a` is the production database (the `-a` is because it is the successor to an older produciton database). It is configured as:
+`web-monitoring-db-production-b` is the production database (the `-b` is because it is the successor to an older production database). It is configured as:
 
 - Instance: **db.t4g.medium** (This doesn’t really have as much RAM as we’d like for big queries. It’s cost-effective for our current usage, however.)
-- Database: **Postgres 14.x**
+- Database: **Postgres 17.x**
 - Storage: **20+ GB Standard SSD** with autoscaling
 - VPC: **Same VPC as Kubernetes**
 - Security Groups: **Kubernetes security group** + **custom Postgres security group** for external access.
-- Custom parameter group based on the defaults. The JSON configuration for the parameter group is in [`web-monitoring-db-production-a-params.json`][web-monitoring-db-production-a-params] [(see below)](#other-notes), but with these modifications:
+- Custom parameter group based on the defaults. The JSON configuration for the parameter group is in [`web-monitoring-db-production-b-params.json`][web-monitoring-db-production-b-params] [(see below)](#other-notes), but with these modifications:
     - `work_mem` 16 MB (much bigger than default, which is 1 MB, but not huge)
     - `shared_buffers` 2/5 of available memory
     - `effective_cache_size` 3/4 of available memory
@@ -29,7 +29,7 @@ The database should be set to automatically update minor releases. However, majo
     2. Click the “Create Parameter Group” button.
     3. Choose the appropriate Postgres version and fill in a name and description and click “create.”
     4. Click on the new parameter group to view its details, then click “Edit parameters” in the top right to edit.
-    5. Find the parameters we customize (noted above) and set them to match the values from the old parameter group. You can use the [`web-monitoring-db-production-a-params.json`](./web-monitoring-db-production-a-params.json) file in this repo to get the values or look at the old group in the AWs console.
+    5. Find the parameters we customize (noted above) and set them to match the values from the old parameter group. You can use the [`web-monitoring-db-production-b-params.json`](./web-monitoring-db-production-b-params.json) file in this repo to get the values or look at the old group in the AWs console.
     6. Click “save” in the top-right.
 
 2. Modify the database.
@@ -65,7 +65,7 @@ Using `pg_table_size`, `pg_relation_size`, `pg_total_relation_size`, `pg_indexes
 The parameter groups file can be generated with the AWS CLI app:
 
 ```sh
-aws rds describe-db-parameters --db-parameter-group-name web-monitoring-db-production-a-params > ./manually-managed/rds/web-monitoring-db-production-a-params.json
+aws rds describe-db-parameters --db-parameter-group-name web-monitoring-db-production-b-params-17 > ./manually-managed/rds/web-monitoring-db-production-b-params.json
 ```
 
 **Parameter Expressions:** AWS allows you to use expressions and variables for some settings, but they are limited and can wind up looking kind of funny. For example, `shared buffers` is:
