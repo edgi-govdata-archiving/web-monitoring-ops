@@ -1,0 +1,65 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: ia-import-job
+  namespace: production
+spec:
+  # Run at 2 am UTC every day.
+  schedule: "0 2 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+          - name: ia-import-job-box
+            image: envirodgi/processing:latest
+            command: [
+              "scripts/wm",
+              "import",
+              "ia-known-pages",
+              "--parallel", "6",
+              "--precheck",
+              "--archive-s3", "edgi-wm-archive",
+              "--unplaybackable", "s3://edgi-wm-db-internal/processing/unplaybackable-cache.json",
+              "--skip-unchanged", "none",
+              "--from", "168"  # 1 week ago
+            ]
+            imagePullPolicy: Always
+            resources:
+              requests:
+                memory: "256Mi"
+                cpu: "100m"
+              limits:
+                memory: "1024Mi"
+                cpu: "1500m"
+            env:
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: processing-import-secrets
+                  key: aws_access_key_id
+            - name: AWS_REGION
+              value: us-west-2
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: processing-import-secrets
+                  key: aws_secret_access_key
+            - name: SENTRY_DSN
+              valueFrom:
+                secretKeyRef:
+                  name: processing-import-secrets
+                  key: sentry_dsn
+            - name: WEB_MONITORING_DB_EMAIL
+              valueFrom:
+                secretKeyRef:
+                  name: processing-import-secrets
+                  key: web_monitoring_db_email
+            - name: WEB_MONITORING_DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: processing-import-secrets
+                  key: web_monitoring_db_password
+            - name: WEB_MONITORING_DB_URL
+              value: 'https://api.monitoring.envirodatagov.org'
