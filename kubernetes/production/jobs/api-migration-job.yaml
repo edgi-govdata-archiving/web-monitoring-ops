@@ -15,16 +15,16 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: api-migration-job-2024-11-20-1
+  name: api-migration-job-2025-02-02-1
   namespace: production
 spec:
   template:
     spec:
-      restartPolicy: OnFailure
+      restartPolicy: Never
       containers:
       - name: api-migration-job-2024-11-20-1
         image: envirodgi/db-status-update-job:latest
-        command: ["bundle", "exec", "rake", "db:migrate"]
+        command: ["bin/rails", "db:migrate"]
         imagePullPolicy: Always
         resources:
           requests:
@@ -36,6 +36,10 @@ spec:
         env:
         - name: ALLOWED_ARCHIVE_HOSTS
           value: "https://edgi-wm-versionista.s3.amazonaws.com/ https://edgi-wm-versionista.s3-us-west-2.amazonaws.com/ https://edgi-wm-archive.s3.amazonaws.com/ https://edgi-wm-archive.s3.us-west-2.amazonaws.com/"
+        # Set to "true" to be safe/conservative on what kinds of diffs to try
+        # If we suddenly see the diff server going nuts, maybe uncomment this.
+        # - name: ANALYSIS_REQUIRE_MEDIA_TYPE
+        #   value: "true"
         - name: AUTO_ANNOTATION_USER
           valueFrom:
             secretKeyRef:
@@ -87,6 +91,12 @@ spec:
           value: production
         - name: RAILS_SERVE_STATIC_FILES
           value: enabled
+        # Redis cache is disabled in favor of just relying on CloudFront.
+        # - name: REDIS_CACHE_URL
+        #   valueFrom:
+        #     secretKeyRef:
+        #       name: app-secrets
+        #       key: redis_cache_url
         - name: SECRET_KEY_BASE
           valueFrom:
             secretKeyRef:
@@ -102,5 +112,5 @@ spec:
             secretKeyRef:
               name: app-secrets
               key: token_private_key
-        - name: INCREMENTAL_UPDATE
-          value: "1"
+        - name: API_READ_ONLY
+          value: "false"
