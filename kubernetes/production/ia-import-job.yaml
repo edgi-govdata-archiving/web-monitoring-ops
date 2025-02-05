@@ -4,8 +4,8 @@ metadata:
   name: ia-import-job
   namespace: production
 spec:
-  # Run at 2 am UTC every day.
-  schedule: "0 2 * * *"
+  # Run at 6 am UTC every day.
+  schedule: "0 6 * * *"
   jobTemplate:
     spec:
       template:
