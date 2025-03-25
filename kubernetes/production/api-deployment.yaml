@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name:  rails-server
-        image: envirodgi/db-rails-server:7cbeea0571a0751fa44f890cfd2d2ab61a8c157a
+        image: envirodgi/db-rails-server:b9fd28619076d0411f58f731d10d521387e1d01d
         imagePullPolicy: Always
         ports: 
         - containerPort: 3000
@@ -67,7 +67,7 @@ spec:
         - name: DIFFER_DEFAULT
           value: http://diffing:80
         - name: CACHE_DATE_DIFFER
-          value: "2020-11-24T20:30:00Z"
+          value: "2025-03-25T02:50:00Z"
         # TODO: consider making this not a secret
         - name: HOST_URL
           value: "https://api.monitoring.envirodatagov.org/"

@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: db-import-worker
-        image: envirodgi/db-import-worker:7cbeea0571a0751fa44f890cfd2d2ab61a8c157a
+        image: envirodgi/db-import-worker:b9fd28619076d0411f58f731d10d521387e1d01d
         imagePullPolicy: Always
         resources:
           requests:
@@ -53,7 +53,7 @@ spec:
         - name: AWS_WORKING_BUCKET
           value: edgi-wm-db-internal
         - name: CACHE_DATE_DIFFER
-          value: "2019-09-22T00:00:00Z"
+          value: "2025-03-25T02:50:00Z"
         - name: DATABASE_URL
           valueFrom:
             secretKeyRef:
