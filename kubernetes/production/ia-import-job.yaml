@@ -15,9 +15,9 @@ spec:
           - name: ia-import-job-box
             image: envirodgi/processing:latest
             command: [
-              "scripts/wm",
-              "import",
-              "ia-known-pages",
+              "wm",
+              "import-ia",
+              "active-pages",
               "--parallel", "6",
               "--precheck",
               "--archive-s3", "edgi-wm-archive",
