@@ -7,6 +7,7 @@ metadata:
   name: api-renormalize-urls
   namespace: production
 spec:
+  ttlSecondsAfterFinished: 172800  # 2 days
   template:
     spec:
       restartPolicy: Never

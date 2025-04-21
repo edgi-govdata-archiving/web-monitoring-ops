@@ -18,6 +18,7 @@ metadata:
   name: api-migration-job-2025-02-02-1
   namespace: production
 spec:
+  ttlSecondsAfterFinished: 172800  # 2 days
   template:
     spec:
       restartPolicy: Never
