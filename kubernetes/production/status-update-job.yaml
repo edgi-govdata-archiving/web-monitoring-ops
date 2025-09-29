@@ -12,7 +12,7 @@ spec:
           restartPolicy: OnFailure
           containers:
           - name: db-status-update-job
-            image: envirodgi/db-status-update-job:ab64090e3ec76ad395b746ced3408599bb871e34
+            image: envirodgi/db-status-update-job:02a01949da5348f0461878a1deada931e82fa417
             imagePullPolicy: Always
             resources:
               requests:
