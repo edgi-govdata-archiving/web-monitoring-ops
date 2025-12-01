@@ -10,7 +10,9 @@ spec:
     spec:
       template:
         spec:
-          restartPolicy: OnFailure
+          # Since this just will just kick off again the next day, allow it to
+          # fail without any automatic restarting.
+          restartPolicy: Never
           containers:
           - name: ia-import-job-box
             image: envirodgi/processing:latest
@@ -23,7 +25,7 @@ spec:
               "--archive-s3", "edgi-wm-archive",
               "--unplaybackable", "s3://edgi-wm-db-internal/processing/unplaybackable-cache.json",
               "--skip-unchanged", "none",
-              "--from", "7d"
+              "--from", "10d"
             ]
             imagePullPolicy: Always
             resources:
