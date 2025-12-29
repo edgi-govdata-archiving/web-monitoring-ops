@@ -6,6 +6,10 @@ metadata:
 spec:
   # Run at 6 am UTC every day.
   schedule: "0 6 * * *"
+  # Only run one import at a time so we don't blow through IA's rate limits.
+  # Better to interrupt a running import and start a new one so we pick up any
+  # newly added URLs (and skip paused URLs), as well as any other new state.
+  concurrencyPolicy: Replace
   jobTemplate:
     spec:
       template:
@@ -13,6 +17,8 @@ spec:
           # Since this just will just kick off again the next day, allow it to
           # fail without any automatic restarting.
           restartPolicy: Never
+          # Give it some time to clean up and finish partial batches.
+          terminationGracePeriodSeconds: 120
           containers:
           - name: ia-import-job-box
             image: envirodgi/processing:latest
