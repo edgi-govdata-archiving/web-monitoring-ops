@@ -31,7 +31,7 @@ spec:
               "--archive-s3", "edgi-wm-archive",
               "--unplaybackable", "s3://edgi-wm-db-internal/processing/unplaybackable-cache.json",
               "--skip-unchanged", "none",
-              "--from", "28d"
+              "--from", "10d"
             ]
             imagePullPolicy: Always
             resources:
