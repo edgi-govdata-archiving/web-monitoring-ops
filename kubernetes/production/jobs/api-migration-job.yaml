@@ -15,7 +15,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: api-migration-job-2025-02-02-1
+  name: api-migration-job-2026-02-02-1
   namespace: production
 spec:
   ttlSecondsAfterFinished: 172800  # 2 days
@@ -23,7 +23,7 @@ spec:
     spec:
       restartPolicy: Never
       containers:
-      - name: api-migration-job-2024-11-20-1
+      - name: api-migration-job-2026-02-02-1
         image: envirodgi/db-status-update-job:latest
         command: ["bin/rails", "db:migrate"]
         imagePullPolicy: Always
