@@ -7,8 +7,8 @@
 # This file, which includes all configs for the Metrics Server, is sourced from
 # metrics-server's Releases.
 #
-# Version: 0.5.2
-# https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.5.2/components.yaml
+# Version: 0.8.1
+# https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.8.1/components.yaml
 #
 # We've added some minor customizations to the default configuration, which are
 # marked with comments beginning with `# EDGI:`
@@ -51,11 +51,14 @@ rules:
 - apiGroups:
   - ""
   resources:
+  - nodes/metrics
+  verbs:
+  - get
+- apiGroups:
+  - ""
+  resources:
   - pods
   - nodes
-  - nodes/stats
-  - namespaces
-  - configmaps
   verbs:
   - get
   - list
@@ -116,7 +119,8 @@ metadata:
   namespace: kube-system
 spec:
   ports:
-  - name: https
+  - appProtocol: https
+    name: https
     port: 443
     protocol: TCP
     targetPort: https
@@ -145,14 +149,11 @@ spec:
       containers:
       - args:
         - --cert-dir=/tmp
-        - --secure-port=4443
+        - --secure-port=10250
         - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
         - --kubelet-use-node-status-port
         - --metric-resolution=15s
-        # EDGI: this argument is needed to work with our basic Kops setup.
-        - --kubelet-insecure-tls
-        # /EDGI
-        image: k8s.gcr.io/metrics-server/metrics-server:v0.5.2
+        image: registry.k8s.io/metrics-server/metrics-server:v0.8.1
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -163,7 +164,7 @@ spec:
           periodSeconds: 10
         name: metrics-server
         ports:
-        - containerPort: 4443
+        - containerPort: 10250
           name: https
           protocol: TCP
         readinessProbe:
@@ -179,9 +180,15 @@ spec:
             cpu: 100m
             memory: 200Mi
         securityContext:
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+            - ALL
           readOnlyRootFilesystem: true
           runAsNonRoot: true
           runAsUser: 1000
+          seccompProfile:
+            type: RuntimeDefault
         volumeMounts:
         - mountPath: /tmp
           name: tmp-dir
