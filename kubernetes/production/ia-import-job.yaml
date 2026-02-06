@@ -54,6 +54,9 @@ spec:
                 secretKeyRef:
                   name: processing-import-secrets
                   key: aws_secret_access_key
+            # TODO: bake this into the Docker image!
+            - name: PYTHONUNBUFFERED
+              value: '1'
             - name: SENTRY_DSN
               valueFrom:
                 secretKeyRef:
