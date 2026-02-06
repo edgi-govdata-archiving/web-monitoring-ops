@@ -165,7 +165,7 @@ kops create cluster \
   --state=$KOPS_STATE_STORE \
   --node-count=4 \
   --node-size=t3.medium \
-  --master-size=t3.medium \
+  --control-plane-size=t3.medium \
   --yes
 ```
 
@@ -291,7 +291,7 @@ deployments. Here we use the 'default' namespace.
 
 ```
 export NAMESPACE=default
-kubectl set-cluster $HOSTED_ZONE
+kubectl config set-cluster $HOSTED_ZONE
 kubectl config set-context $(kubectl config current-context) --namespace=$NAMESPACE
 kubectl config view | grep namespace:
 ```
@@ -489,7 +489,7 @@ bundle exec rake db:seed
 Which hosted zone are our load balancers in? (This command assumes they are in the same zone.)
 
 ```
-export ELB_ZONE=$(aws elb describe-load-balancers | jq -r .LoadBalancerDescriptions[0].CanonicalHostedZoneNameID)
+export ELB_ZONE=$(aws elb describe-load-balancers | jq -r '.LoadBalancerDescriptions[0].CanonicalHostedZoneNameID')
 ```
 
 ```
