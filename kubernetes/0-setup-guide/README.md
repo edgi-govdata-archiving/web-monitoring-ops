@@ -324,7 +324,7 @@ The important options here are:
 ```
 export DB_INSTANCE_IDENTIFIER=web-monitoring-db-$NAMESPACE
 export DB_PASSWORD=$(cat /dev/random | LC_ALL=C tr -dc "[:alpha:]" | tr '[:upper:]' '[:lower:]' | head -c 32)
-export NODES_SEC_GROUP=$(aws ec2 describe-security-groups --filters Name=group-name,Values=nodes.$HOSTED_ZONE | jq  -r .SecurityGroups[0].GroupId)
+export NODES_SEC_GROUP=$(aws ec2 describe-security-groups --filters Name=group-name,Values=nodes.$HOSTED_ZONE | jq  -r '.SecurityGroups[0].GroupId')
 export SUBNETS=$(aws ec2 describe-subnets --filters Name=tag:KubernetesCluster,Values=$HOSTED_ZONE | jq  -r '.Subnets[] | .SubnetId')
 
 # Only need to do this once per cluster (not once per namespace).
@@ -343,14 +343,14 @@ Wait several minutes for the RDS instance to be ready. You may check on its
 status like so.
 
 ```
-aws rds describe-db-instances --db-instance-identifier $DB_INSTANCE_IDENTIFIER | jq -r .DBInstances[0].DBInstanceStatus
+aws rds describe-db-instances --db-instance-identifier $DB_INSTANCE_IDENTIFIER | jq -r '.DBInstances[0].DBInstanceStatus'
 ```
 
 Enter this address into the rds ``externalName`` field in ``kubernetes/${NAMESPACE}/services.yaml``.
 (It will be ``null`` until the database is done "creating".)
 
 ```
-$ aws rds describe-db-instances --db-instance-identifier $DB_INSTANCE_IDENTIFIER | jq -r .DBInstances[0].Endpoint.Address
+$ aws rds describe-db-instances --db-instance-identifier $DB_INSTANCE_IDENTIFIER | jq -r '.DBInstances[0].Endpoint.Address'
 ```
 ## Get SSL certificates.
 
@@ -368,8 +368,8 @@ created to show that we control the domain that we would like to certify.
 Obtain this name and value.
 
 ```
-export API_RES_REC=$(aws acm describe-certificate --certificate-arn $API_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
-export UI_RES_REC=$(aws acm describe-certificate --certificate-arn $UI_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
+export API_RES_REC=$(aws acm describe-certificate --certificate-arn $API_ARN | jq '.Certificate.DomainValidationOptions[0].ResourceRecord')
+export UI_RES_REC=$(aws acm describe-certificate --certificate-arn $UI_ARN | jq '.Certificate.DomainValidationOptions[0].ResourceRecord')
 ```
 
 Obtain the hosted name ID of our cluster DNS. This is where we will create the
@@ -382,8 +382,8 @@ export KUBE_ZONE=$(aws route53 list-hosted-zones-by-name --dns-name "$HOSTED_ZON
 Extract the names and values of the CNAME records we must create.
 
 ```
-export API_RES_REC=$(aws acm describe-certificate --certificate-arn $API_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
-export UI_RES_REC=$(aws acm describe-certificate --certificate-arn $UI_ARN | jq .Certificate.DomainValidationOptions[0].ResourceRecord)
+export API_RES_REC=$(aws acm describe-certificate --certificate-arn $API_ARN | jq '.Certificate.DomainValidationOptions[0].ResourceRecord')
+export UI_RES_REC=$(aws acm describe-certificate --certificate-arn $UI_ARN | jq '.Certificate.DomainValidationOptions[0].ResourceRecord')
 export API_VALIDATE_NAME=$(echo $API_RES_REC | jq -r .Name)
 export API_VALIDATE_VALUE=$(echo $API_RES_REC | jq -r .Value)
 export UI_VALIDATE_NAME=$(echo $UI_RES_REC | jq -r .Name)
@@ -495,8 +495,8 @@ export ELB_ZONE=$(aws elb describe-load-balancers | jq -r '.LoadBalancerDescript
 ```
 export API_DNS_NAME=api.$NAMESPACE.$HOSTED_ZONE
 export UI_DNS_NAME=ui.$NAMESPACE.$HOSTED_ZONE
-export API_TARGET=$(kubectl get svc api -o json | jq -r .status.loadBalancer.ingress[0].hostname)
-export UI_TARGET=$(kubectl get svc ui -o json | jq -r .status.loadBalancer.ingress[0].hostname)
+export API_TARGET=$(kubectl get svc api -o json | jq -r '.status.loadBalancer.ingress[0].hostname')
+export UI_TARGET=$(kubectl get svc ui -o json | jq -r '.status.loadBalancer.ingress[0].hostname')
 ```
 
 ```
