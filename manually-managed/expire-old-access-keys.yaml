@@ -57,7 +57,9 @@ Resources:
   EdgiAccessKeyRotationRemediationRole:
     Type: AWS::IAM::Role
     Properties:
-      Description: Policies required for Config to execute SSM and SSM to update IAM, Config, and SNS.
+      Description: >-
+        Grants AWS Config & SSM permission to revoke IAM access keys and send
+        notifications. (Managed in CloudFormation; do not edit manually.)
       AssumeRolePolicyDocument:
         Version: 2012-10-17
         Statement:
@@ -107,7 +109,9 @@ Resources:
     Type: AWS::SSM::Document
     Properties:
       Content:
-        description: Send nice SNS warnings about IAM users whose keys expire soon.
+        description: >-
+          Send nice SNS warnings about IAM users whose keys expire soon.
+          (Managed in CloudFormation; do not edit manually.)
         schemaVersion: '0.3'
         assumeRole: '{{ AutomationAssumeRole }}'
         parameters:
@@ -152,7 +156,9 @@ Resources:
     Type: AWS::SSM::Document
     Properties:
       Content:
-        description: "Deactivate an IAM user's expired access keys and send an SNS message about it."
+        description: >-
+          Deactivate an IAM user's expired access keys and send an SNS message
+          about it. (Managed in CloudFormation; do not edit manually.)
         schemaVersion: '0.3'
         assumeRole: '{{ AutomationAssumeRole }}'
         parameters:
@@ -339,8 +345,10 @@ Resources:
     Type: AWS::Config::ConfigRule
     Properties:
       ConfigRuleName: warn-access-keys-expire-soon
-      Description: Identify IAM users with access keys older than
-        `maxAccessKeyAge` days and use SSM to send an SNS notification.
+      Description: >-
+        Identify IAM users with access keys older than `maxAccessKeyAge` days
+        and use SSM to send an SNS notification. (Managed in CloudFormation; do
+        not edit manually.)
       InputParameters:
         maxAccessKeyAge: !Ref warnAccessKeyAge
       Scope: {}
@@ -375,9 +383,10 @@ Resources:
     Type: AWS::Config::ConfigRule
     Properties:
       ConfigRuleName: expire-old-access-keys
-      Description:  Identify IAM users with access keys older than
-        `maxAccessKeyAge` days and use SSM to deactivate those keys and send
-        an SNS notification about them.
+      Description: >-
+        Identify IAM users with access keys older than `maxAccessKeyAge` days
+        and use SSM to deactivate those keys and send an SNS notification about
+        them. (Managed in CloudFormation; do not edit manually.)
       InputParameters:
         maxAccessKeyAge: !Ref maxAccessKeyAge
       Scope: {}
