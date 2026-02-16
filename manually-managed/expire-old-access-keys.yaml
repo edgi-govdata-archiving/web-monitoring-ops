@@ -1,0 +1,328 @@
+# EDGI AWS: Expire Old Access Keys
+#
+# This CloudFormation template creates IAM roles, Config rules, and SSM
+# documents/runbooks necessary to warn about access keys getting old, and then
+# later automatically expire them.
+#
+# Based on this AWS guide: https://aws.amazon.com/blogs/mt/managing-aged-access-keys-through-aws-config-remediations/
+# And the associated cloudformation template: https://raw.githubusercontent.com/aws-samples/aws-config-track-aged-access-keys/master/AccessKeyRotationChildAccounts.yaml
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  Automatically warn about and expire old AWS IAM access keys.
+# Creates an Automation Document for distributing info on noncompliant Access Keys to an SNS distro. To accomplish this, creates an AWS Systems Manager Automation Document creates a role
+#   to allow AWS Config to execute SSM Automation Documents,
+#   execute the configservice list-discovered-resources API call,
+#   and publish to the SNS topic passed in
+# enables the AWS Config Rule access-keys-rotated hooks up the Automation Document created as the Config rule's automatic remediation action
+
+Parameters:
+  SNSTopic:
+    Type: String
+    Description: Send notifications for expiring access keys to this SNS Topic.
+  MaximumExecutionFrequency:
+    Type: String
+    Default: TwentyFour_Hours
+    Description: The frequency that you want AWS Config to run evaluations for the rule.
+    MinLength: '1'
+    ConstraintDescription: This parameter is required.
+    AllowedValues:
+      - One_Hour
+      - Three_Hours
+      - Six_Hours
+      - Twelve_Hours
+      - TwentyFour_Hours
+  maxAccessKeyAge:
+    Type: String
+    Default: '90'
+    Description: Maximum number of days without rotation. Default 90.
+    MinLength: '1'
+    ConstraintDescription: This parameter is required.
+  warnAccessKeyAge:
+    Type: String
+    Default: '83'
+    Description: Send a warning after this many days without rotation.
+    MinLength: '1'
+    ConstraintDescription: This parameter is required.
+
+Resources:
+  EdgiAccessKeyRotationRemediationRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Description: Policies required for Config to execute SSM and SSM to execute
+        Config API call and publish to SNS
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ssm.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonSSMAutomationRole
+      Policies:
+        - PolicyName: EdgiAccessKeyRotationConfigListResourcesPolicy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: config:ListDiscoveredResources
+                Resource: '*'
+        - PolicyName: EdgiAccessKeyRotationPublishToSnsPolicy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: sns:Publish
+                Resource: !Ref SNSTopic
+        - PolicyName: EdgiAccessKeyRotationRevocationPolicy
+          PolicyDocument:
+            Version: 2012-10-17
+            # Needed for revoking keys. See docs:
+            # https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-revoke-iam-user.html
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'ssm:StartAutomationExecution'
+                  - 'ssm:GetAutomationExecution'
+                  - 'config:ListDiscoveredResources'
+                  - 'iam:DeleteAccessKey'
+                  - 'iam:DeleteLoginProfile'
+                  - 'iam:GetAccessKeyLastUsed'
+                  - 'iam:GetLoginProfile'
+                  - 'iam:GetUser'
+                  - 'iam:ListAccessKeys'
+                  - 'iam:UpdateAccessKey'
+                  # - 'iam:PassRole'
+                Resource: '*'
+      RoleName: EdgiAccessKeyRotationRemediationRole
+
+  EdgiAccessKeyRotationAutomationDoc:
+    Type: AWS::SSM::Document
+    Properties:
+      Content:
+        description: Automation Document For resolving a User from a ResourceId
+        schemaVersion: '0.3'
+        assumeRole: '{{ AutomationAssumeRole }}'
+        parameters:
+          ResourceId:
+            type: String
+            description: (Required) The ResourceId of a User
+          AutomationAssumeRole:
+            type: String
+            description: (Optional) The ARN of the role that allows Automation to perform
+              the actions on your behalf.
+        mainSteps:
+          - name: resolveUsername
+            action: aws:executeAwsApi
+            inputs:
+              Service: config
+              Api: ListDiscoveredResources
+              resourceType: AWS::IAM::User
+              resourceIds:
+                - '{{ResourceId}}'
+            outputs:
+              - Name: configUserName
+                Selector: $.resourceIdentifiers[0].resourceName
+                Type: String
+          - name: sendNotification
+            action: aws:executeAwsApi
+            timeoutSeconds: 30
+            onFailure: Abort
+            inputs:
+              Service: sns
+              Api: Publish
+              TopicArn: !Ref SNSTopic
+              Subject: EDGI AWS Access Keys Expiring
+              Message: >
+                EDGI AWS user "{{resolveUsername.configUserName}}" has an
+                access key that will expire soon. Please rotate it and update
+                any external services using it.
+        outputs:
+          - resolveUsername.configUserName
+      DocumentType: Automation
+
+  EdgiAccessKeyRevocationAutomationDoc:
+    Type: AWS::SSM::Document
+    Properties:
+      Content:
+        description: Automation Document For resolving a User from a ResourceId
+        schemaVersion: '0.3'
+        assumeRole: '{{ AutomationAssumeRole }}'
+        parameters:
+          ResourceId:
+            type: String
+            description: (Required) The ResourceId of a User
+          AutomationAssumeRole:
+            type: String
+            description: (Optional) The ARN of the role that allows Automation to perform
+              the actions on your behalf.
+        mainSteps:
+          - name: resolveUsername
+            action: aws:executeAwsApi
+            inputs:
+              Service: config
+              Api: ListDiscoveredResources
+              resourceType: AWS::IAM::User
+              resourceIds:
+                - '{{ResourceId}}'
+            outputs:
+              - Name: configUserName
+                Selector: $.resourceIdentifiers[0].resourceName
+                Type: String
+          # FIXME: Replace with script that deletes keys older than the given
+          # age, not just keys that haven't been *used* more recently.
+          # See source to fork: https://us-west-2.console.aws.amazon.com/systems-manager/documents/AWSConfigRemediation-RevokeUnusedIAMUserCredentials/content
+          - name: revokeExpiredKeys
+            action: aws:executeAutomation
+            maxAttempts: 2
+            timeoutSeconds: 30
+            isEnd: false
+            nextStep: sendSuccessNotification
+            onFailure: step:sendFailureNotification
+            inputs:
+              DocumentName: AWSConfigRemediation-RevokeUnusedIAMUserCredentials
+              RuntimeParameters:
+                MaxCredentialUsageAge: !Ref maxAccessKeyAge
+                IAMResourceId: '{{ResourceId}}'
+                AutomationAssumeRole: '{{ AutomationAssumeRole }}'
+          - name: sendFailureNotification
+            action: aws:executeAwsApi
+            timeoutSeconds: 30
+            isEnd: true
+            onFailure: Abort
+            inputs:
+              Service: sns
+              Api: Publish
+              TopicArn: !Ref SNSTopic
+              Subject: EDGI AWS Access Keys Expired Error
+              Message: >
+                  There was an error when revoking expired access keys for user
+                  "{{resolveUsername.configUserName}}" in EDGI's AWS account!
+                  Please check AWS Systems Manager automations panel for
+                  details:
+
+                  This execution: https://{{global:REGION}}.console.aws.amazon.com/systems-manager/automation/execution/{{automation:EXECUTION_ID}}
+
+                  All executiosn: https://{{global:REGION}}.console.aws.amazon.com/systems-manager/automation/executions
+          - name: sendSuccessNotification
+            action: aws:executeAwsApi
+            timeoutSeconds: 30
+            isEnd: true
+            onFailure: Abort
+            inputs:
+              Service: sns
+              Api: Publish
+              TopicArn: !Ref SNSTopic
+              Subject: EDGI AWS Access Keys Expired
+              Message: >
+                  EDGI AWS access keys for user
+                  "{{resolveUsername.configUserName}}" expired after being
+                  created ${maxAccessKeyAge} days ago!
+        outputs:
+          - resolveUsername.configUserName
+      DocumentType: Automation
+
+  EdgiAWSConfigAccessKeyRotationRule:
+    Type: AWS::Config::ConfigRule
+    Properties:
+      ConfigRuleName: warn-access-keys-expire-soon
+      Description: Checks whether the active access keys are rotated within the number
+        of days specified in maxAccessKeyAge. The rule is non-compliant if the
+        access keys have not been rotated for more than maxAccessKeyAge number
+        of days.
+      InputParameters:
+        maxAccessKeyAge: !Ref warnAccessKeyAge
+      Scope: {}
+      Source:
+        Owner: AWS
+        SourceIdentifier: ACCESS_KEYS_ROTATED
+      MaximumExecutionFrequency: !Ref MaximumExecutionFrequency
+
+  EdgiAWSConfigAccessKeyRotationRuleRemediation:
+    Type: AWS::Config::RemediationConfiguration
+    Properties:
+      ConfigRuleName: !Ref EdgiAWSConfigAccessKeyRotationRule
+      Automatic: true
+      MaximumAutomaticAttempts: 2
+      RetryAttemptSeconds: 60
+      Parameters:
+        AutomationAssumeRole:
+          StaticValue:
+            Values:
+              - !Join
+                - ''
+                - - 'arn:aws:iam::'
+                  - !Ref AWS::AccountId
+                  - ':role/EdgiAccessKeyRotationRemediationRole'
+        ResourceId:
+          ResourceValue:
+            Value: RESOURCE_ID
+      TargetId: !Ref EdgiAccessKeyRotationAutomationDoc
+      TargetType: SSM_DOCUMENT
+
+  EdgiAWSConfigAccessKeyRevocationRule:
+    Type: AWS::Config::ConfigRule
+    Properties:
+      ConfigRuleName: expire-old-access-keys
+      Description: Checks whether the active access keys are rotated within the number
+        of days specified in maxAccessKeyAge. The rule is non-compliant if the
+        access keys have not been rotated for more than maxAccessKeyAge number
+        of days.
+      InputParameters:
+        maxAccessKeyAge: !Ref maxAccessKeyAge
+      Scope: {}
+      Source:
+        Owner: AWS
+        SourceIdentifier: ACCESS_KEYS_ROTATED
+      MaximumExecutionFrequency: !Ref MaximumExecutionFrequency
+
+  EdgiAWSConfigAccessKeyRevocationRemediation:
+    Type: AWS::Config::RemediationConfiguration
+    Properties:
+      ConfigRuleName: !Ref EdgiAWSConfigAccessKeyRevocationRule
+      Automatic: true
+      MaximumAutomaticAttempts: 2
+      RetryAttemptSeconds: 60
+      Parameters:
+        AutomationAssumeRole:
+          StaticValue:
+            Values:
+              - !Join
+                - ''
+                - - 'arn:aws:iam::'
+                  - !Ref AWS::AccountId
+                  - ':role/EdgiAccessKeyRotationRemediationRole'
+        ResourceId:
+          ResourceValue:
+            Value: RESOURCE_ID
+      TargetId: !Ref EdgiAccessKeyRevocationAutomationDoc
+      TargetType: SSM_DOCUMENT
+
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label:
+          default: Required
+        Parameters:
+          - maxAccessKeyAge
+          - warnAccessKeyAge
+          - SNSTopic
+      - Label:
+          default: Optional
+        Parameters: []
+Conditions:
+  maxAccessKeyAge: !Not
+    - !Equals
+      - ''
+      - !Ref maxAccessKeyAge
+
+Outputs:
+  RoleCreated:
+    Description: The IAM Role that was created
+    Value: !Ref EdgiAccessKeyRotationRemediationRole
+  SSMDocumentCreated:
+    Description: The System Manager Automation Document that was created
+    Value: !Ref EdgiAccessKeyRotationAutomationDoc
+  AWSConfigRuleEnabled:
+    Description: The AWS Config Rule that was enabled
+    Value: !Ref EdgiAWSConfigAccessKeyRotationRule
