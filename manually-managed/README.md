@@ -43,6 +43,27 @@ To protect the production instance of the API from from abuse, we point the DNS 
     - It uses a `per-ip-rate-limit` rule to block IP addresses requesting over a certain rate.
 
 
+## IAM Access Key Expiration
+
+*This is not specific to Web Monitoring, but is a security concern for the AWS account it runs in.*
+
+We have some tools and scripts that use IAM access keys to get stuff done with AWS APIs (e.g. uploading to S3), but access keys unfortunately do not expire. That creates a big risk! (AWS has some nice solutions for OIDC and short-lived keys, but we have plenty of code that is not (yet?) compatible with that.)
+
+The CloudFormation template in [`expire-old-access-keys.yaml`](./expire-old-access-keys.yaml) creates a set of roles, policies, and configurations in AWS that will automatically expire old access keys and send warnings to an SNS topic about keys that are near expiration. To set it up:
+
+1. Ensure you have an SNS (Simple Notification Service) topic for admins to subscribe to and be notified about expiring access keys.
+
+    If you don’t already have one, you can create a topic in the AWS console at: https://us-west-2.console.aws.amazon.com/sns/v3/home. Name the topic anything you like, and then add the appropriate e-mail addresses or phone numbers for people who should be alerted about expiring keys (e.g. yourself). SNS topics are basically message queues that can be subscribed to via e-mail, SMS, or mobile push messages.
+
+    Note the ARN for your SNS topic.
+
+2. In [CloudFormation](https://us-west-2.console.aws.amazon.com/cloudformation/home)…
+    1. click the “create stack” button (a stack is a set of resources in AWS that are controlled together by a template). Then upload the [`expire-old-access-keys.yaml`](./expire-old-access-keys.yaml) file as the template to use.
+    2. On the next screen, give it an understandable name and fill in the parameters as appropriate: when you want keys to expire, when you want warnings about near-expiration keys, and the ARN for your SNS topic from step 1.
+    3. Follow the rest of the steps to instantiate the template.
+    4. You should be done and good to go!
+
+
 ## 📦 Deprecated Services
 
 ⚠️ These services used to be managed manually, but have either been shut down or moved to a different, automated approach. The documentation here is for historical reference.

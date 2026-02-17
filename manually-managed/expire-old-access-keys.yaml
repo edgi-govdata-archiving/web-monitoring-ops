@@ -1,0 +1,458 @@
+# EDGI AWS: Expire Old Access Keys
+#
+# This CloudFormation template creates IAM roles, Config rules, and SSM
+# documents/runbooks necessary to warn about access keys getting old, and then
+# later automatically expire them.
+#
+# Based on this AWS guide: https://aws.amazon.com/blogs/mt/managing-aged-access-keys-through-aws-config-remediations/
+# And the associated cloudformation template: https://raw.githubusercontent.com/aws-samples/aws-config-track-aged-access-keys/master/AccessKeyRotationChildAccounts.yaml
+#
+# TODO: Consider also expiring old or unused passwords!
+# - Config has a built-in `iam-user-unused-credentials-check` rule.
+# - SSM has a `AWSConfigRemediation-RevokeUnusedIAMUserCredentials` runbook.
+# - Use those in conjunction just like we currently do for basic key age with
+#   the `ACCESS_KEYS_ROTATED` Config rule and a custom SSM runbook.
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  Automatically warn about and expire old AWS IAM access keys. It requires you
+  have enabled AWS Config and are collecting information about IAM users in it,
+  and that you have an SNS topic to send expiration notices to.
+
+  This will create: 1) Rules in AWS Config for identifying keys near expiration
+  and after expiration, 2) AWS Systems Manager runbooks that "remediate" the
+  Config rules by either sending an SNS notification for each user with
+  near-expiration keys or by deactivating expired keys and sending an SNS
+  notification about that.
+
+Parameters:
+  SNSTopic:
+    Type: String
+    Description: Send notifications for expiring access keys to this SNS Topic.
+  MaximumExecutionFrequency:
+    Type: String
+    Default: TwentyFour_Hours
+    Description: The frequency that you want AWS Config to run evaluations for the rule.
+    MinLength: '1'
+    ConstraintDescription: This parameter is required.
+    AllowedValues:
+      - One_Hour
+      - Three_Hours
+      - Six_Hours
+      - Twelve_Hours
+      - TwentyFour_Hours
+  maxAccessKeyAge:
+    Type: String
+    Default: '90'
+    Description: Deactivate keys that are this many days old.
+    MinLength: '1'
+    ConstraintDescription: This parameter is required.
+  warnAccessKeyAge:
+    Type: String
+    Default: '83'
+    Description: 'Send an "expiring soon" warning about keys this many days old.'
+    MinLength: '1'
+    ConstraintDescription: This parameter is required.
+
+Resources:
+  EdgiAccessKeyRotationRemediationRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Description: >-
+        Grants AWS Config & SSM permission to revoke IAM access keys and send
+        notifications. (Managed in CloudFormation; do not edit manually.)
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ssm.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonSSMAutomationRole
+      Policies:
+        - PolicyName: EdgiAccessKeyRotationConfigListResourcesPolicy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: config:ListDiscoveredResources
+                Resource: '*'
+        - PolicyName: EdgiAccessKeyRotationPublishToSnsPolicy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: sns:Publish
+                Resource: !Ref SNSTopic
+        - PolicyName: EdgiAccessKeyRotationRevocationPolicy
+          PolicyDocument:
+            Version: 2012-10-17
+            # Needed for revoking keys. See docs:
+            # https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-revoke-iam-user.html
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'ssm:StartAutomationExecution'
+                  - 'ssm:GetAutomationExecution'
+                  - 'config:ListDiscoveredResources'
+                  - 'iam:DeleteAccessKey'
+                  - 'iam:DeleteLoginProfile'
+                  - 'iam:GetAccessKeyLastUsed'
+                  - 'iam:GetLoginProfile'
+                  - 'iam:GetUser'
+                  - 'iam:ListAccessKeys'
+                  - 'iam:UpdateAccessKey'
+                Resource: '*'
+      RoleName: EdgiAccessKeyRotationRemediationRole
+
+  EdgiAccessKeyAgeWarningRunbook:
+    Type: AWS::SSM::Document
+    Properties:
+      Content:
+        description: >-
+          Send nice SNS warnings about IAM users whose keys expire soon.
+          (Managed in CloudFormation; do not edit manually.)
+        schemaVersion: '0.3'
+        assumeRole: '{{ AutomationAssumeRole }}'
+        parameters:
+          ResourceId:
+            type: String
+            description: (Required) The ResourceId of a User
+          AutomationAssumeRole:
+            type: String
+            description: (Optional) The ARN of the role that allows Automation to perform
+              the actions on your behalf.
+        mainSteps:
+          - name: resolveUsername
+            action: aws:executeAwsApi
+            inputs:
+              Service: config
+              Api: ListDiscoveredResources
+              resourceType: AWS::IAM::User
+              resourceIds:
+                - '{{ResourceId}}'
+            outputs:
+              - Name: configUserName
+                Selector: $.resourceIdentifiers[0].resourceName
+                Type: String
+          - name: sendNotification
+            action: aws:executeAwsApi
+            timeoutSeconds: 30
+            onFailure: Abort
+            inputs:
+              Service: sns
+              Api: Publish
+              TopicArn: !Ref SNSTopic
+              Subject: EDGI AWS Access Keys Expiring
+              Message: >
+                EDGI AWS user "{{resolveUsername.configUserName}}" has an
+                access key that will expire soon. Please rotate it and update
+                any external services using it.
+        outputs:
+          - resolveUsername.configUserName
+      DocumentType: Automation
+
+  EdgiAccessKeyAgeRevocationRunbook:
+    Type: AWS::SSM::Document
+    Properties:
+      Content:
+        description: >-
+          Deactivate an IAM user's expired access keys and send an SNS message
+          about it. (Managed in CloudFormation; do not edit manually.)
+        schemaVersion: '0.3'
+        assumeRole: '{{ AutomationAssumeRole }}'
+        parameters:
+          ResourceId:
+            type: String
+            description: (Required) The ResourceId of a User
+          AutomationAssumeRole:
+            type: String
+            description: (Optional) The ARN of the role that allows Automation to perform
+              the actions on your behalf.
+        mainSteps:
+          - name: resolveUsername
+            action: aws:executeAwsApi
+            inputs:
+              Service: config
+              Api: ListDiscoveredResources
+              resourceType: AWS::IAM::User
+              resourceIds:
+                - '{{ResourceId}}'
+            outputs:
+              - Name: configUserName
+                Selector: $.resourceIdentifiers[0].resourceName
+                Type: String
+          - name: revokeExpiredKeys
+            action: aws:executeScript
+            description: |
+              Deactivate access keys for an IAM user that were created more
+              `MaxCredentialAge` days ago.
+
+              This is based on AWS's official [`AWSConfigRemediation-RevokeUnusedIAMUserCredentials` runbook](https://us-west-2.console.aws.amazon.com/systems-manager/documents/AWSConfigRemediation-RevokeUnusedIAMUserCredentials/content),
+              but it looks at the age of the keys rather than when they were
+              last *used*. It also outputs some more detailed messaging.
+
+
+              ## Outputs
+
+              - `message`: String with information about each key's age and
+                  whether it was deactivated or left alone.
+              - `verification`: Map/dictionary with detailed information about
+                  verifications and API requests made. Useful for debugging in
+                  the AWS console, but you probably don't want to put it into
+                  an e-mail or text notification.
+            timeoutSeconds: 600
+            isEnd: false
+            nextStep: sendSuccessNotification
+            onFailure: step:sendFailureNotification
+            inputs:
+              Runtime: python3.11
+              Handler: main_handler
+              InputPayload:
+                IamResourceId: '{{ResourceId}}'
+                MaxCredentialAge: !Ref maxAccessKeyAge
+              Script: |
+                import boto3
+                from datetime import datetime, timedelta, timezone
+
+                iam_client = boto3.client("iam")
+                config_client = boto3.client("config")
+
+                responses = {}
+                responses["DeactivateUnusedKeysResponse"] = []
+
+                def list_access_keys(user_name):
+                  return iam_client.list_access_keys(UserName=user_name).get("AccessKeyMetadata")
+
+                def deactivate_key(user_name, access_key):
+                  responses["DeactivateUnusedKeysResponse"].append({
+                    "AccessKeyId": access_key,
+                    "Response": iam_client.update_access_key(
+                      UserName=user_name,
+                      AccessKeyId=access_key,
+                      Status="Inactive",
+                    ),
+                  })
+
+                def deactivate_old_keys(access_keys, max_age, user_name):
+                  results = []
+                  for key in access_keys:
+                    create_date = key.get("CreateDate")
+                    days_since_creation = (datetime.now(tz=timezone.utc) - create_date).days
+                    if days_since_creation >= max_age:
+                      deactivate_key(user_name, key.get("AccessKeyId"))
+                      results.append(f"Deactivated a {days_since_creation:,} day old key (created: {create_date}).")
+                    else:
+                      results.append(f"Kept a {days_since_creation:,} day old key (created: {create_date}).")
+
+                  return results
+
+                def verify_expired_keys_revoked(responses, user_name):
+                  if responses.get("DeactivateUnusedKeysResponse"):
+                    for key in responses.get("DeactivateUnusedKeysResponse"):
+                      key_data = next(filter(lambda x: x.get("AccessKeyId") == key.get("AccessKeyId"), list_access_keys(user_name)))
+                      if key_data.get("Status") != "Inactive":
+                        error_message = "VERIFICATION FAILED. ACCESS KEY {} NOT DEACTIVATED".format(key_data.get("AccessKeyId"))
+                        raise Exception(error_message)
+                  return {
+                      "output": "Verification of unused IAM User access keys is successful.",
+                      "http_responses": responses
+                  }
+
+                def get_user_name(resource_id):
+                  list_discovered_resources_response = config_client.list_discovered_resources(
+                      resourceType='AWS::IAM::User',
+                      resourceIds=[resource_id]
+                  )
+                  resource_name = list_discovered_resources_response.get("resourceIdentifiers")[0].get("resourceName")
+                  return resource_name
+
+                def main_handler(event, context):
+                  user_name = event.get("IamUserName")
+                  if not user_name:
+                    iam_resource_id = event.get("IamResourceId")
+                    if not iam_resource_id:
+                      raise ValueError(f"You must set either `IamUserName` or `IamResourceId` in the input payload.")
+                    user_name = get_user_name(iam_resource_id)
+
+                  max_credential_age = int(event.get("MaxCredentialAge"))
+                  if max_credential_age < 1:
+                    raise ValueError(f"MaxCredentialAge must be >= 1, but was '{max_credential_age}'.")
+
+                  access_keys = list_access_keys(user_name)
+                  results = deactivate_old_keys(access_keys, max_credential_age, user_name)
+                  verification = verify_expired_keys_revoked(responses, user_name)
+
+                  return {
+                    "message": "\n\n".join(results),
+                    "verification": verification,
+                  }
+            outputs:
+              # Useful reporting to admins about what happened.
+              - Name: message
+                Selector: $.Payload.message
+                Type: String
+              # Useful for debugging/troubleshooting in the AWS console.
+              - Name: verification
+                Selector: $.Payload.verification
+                Type: StringMap
+          - name: sendFailureNotification
+            action: aws:executeAwsApi
+            timeoutSeconds: 30
+            isEnd: true
+            onFailure: Abort
+            inputs:
+              Service: sns
+              Api: Publish
+              TopicArn: !Ref SNSTopic
+              Subject: EDGI AWS Access Keys Expired Error
+              Message: >
+                  There was an error when revoking expired access keys for user
+                  "{{resolveUsername.configUserName}}" in EDGI's AWS account!
+
+
+                  Please check the AWS Systems Manager automations panel for
+                  details:
+
+                  This execution: https://{{global:REGION}}.console.aws.amazon.com/systems-manager/automation/execution/{{automation:EXECUTION_ID}}
+
+                  All executiosn: https://{{global:REGION}}.console.aws.amazon.com/systems-manager/automation/executions
+          - name: sendSuccessNotification
+            action: aws:executeAwsApi
+            timeoutSeconds: 30
+            isEnd: true
+            onFailure: Abort
+            inputs:
+              Service: sns
+              Api: Publish
+              TopicArn: !Ref SNSTopic
+              Subject: EDGI AWS Access Keys Expired
+              Message: >
+                  EDGI AWS access keys for user
+                  "{{resolveUsername.configUserName}}" expired!
+
+
+                  {{revokeExpiredKeys.message}}
+
+
+                  See this user's keys in AWS console:
+                  https://us-east-1.console.aws.amazon.com/iam/home#/users/details/{{resolveUsername.configUserName}}?section=security_credentials
+        outputs:
+          - resolveUsername.configUserName
+          - revokeExpiredKeys.message
+      DocumentType: Automation
+
+  EdgiAccessKeyAgeWarningConfigRule:
+    Type: AWS::Config::ConfigRule
+    Properties:
+      ConfigRuleName: warn-access-keys-expire-soon
+      Description: >-
+        Identify IAM users with access keys older than `maxAccessKeyAge` days
+        and use SSM to send an SNS notification. (Managed in CloudFormation; do
+        not edit manually.)
+      InputParameters:
+        maxAccessKeyAge: !Ref warnAccessKeyAge
+      Scope: {}
+      Source:
+        Owner: AWS
+        SourceIdentifier: ACCESS_KEYS_ROTATED
+      MaximumExecutionFrequency: !Ref MaximumExecutionFrequency
+
+  EdgiAccessKeyAgeWarningConfigRuleRemediation:
+    Type: AWS::Config::RemediationConfiguration
+    Properties:
+      ConfigRuleName: !Ref EdgiAccessKeyAgeWarningConfigRule
+      Automatic: true
+      MaximumAutomaticAttempts: 2
+      RetryAttemptSeconds: 60
+      Parameters:
+        AutomationAssumeRole:
+          StaticValue:
+            Values:
+              - !Join
+                - ''
+                - - 'arn:aws:iam::'
+                  - !Ref AWS::AccountId
+                  - ':role/EdgiAccessKeyRotationRemediationRole'
+        ResourceId:
+          ResourceValue:
+            Value: RESOURCE_ID
+      TargetId: !Ref EdgiAccessKeyAgeWarningRunbook
+      TargetType: SSM_DOCUMENT
+
+  EdgiAccessKeyAgeRevocationConfigRule:
+    Type: AWS::Config::ConfigRule
+    Properties:
+      ConfigRuleName: expire-old-access-keys
+      Description: >-
+        Identify IAM users with access keys older than `maxAccessKeyAge` days
+        and use SSM to deactivate those keys and send an SNS notification about
+        them. (Managed in CloudFormation; do not edit manually.)
+      InputParameters:
+        maxAccessKeyAge: !Ref maxAccessKeyAge
+      Scope: {}
+      Source:
+        Owner: AWS
+        SourceIdentifier: ACCESS_KEYS_ROTATED
+      MaximumExecutionFrequency: !Ref MaximumExecutionFrequency
+
+  EdgiAccessKeyAgeRevocationConfigRuleRemediation:
+    Type: AWS::Config::RemediationConfiguration
+    Properties:
+      ConfigRuleName: !Ref EdgiAccessKeyAgeRevocationConfigRule
+      Automatic: true
+      MaximumAutomaticAttempts: 2
+      RetryAttemptSeconds: 60
+      Parameters:
+        AutomationAssumeRole:
+          StaticValue:
+            Values:
+              - !Join
+                - ''
+                - - 'arn:aws:iam::'
+                  - !Ref AWS::AccountId
+                  - ':role/EdgiAccessKeyRotationRemediationRole'
+        ResourceId:
+          ResourceValue:
+            Value: RESOURCE_ID
+      TargetId: !Ref EdgiAccessKeyAgeRevocationRunbook
+      TargetType: SSM_DOCUMENT
+
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label:
+          default: Required
+        Parameters:
+          - maxAccessKeyAge
+          - warnAccessKeyAge
+          - SNSTopic
+      - Label:
+          default: Optional
+        Parameters: []
+Conditions:
+  maxAccessKeyAge: !Not
+    - !Equals
+      - ''
+      - !Ref maxAccessKeyAge
+  warnAccessKeyAge: !Not
+    - !Equals
+      - ''
+      - !Ref warnAccessKeyAge
+
+Outputs:
+  RoleCreated:
+    Description: The IAM Role that was created
+    Value: !Ref EdgiAccessKeyRotationRemediationRole
+  WarningSsmDocumentCreated:
+    Description: The System Manager Automation Document to warn about old keys that was created
+    Value: !Ref EdgiAccessKeyAgeWarningRunbook
+  WarningConfigRuleEnabled:
+    Description: The AWS Config Rule for key warnings that was enabled
+    Value: !Ref EdgiAccessKeyAgeWarningConfigRule
+  RevocationSsmDocumentCreated:
+    Description: The System Manager Automation Document to revoke expired keys that was created
+    Value: !Ref EdgiAccessKeyAgeRevocationRunbook
+  RevocationConfigRuleEnabled:
+    Description: The AWS Config Rule for key revocation that was enabled
+    Value: !Ref EdgiAccessKeyAgeRevocationConfigRule
