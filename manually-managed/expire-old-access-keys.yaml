@@ -241,9 +241,9 @@ Resources:
                     days_since_creation = (datetime.now(tz=timezone.utc) - create_date).days
                     if days_since_creation >= max_age:
                       deactivate_key(user_name, key.get("AccessKeyId"))
-                      results.append(f"Deactivated a {days_since_creation} day old key (created: {create_date} UTC).")
+                      results.append(f"Deactivated a {days_since_creation:,} day old key (created: {create_date}).")
                     else:
-                      results.append(f"Kept a {days_since_creation} day old key (created: {create_date} UTC).")
+                      results.append(f"Kept a {days_since_creation:,} day old key (created: {create_date}).")
 
                   return results
 
