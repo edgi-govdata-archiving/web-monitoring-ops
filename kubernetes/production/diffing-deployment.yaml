@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: processing
-        image: envirodgi/web-monitoring-diff:0.1.7
+        image: envirodgi/web-monitoring-diff:0.2.0
         imagePullPolicy: Always
         ports:
         - containerPort: 80
@@ -43,6 +43,8 @@ spec:
           value: "#e8a4c8"
         - name: DIFFER_PARALLELISM
           value: "4"
+        - name: MAX_DIFFS_PER_WORKER
+          value: "100"
         - name: SENTRY_DSN
           valueFrom:
             secretKeyRef:
