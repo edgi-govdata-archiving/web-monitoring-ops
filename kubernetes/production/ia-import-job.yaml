@@ -74,3 +74,6 @@ spec:
                   key: web_monitoring_db_password
             - name: WEB_MONITORING_DB_URL
               value: 'https://api.monitoring.envirodatagov.org'
+            - name: WAYBACK_RATE_LIMIT
+              value: '5'
+
