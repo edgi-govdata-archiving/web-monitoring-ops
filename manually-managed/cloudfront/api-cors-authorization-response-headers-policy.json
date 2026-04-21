@@ -1,0 +1,65 @@
+{
+  "LastModifiedTime": "2026-04-21T07:10:34.373000+00:00",
+  "ResponseHeadersPolicyConfig": {
+    "Comment": "Allows all origins for CORS (and preflight requests), adds security headers, allows \"authorization\" header.",
+    "Name": "api-cors-authorization-response-headers-policy",
+    "CorsConfig": {
+      "AccessControlAllowOrigins": {
+        "Quantity": 2,
+        "Items": [
+          "monitoring.envirodatagov.org",
+          "*.monitoring.envirodatagov.org"
+        ]
+      },
+      "AccessControlAllowHeaders": {
+        "Quantity": 3,
+        "Items": [
+          "Authorization",
+          "content-type",
+          "x-requested-with"
+        ]
+      },
+      "AccessControlAllowMethods": {
+        "Quantity": 5,
+        "Items": [
+          "GET",
+          "HEAD",
+          "POST",
+          "OPTIONS"
+        ]
+      },
+      "AccessControlAllowCredentials": true,
+      "AccessControlExposeHeaders": {
+        "Quantity": 0,
+        "Items": []
+      },
+      "AccessControlMaxAgeSec": 600,
+      "OriginOverride": false
+    },
+    "SecurityHeadersConfig": {
+      "XSSProtection": {
+        "Override": false,
+        "Protection": true,
+        "ModeBlock": true
+      },
+      "FrameOptions": {
+        "Override": false,
+        "FrameOption": "SAMEORIGIN"
+      },
+      "ReferrerPolicy": {
+        "Override": false,
+        "ReferrerPolicy": "strict-origin-when-cross-origin"
+      },
+      "ContentSecurityPolicy": {},
+      "ContentTypeOptions": {
+        "Override": true
+      },
+      "StrictTransportSecurity": {
+        "Override": false,
+        "IncludeSubdomains": false,
+        "Preload": false,
+        "AccessControlMaxAgeSec": 31536000
+      }
+    }
+  }
+}
