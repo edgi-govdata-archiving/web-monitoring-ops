@@ -36,10 +36,10 @@ spec:
             imagePullPolicy: Always
             resources:
               requests:
-                memory: "1024Mi"
+                memory: "1536Mi"
                 cpu: "1000m"
               limits:
-                memory: "2048Mi"
+                memory: "3072Mi"
                 cpu: "2000m"
             env:
             - name: AWS_ACCESS_KEY_ID
@@ -76,4 +76,5 @@ spec:
               value: 'https://api.monitoring.envirodatagov.org'
             - name: WAYBACK_RATE_LIMIT
               value: '5'
-
+            - name: WAYBACK_USE_TIMEMAP_CDX
+              value: 'true'
