@@ -54,6 +54,8 @@ spec:
                 secretKeyRef:
                   name: processing-import-secrets
                   key: aws_secret_access_key
+            - name: LOG_LEVEL
+              value: 'INFO'
             # TODO: bake this into the Docker image!
             - name: PYTHONUNBUFFERED
               value: '1'
