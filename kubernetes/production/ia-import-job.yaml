@@ -64,6 +64,10 @@ spec:
                 secretKeyRef:
                   name: processing-import-secrets
                   key: sentry_dsn
+            # TEMPORARY: Should reconsider this after 2026-09-01. We are trying
+            # to get extra detailed metrics for now.
+            - name: SENTRY_TRACES_SAMPLE_RATE
+              value: '1.0'
             - name: WEB_MONITORING_DB_EMAIL
               valueFrom:
                 secretKeyRef:
