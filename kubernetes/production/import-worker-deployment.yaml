@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: db-import-worker
-        image: envirodgi/db-rails-server:ec98767c501d7dbb4f2f96c49588d4f6431a686f
+        image: envirodgi/db-rails-server:b4d919e2d27862c7619bdb8479228987bc050603
         command: ['bundle', 'exec', 'good_job', 'start']
         imagePullPolicy: Always
         resources:
