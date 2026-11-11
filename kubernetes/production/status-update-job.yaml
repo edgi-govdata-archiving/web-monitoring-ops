@@ -12,7 +12,7 @@ spec:
           restartPolicy: OnFailure
           containers:
           - name: db-status-update-job
-            image: envirodgi/db-rails-server:fa70be6ddb49855ddbfea02148636fdc179e8ae8
+            image: envirodgi/db-rails-server:fd73453dc2a1b21e9d160eb3787b28d669183264
             command: ['bundle', 'exec', 'rake', 'update_page_statuses']
             imagePullPolicy: Always
             resources:
