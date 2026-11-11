@@ -67,7 +67,7 @@ spec:
         - name: DIFFER_DEFAULT
           value: http://diffing:80
         - name: CACHE_DATE_DIFFER
-          value: "2025-03-25T02:50:00Z"
+          value: "2026-11-11T10:00:00Z"
         # TODO: consider making this not a secret
         - name: HOST_URL
           value: "https://api.monitoring.envirodatagov.org/"

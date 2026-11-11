@@ -54,7 +54,7 @@ spec:
         - name: AWS_WORKING_BUCKET
           value: edgi-wm-db-internal
         - name: CACHE_DATE_DIFFER
-          value: "2025-03-25T02:50:00Z"
+          value: "2026-11-11T10:00:00Z"
         - name: DATABASE_URL
           valueFrom:
             secretKeyRef:
