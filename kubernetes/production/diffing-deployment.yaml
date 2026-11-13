@@ -52,3 +52,9 @@ spec:
               key: sentry_dsn
         - name: SENTRY_ENVIRONMENT
           value: "production"
+        # TEMPORARY: Should reconsider this after 2026-12-01. We are trying
+        # to get extra detailed metrics for now.
+        - name: SENTRY_TRACES_SAMPLE_RATE
+          value: "1.0"
+        - name: WEB_MONITORING_APP_ENV
+          value: "production"
