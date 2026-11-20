@@ -105,6 +105,13 @@ Resources:
                 Resource: '*'
       RoleName: EdgiAccessKeyRotationRemediationRole
 
+  # RUNBOOKS/SSM Docs ---------------------------------------------------------
+  #
+  # SSM Runbooks/Documents (different tools and parts of the web console use
+  # either of these names for the same thing) define a series of steps, each of
+  # which runs a script or executes some command. Think of this sort of like a
+  # GitHub Action Workflow or Zapier automation. The basic setup is that the
+  # AWS Config rules (at bottom)
   EdgiAccessKeyAgeWarningRunbook:
     Type: AWS::SSM::Document
     Properties:
