@@ -30,7 +30,7 @@ spec:
               "--precheck",
               "--archive-s3", "edgi-wm-archive",
               "--unplaybackable", "s3://edgi-wm-db-internal/processing/unplaybackable-cache.json",
-              "--skip-unchanged", "none",
+              "--sample-rate", "4",
               "--from", "10d"
             ]
             imagePullPolicy: Always
